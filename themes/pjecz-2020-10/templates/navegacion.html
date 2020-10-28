@@ -1,20 +1,34 @@
     <!-- Navegacion -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header>
+    <nav id="navegacion_logo" class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="{{ SITEURL }}/theme/images/navegacion-logotipo.png" alt="PJECZ" width="150px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#"><img src="{{ SITEURL }}/theme/images/navegacion-logotipo.png" alt="PJECZ" width="200px"></a>
+            <span class="navbar-text">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-twitter-square fa-lg"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-vimeo-square fa-lg"></i></a></li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </nav>
+    <nav id="navegacion_menu" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsNavegacion" aria-controls="navbarsNavegacion" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarsExample07">
+            <div class="collapse navbar-collapse" id="navbarsNavegacion">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -26,11 +40,12 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-md-0">
-                    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    <input class="form-control" type="text" placeholder="Buscar" aria-label="Buscar">
                 </form>
             </div>
         </div>
     </nav>
+</header>
     <!--
         <img src="{{ SITEURL }}/theme/images/navegacion-logotipo.png" alt="Poder Judicial de Coahuila">
                 <ul class="navbar-nav ml-auto">

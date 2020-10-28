@@ -27,7 +27,7 @@ b,
 strong      { font-weight: 700; }
 
 header      { font-family: 'Lato', sans-serif; font-weight: 300; }
-#navegacion { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
+#navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
 
 /* --------
  * Espacios
@@ -45,7 +45,8 @@ blockquote              { padding: 1.2em; }
 header                  { min-height: 100px; }
 main                    { min-height: 800px; }
 article                 { min-height: 800px; }
-#cabecera               { }
+#navegacion_logo        { }
+#navegacion_menu        { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
 #destacados             { min-height: 400px; }
 #en_construccion        { min-height: 120px; }
 #novedades              { min-height: 400px; }
@@ -75,7 +76,8 @@ a:hover                 { color: #215796; }
 a:active,
 a:visited               { color: #46576b; }
 header                  { background-color: #e3e1e4; }
-#navegacion             { background-color: #46576b; border-bottom: 8px solid #f3edce; }
+#navegacion_logo        { background-color: #ffffff; }
+#navegacion_menu        { background-color: #46576b; }
 #cabecera               { background-color: #ffffff; }
 #destacados             { background-color: #ffffff; }
 .destacados-card        { background-color: #f7f3f2; }
