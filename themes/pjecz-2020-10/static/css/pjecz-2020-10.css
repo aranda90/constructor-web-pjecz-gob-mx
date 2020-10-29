@@ -28,6 +28,7 @@ strong      { font-weight: 700; }
 
 header      { font-family: 'Lato', sans-serif; font-weight: 300; }
 #navegacion_menu           { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
+.navegacion_icon           { font-size: 2.6rem; }
 #destacados h4             { font-size: 1.2rem; }
 #destacados p              { font-size: 0.8rem; line-height: 1.4rem; }
 #transmisiones_sesiones h2 { font-size: 1.6rem; }
@@ -80,12 +81,17 @@ h5                      { color: #004360; }
 h6                      { color: #004360; }
 a                       { color: #46576b; }
 a:focus,
-a:hover                 { color: #215796; }
+a:visited               { color: #215796; }
 a:active,
-a:visited               { color: #46576b; }
+a:hover                 { color: #46576b; }
 header                  { background-color: #e3e1e4; }
 #navegacion_logo        { background-color: #ffffff; }
-#navegacion_menu        { background-color: #46576b; }
+a.navegacion_icon,
+a.navegacion_icon:focus,
+a.navegacion_icon:visited { color: #dbb993; }
+a.navegacion_icon:active,
+a.navegacion_icon:hover   { color: #a36e33; }
+#navegacion_menu        { background-color: #004360; border-bottom: 6px solid #dbb993; }
 #cabecera               { background-color: #ffffff; }
 #destacados             { background-color: #ffffff; }
 .destacados-card        { background-color: #f7f3f2; }
@@ -110,11 +116,12 @@ footer a:visited        { color: #dddddd; }
  * ----------
  */
 
-.navbar { padding: 0 0.2em; }
-.dropdown-menu { margin-top: 0; }
-.navbar .nav-item:not(:last-child) { margin-right: 1.2em; }
-.dropdown-toggle::after { transition: transform 0.15s linear; }
+.navbar                                { padding: 0 0.2em; }
+.dropdown-menu                         { margin-top: 0; }
+.navbar .nav-item:not(:last-child)     { margin-right: 1.2em; }
+.dropdown-toggle::after                { transition: transform 0.15s linear; }
 .show.dropdown .dropdown-toggle::after { transform: translateY(3px); }
+.navbar-dark .navbar-nav .nav-link     { color: rgba(255,255,255,.8); }
 
 /* ----------
  * Responsivo
