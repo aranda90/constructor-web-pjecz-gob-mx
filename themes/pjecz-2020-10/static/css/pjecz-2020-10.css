@@ -10,23 +10,20 @@
  * -----------
  */
 
-body        { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
-
-h1          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
-h2          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
-h3          { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; }
-h4          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4rem; }
-h5          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.3rem; }
-h6          { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2rem; }
-
+body                       { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
+h1                         { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
+h2                         { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
+h3                         { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; }
+h4                         { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.4rem; }
+h5                         { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.3rem; }
+h6                         { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.2rem; }
 p,
-p.lead      { font-size: 1.2rem; }
-blockquote  { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
-footer      { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0rem; line-height: 1.4rem; }
+p.lead                     { font-size: 1.2rem; }
+blockquote                 { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
+footer                     { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0rem; line-height: 1.4rem; }
 b,
-strong      { font-weight: 700; }
-
-header      { font-family: 'Lato', sans-serif; font-weight: 300; }
+strong                     { font-weight: 700; }
+header                     { font-family: 'Lato', sans-serif; font-weight: 300; }
 #navegacion_menu           { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
 .navegacion_icon           { font-size: 2.6rem; }
 #destacados h4             { font-size: 1.2rem; }
@@ -40,76 +37,76 @@ header      { font-family: 'Lato', sans-serif; font-weight: 300; }
  * --------
  */
 
-h1                      { margin-top: 1.0em; margin-bottom: 0.4em; }
-h2                      { margin-top: 0.8em; margin-bottom: 0.4em; }
-h3                      { margin-top: 0.6em; margin-bottom: 0.3em; }
-h4                      { margin-top: 0.4em; margin-bottom: 0.3em; }
-h5                      { margin-top: 0.2em; margin-bottom: 0.2em; }
-h6                      { margin-top: 0.2em; margin-bottom: 0.2em; }
-p                       { padding: 0.4em 0; }
-blockquote              { padding: 1.2em; }
-header                  { min-height: 100px; }
-main                    { min-height: 800px; }
-article                 { min-height: 800px; }
-#navegacion_logo        { }
-#navegacion_menu        { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
-#destacados             { min-height: 400px; }
-#en_construccion        { min-height: 120px; }
-#novedades              { min-height: 400px; }
-#novedades h5           { margin-top: 0.8em; margin-bottom: 0em; }
-#novedades p            { margin-top: 0; margin-bottom: 0.2em; }
-#recomendaciones        { min-height: 400px; }
-#sitios_interes         { min-height: 200px; }
-#transmisiones_sesiones { min-height: 120px; }
+h1                         { margin-top: 1.0em; margin-bottom: 0.4em; }
+h2                         { margin-top: 0.8em; margin-bottom: 0.4em; }
+h3                         { margin-top: 0.6em; margin-bottom: 0.3em; }
+h4                         { margin-top: 0.4em; margin-bottom: 0.3em; }
+h5                         { margin-top: 0.2em; margin-bottom: 0.2em; }
+h6                         { margin-top: 0.2em; margin-bottom: 0.2em; }
+p                          { padding: 0.4em 0; }
+blockquote                 { padding: 1.2em; }
+header                     { min-height: 100px; }
+main                       { min-height: 800px; }
+article                    { min-height: 800px; }
+#navegacion_logo           { }
+#navegacion_menu           { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
+#destacados                { min-height: 400px; }
+#en_construccion           { min-height: 120px; }
+#novedades                 { min-height: 400px; }
+#novedades h5              { margin-top: 0.8em; margin-bottom: 0em; }
+#novedades p               { margin-top: 0; margin-bottom: 0.2em; }
+#recomendaciones           { min-height: 400px; }
+#sitios_interes            { min-height: 200px; }
+#transmisiones_sesiones    { min-height: 120px; }
 #transmisiones_sesiones h2 { margin-top: 0.6rem; margin-bottom: 0.4rem; }
 #transmisiones_sesiones h3 { margin-top: 0.6rem; margin-bottom: 0; }
 #transmisiones_sesiones p  { margin-top: 0; margin-bottom: 0.4rem; }
-footer                  { min-height: 200px; }
-footer ul li            { padding: 0.2em 0; }
+footer                     { min-height: 200px; }
+footer ul li               { padding: 0.2em 0; }
 
 /* -------
  * Colores
  * -------
  */
 
-body                    { color: black; background-color: white; }
-h1                      { color: #000000; }
-h2                      { color: #31322c; }
-h3                      { color: #004360; }
-h4                      { color: #d0a473; }
-h5                      { color: #004360; }
-h6                      { color: #004360; }
-a                       { color: #46576b; }
+body                      { color: black; background-color: white; }
+h1                        { color: #000000; }
+h2                        { color: #31322c; }
+h3                        { color: #004360; }
+h4                        { color: #d0a473; }
+h5                        { color: #004360; }
+h6                        { color: #004360; }
+a                         { color: #46576b; }
 a:focus,
-a:visited               { color: #215796; }
+a:visited                 { color: #215796; }
 a:active,
-a:hover                 { color: #46576b; }
-header                  { background-color: #e3e1e4; }
-#navegacion_logo        { background-color: #ffffff; }
+a:hover                   { color: #46576b; }
+header                    { background-color: #e3e1e4; }
+#navegacion_logo          { background-color: #ffffff; }
 a.navegacion_icon,
 a.navegacion_icon:focus,
 a.navegacion_icon:visited { color: #dbb993; }
 a.navegacion_icon:active,
 a.navegacion_icon:hover   { color: #a36e33; }
-#navegacion_menu        { background-color: #004360; border-bottom: 6px solid #dbb993; }
-#cabecera               { background-color: #ffffff; }
-#destacados             { background-color: #ffffff; }
-.destacados-card        { background-color: #f7f3f2; }
-#en_construccion        { background-color: #fff2b6; background-image: linear-gradient(#fff2b6, #fffced); }
-#novedades              { background-color: #e3e1e4; }
-#recomendaciones        { background-color: #ffffff; }
-#sitios_interes         { background-color: #f7f3f2; }
-#transmisiones_sesiones { background-color: #f7f3f2; }
-footer                  { color: #ffffff; background-color: #46576b; }
-footer h3               { color: #96a5b6; }
-footer h4               { color: #96a5b6; }
-footer h5               { color: #96a5b6; }
-footer ul li            { color: #777777; }
-footer a                { color: #dddddd; }
+#navegacion_menu          { background-color: #004360; border-bottom: 6px solid #dbb993; }
+#cabecera,
+#destacados,
+#recomendaciones          { background-color: #ffffff; }
+.destacados-card          { background-color: #f7f3f2; }
+#en_construccion          { background-color: #fff2b6; background-image: linear-gradient(#fff2b6, #fffced); }
+#novedades                { background-color: #e3e1e4; }
+#sitios_interes,
+#transmisiones_sesiones   { background-color: #f7f3f2; }
+footer                    { color: #ffffff; background-color: #212530; }
+footer h3,
+footer h4,
+footer h5                 { color: #daba93; }
+footer ul li              { color: #777777; }
+footer a                  { color: #dddddd; }
 footer a:focus,
-footer a:hover          { color: #ffffff; }
+footer a:hover            { color: #ffffff; }
 footer a:active,
-footer a:visited        { color: #dddddd; }
+footer a:visited          { color: #dddddd; }
 
 /* ----------
  * Navegacion
@@ -126,12 +123,6 @@ footer a:visited        { color: #dddddd; }
 /* ----------
  * Responsivo
  * ----------
-h1          { font-size: 2.4rem; }
-h2          { font-size: 2.0rem; }
-h3          { font-size: 1.6rem; }
-h4          { font-size: 1.4rem; }
-h5          { font-size: 1.3rem; }
-h6          { font-size: 1.2rem; }
  */
 
 @media only screen and (max-width: 990px) {
