@@ -37,29 +37,28 @@ header                     { font-family: 'Lato', sans-serif; font-weight: 300; 
  * --------
  */
 
-h1                         { margin-top: 1.0em; margin-bottom: 0.4em; }
-h2                         { margin-top: 0.8em; margin-bottom: 0.4em; }
-h3                         { margin-top: 0.6em; margin-bottom: 0.3em; }
-h4                         { margin-top: 0.4em; margin-bottom: 0.3em; }
-h5                         { margin-top: 0.2em; margin-bottom: 0.2em; }
-h6                         { margin-top: 0.2em; margin-bottom: 0.2em; }
-p                          { padding: 0.4em 0; }
-blockquote                 { padding: 1.2em; }
-header                     { min-height: 100px; }
-main                       { min-height: 800px; }
-article                    { min-height: 800px; }
-#navegacion_logo           { }
-#navegacion_menu           { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
-#destacados                { min-height: 400px; }
+h1                          { margin-top: 1.0em; margin-bottom: 0.4em; }
+h2                          { margin-top: 0.8em; margin-bottom: 0.4em; }
+h3                          { margin-top: 0.6em; margin-bottom: 0.3em; }
+h4                          { margin-top: 0.4em; margin-bottom: 0.3em; }
+h5                          { margin-top: 0.2em; margin-bottom: 0.2em; }
+h6                          { margin-top: 0.2em; margin-bottom: 0.2em; }
+p                           { padding: 0.4em 0; }
+blockquote                  { padding: 1.2em; }
+header                      { min-height: 100px; }
+main                        { min-height: 800px; }
+article                     { min-height: 800px; }
+#navegacion_menu            { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
+#destacados                 { min-height: 400px; }
 .destacados-card .card-body { padding: 0.5rem; }
-#en_construccion           { min-height: 120px; }
-#novedades                 { min-height: 400px; }
-#novedades h5              { margin-top: 0.8em; margin-bottom: 0em; }
-#novedades p               { margin-top: 0; margin-bottom: 0.2em; }
-#recomendaciones           { min-height: 400px; }
-#sitios_interes            { min-height: 200px; }
-footer                     { min-height: 200px; }
-footer ul li               { padding: 0.2em 0; }
+#en_construccion            { min-height: 120px; }
+#novedades                  { min-height: 400px; }
+#novedades h5               { margin-top: 0.8em; margin-bottom: 0em; }
+#novedades p                { margin-top: 0; margin-bottom: 0.2em; }
+#recomendaciones            { min-height: 400px; }
+#sitios_interes             { min-height: 200px; }
+footer                      { min-height: 200px; }
+footer ul li                { padding: 0.2em 0; }
 
 /* -------
  * Colores
@@ -86,14 +85,14 @@ a.navegacion_icon:visited { color: #dbb993; }
 a.navegacion_icon:active,
 a.navegacion_icon:hover   { color: #a36e33; }
 #navegacion_menu          { background-color: #004360; border-bottom: 6px solid #dbb993; }
-#cabecera,
+#cabecera                 { background-color: #ffffff; }
 #destacados               { background-color: #ffffff; }
-.destacados-card          { background-color: #ffffff; border:none; } /* #f7f3f2 */
+.destacados-card          { background-color: #ffffff; border:none; }
 #en_construccion          { background-color: #fff2b6; background-image: linear-gradient(#fff2b6, #fffced); }
-#novedades                { background-color: #efebe8; } /* #e3e1e4 */
+#novedades                { background-color: #efebe8; }
 #recomendaciones          { background-color: #ffffff; }
 #sitios_interes           { background-color: #efebe8; }
-#transmisiones_sesiones   { background-color: #ffffff; } /* #f7f3f2 */
+#transmisiones_sesiones   { background-color: #ffffff; }
 footer                    { color: #ffffff; background-color: #212530; }
 footer h3,
 footer h4,
