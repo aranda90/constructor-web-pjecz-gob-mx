@@ -1,7 +1,7 @@
 Title: Consulta de Boletas
 Summary:
 Slug: consultas-boletas
-URL: consultas/botelas/
+URL: consultas/boletas/
 Save_As: consultas/boletas/index.html
 Date: 2020-05-14 16:40
 Modified: 2020-05-14 21:30
