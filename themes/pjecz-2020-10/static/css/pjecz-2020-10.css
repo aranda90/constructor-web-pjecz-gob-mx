@@ -1,6 +1,6 @@
 /*
  * Poder Judicial del Estado de Coahuila de Zaragoza
- * Direccion de Informatica
+ * Dirección de Informatica
  *
  * Versión 2020-10
  */
@@ -130,6 +130,13 @@ footer .footer-light a:hover   { color:#212530; }
 .dropdown-toggle::after                { transition: transform 0.15s linear; }
 .show.dropdown .dropdown-toggle::after { transform: translateY(3px); }
 .navbar-dark .navbar-nav .nav-link     { color: rgba(255,255,255,.8); }
+
+/* --------
+ * Carrusel
+ * --------
+ */
+
+.carousel-indicators li { width: 1.1rem; height: 1.1rem; border-radius: 100%; }
 
 /* ----------
  * Responsivo
