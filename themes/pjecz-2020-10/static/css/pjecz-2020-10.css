@@ -29,6 +29,7 @@ header                     { font-family: 'Lato', sans-serif; font-weight: 300; 
 .navegacion_icon           { font-size: 2.6rem; }
 #destacados h4             { font-size: 1.2rem; }
 #destacados p              { font-size: 0.8rem; line-height: 1.4rem; }
+#novedades p               { font-size: 0.9rem; }
 #transmisiones_sesiones h2 { font-size: 1.6rem; }
 #transmisiones_sesiones h3 { font-size: 1.4rem; }
 #transmisiones_sesiones p  { font-size: 0.8rem; line-height: 1.4rem; }
@@ -94,6 +95,7 @@ a.navegacion_icon:hover   { color: #a36e33; }
 .destacados-card          { background-color: #ffffff; border:none; }
 #en_construccion          { background-color: #fff2b6; background-image: linear-gradient(#fff2b6, #fffced); }
 #novedades                { background-color: #efebe8; }
+#novedades p              { color: gray; }
 #recomendaciones          { background-color: #ffffff; }
 #sitios_interes           { background-color: #efebe8; }
 #transmisiones_sesiones   { background-color: #ffffff; }
