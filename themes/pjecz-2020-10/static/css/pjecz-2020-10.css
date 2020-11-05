@@ -22,7 +22,7 @@ p.lead                     { font-size: 1.2rem; }
 blockquote                 { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
 footer                     { font-family: 'Saira', sans-serif; font-weight: 400; font-size: 1.0rem; line-height: 1.4rem; }
 b,
-strong                     { font-weight: 700; }
+strong                     { font-weight: 900; }
 header                     { font-family: 'Lato', sans-serif; font-weight: 300; }
 
 #navegacion_menu           { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
