@@ -60,20 +60,20 @@
     <main>
 {% if output_file == 'index.html' %}
 {%   include 'inicial-carrusel.html' %}
-{%   include 'inicial-temas-relevantes.html' %}
+{%   include 'inicial-accesos-directos.html' %}
 {%   include 'inicial-transmisiones-sesiones.html' %}
         <!-- Inicial dos columnas Twitter y Noticias/Eventos -->
         <section id="novedades">
             <div class="container pt-4 pb-2">
                 <div class="row">
                     <div class="col-md-6">
-                        <h3 class="text-center">Red Social Twitter</h3>
+                        <h2 class="text-center">Red Social Twitter</h2>
                         <a class="twitter-timeline" data-height="500" href="https://twitter.com/PJCoah?ref_src=twsrc%5Etfw">Tweets by PJCoah</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                     <div class="col-md-6">
-                        <h3 class="text-center">Noticias y eventos</h3>
+                        <h2 class="text-center">Noticias y eventos</h2>
 {%   for article in articles_page.object_list %}
-                        <h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
+                        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
                         {{ article.summary }}
 {%   endfor %}
 {%   if articles_page %}
@@ -116,13 +116,13 @@
             </div>
         </section>
 {%   include 'inicial-recomendaciones.html' %}
-{%   include 'inicial-accesos-directos.html' %}
+{%   include 'inicial-sitios-interes.html' %}
 {% else %}
         <!-- Una columna para índices de artículos -->
         <section id="novedades">
             <div class="container pt-4 pb-2">
 {%   for article in articles_page.object_list %}
-                <h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
+                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
                 {{ article.summary }}
 {%   endfor %}
 {%   if articles_page %}
