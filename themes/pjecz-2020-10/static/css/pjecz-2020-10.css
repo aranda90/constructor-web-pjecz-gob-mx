@@ -24,7 +24,7 @@ b,
 strong     { font-weight: 900; }
 
 #navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
-.navegacion_icon { font-size: 2.6rem; }
+.navegacion_icon { font-size: 0.7rem; }
 #accesos h3      { font-size: 1.3rem; }
 #accesos p       { font-size: 0.8rem; line-height: 1.2rem; }
 #novedades p     { font-size: 0.9rem; }
@@ -72,16 +72,16 @@ h3        { color: #004360; }
 h4        { color: #d0a473; }
 h5        { color: #004360; }
 h6        { color: #004360; }
-a         { color: #46576b; }
-a:focus,
-a:visited { color: #215796; }
+a,
+a:link,
+a:visited { color: #46576b; }
 a:active,
-a:hover   { color: #46576b; }
+a:hover   { color: #215796; }
 
 header                    { background-color: #e3e1e4; }
 #navegacion_logo          { background-color: #ffffff; }
 a.navegacion_icon,
-a.navegacion_icon:focus,
+a.navegacion_icon:link,
 a.navegacion_icon:visited { color: #dbb993; }
 a.navegacion_icon:active,
 a.navegacion_icon:hover   { color: #a36e33; }
@@ -101,20 +101,20 @@ footer .btn,
 footer h3,
 footer h4,
 footer h5           { color: #daba93; }
-footer .btn:focus,
+footer .btn,
+footer .btn:link,
 footer .btn:visited { color: #daba93; }
 footer .btn:active,
 footer .btn:hover   { color: #a36e33; }
 footer ul li        { color: #777777; }
-footer a            { color: #dddddd; }
-footer a:focus,
-footer a:visited    { color: #ffffff; }
+footer a:link,
+footer a:visited    { color: #dddddd; }
 footer a:active,
-footer a:hover      { color: #dddddd; }
+footer a:hover      { color: #ffffff; }
 
 footer .footer-light           { color: #dbb993; background-color: #ffffff; }
 footer .footer-light a,
-footer .footer-light a:focus,
+footer .footer-light a:link,
 footer .footer-light a:visited { color:#dbb993; }
 footer .footer-light a:active,
 footer .footer-light a:hover   { color:#212530; }
