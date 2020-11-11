@@ -10,24 +10,27 @@
  * -----------
  */
 
-body       { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
-h1         { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
-h2         { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
-h3         { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4rem; }
-h4         { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2rem; }
-h5         { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1rem; }
-h6         { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0rem; }
+body             { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
+h1               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
+h2               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
+h3               { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4rem; }
+h4               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2rem; }
+h5               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1rem; }
+h6               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0rem; }
 p,
-p.lead     { font-size: 1.2rem; }
-blockquote { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
+p.lead           { font-size: 1.2rem; }
+blockquote       { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
 b,
-strong     { font-weight: 900; }
+strong           { font-weight: 900; }
 
 #navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
 .navegacion_icon { font-size: 0.7rem; }
 #accesos h3      { font-size: 1.3rem; }
 #accesos p       { font-size: 0.8rem; line-height: 1.2rem; }
 #novedades p     { font-size: 0.9rem; }
+
+.breadcrumb      { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3rem; }
+
 footer           { font-size: 0.9rem; line-height: 1.2rem; }
 footer .btn      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; }
 footer p         { line-height: 1.4rem; }
@@ -37,17 +40,17 @@ footer p         { line-height: 1.4rem; }
  * --------
  */
 
-h1         { margin-top: 1.0em; margin-bottom: 0.4em; }
-h2         { margin-top: 0.8em; margin-bottom: 0.4em; }
-h3         { margin-top: 0.6em; margin-bottom: 0.3em; }
-h4         { margin-top: 0.4em; margin-bottom: 0.3em; }
-h5         { margin-top: 0.2em; margin-bottom: 0.2em; }
-h6         { margin-top: 0.2em; margin-bottom: 0.2em; }
-p          { padding: 0.4em 0; }
-blockquote { padding: 1.2em; }
-header     { min-height: 100px; }
-main       { min-height: 800px; }
-article    { min-height: 800px; }
+h1                       { margin-top: 1.0em; margin-bottom: 0.4em; }
+h2                       { margin-top: 0.8em; margin-bottom: 0.4em; }
+h3                       { margin-top: 0.6em; margin-bottom: 0.3em; }
+h4                       { margin-top: 0.4em; margin-bottom: 0.3em; }
+h5                       { margin-top: 0.2em; margin-bottom: 0.2em; }
+h6                       { margin-top: 0.2em; margin-bottom: 0.2em; }
+p                        { padding: 0.4em 0; }
+blockquote               { padding: 1.2em; }
+header                   { min-height: 100px; }
+main                     { min-height: 800px; }
+article                  { min-height: 800px; }
 
 #navegacion_menu         { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
 #accesos                 { min-height: 400px; }
@@ -57,6 +60,9 @@ article    { min-height: 800px; }
 #novedades p             { margin-top: 0; margin-bottom: 0.2em; padding-top: 0; }
 #recomendaciones         { min-height: 400px; }
 #sitios_interes          { min-height: 200px; }
+
+.breadcrumb              { padding: 0.8rem 0; }
+
 footer                   { min-height: 200px; }
 footer ul li             { padding: 0.2em 0; }
 
@@ -65,52 +71,54 @@ footer ul li             { padding: 0.2em 0; }
  * -------
  */
 
-body      { color: black; background-color: white; }
-h1        { color: #000000; }
-h2        { color: #31322c; }
-h3        { color: #004360; }
-h4        { color: #d0a473; }
-h5        { color: #004360; }
-h6        { color: #004360; }
+body                           { color: black; background-color: white; }
+h1                             { color: #000000; }
+h2                             { color: #31322c; }
+h3                             { color: #004360; }
+h4                             { color: #d0a473; }
+h5                             { color: #004360; }
+h6                             { color: #004360; }
 a,
 a:link,
-a:visited { color: #46576b; }
+a:visited                      { color: #46576b; }
 a:active,
-a:hover   { color: #215796; }
+a:hover                        { color: #215796; }
 
-header                    { background-color: #e3e1e4; }
-#navegacion_logo          { background-color: #ffffff; }
+header                         { background-color: #e3e1e4; }
+#navegacion_logo               { background-color: #ffffff; }
 a.navegacion_icon,
 a.navegacion_icon:link,
-a.navegacion_icon:visited { color: #dbb993; }
+a.navegacion_icon:visited      { color: #dbb993; }
 a.navegacion_icon:active,
-a.navegacion_icon:hover   { color: #a36e33; }
-#navegacion_menu          { background-color: #004360; border-bottom: 6px solid #dbb993; }
-#carrusel                 { background-color: #ffffff; }
-#accesos                  { background-color: #ffffff; }
-.accesos-card             { background-color: #ffffff; border:none; }
-#novedades                { background-color: #efebe8; }
-#novedades p              { color: gray; }
-#recomendaciones          { background-color: #ffffff; }
-#sitios_interes           { background-color: #efebe8; }
-#transmisiones_sesiones   { background-color: #ffffff; }
+a.navegacion_icon:hover        { color: #a36e33; }
+#navegacion_menu               { background-color: #004360; border-bottom: 6px solid #dbb993; }
+#carrusel                      { background-color: #ffffff; }
+#accesos                       { background-color: #ffffff; }
+.accesos-card                  { background-color: #ffffff; border:none; }
+#novedades                     { background-color: #efebe8; }
+#novedades p                   { color: gray; }
+#recomendaciones               { background-color: #ffffff; }
+#sitios_interes                { background-color: #efebe8; }
+#transmisiones_sesiones        { background-color: #ffffff; }
 
-footer .footer-dark { color: #ffffff; background-color: #212530; }
-footer .card        { color: #ffffff; background-color: #212530; }
+.breadcrumb                    { background-color: #ffffff; }
+
+footer .footer-dark            { color: #ffffff; background-color: #212530; }
+footer .card                   { color: #ffffff; background-color: #212530; }
 footer .btn,
 footer h3,
 footer h4,
-footer h5           { color: #daba93; }
+footer h5                      { color: #daba93; }
 footer .btn,
 footer .btn:link,
-footer .btn:visited { color: #daba93; }
+footer .btn:visited            { color: #daba93; }
 footer .btn:active,
-footer .btn:hover   { color: #a36e33; }
-footer ul li        { color: #777777; }
+footer .btn:hover              { color: #a36e33; }
+footer ul li                   { color: #777777; }
 footer a:link,
-footer a:visited    { color: #dddddd; }
+footer a:visited               { color: #dddddd; }
 footer a:active,
-footer a:hover      { color: #ffffff; }
+footer a:hover                 { color: #ffffff; }
 
 footer .footer-light           { color: #dbb993; background-color: #ffffff; }
 footer .footer-light a,
@@ -154,6 +162,7 @@ footer .footer-light a:hover   { color:#212530; }
     blockquote   { font-size: 1.4em; padding: 0.4em; }
     #accesos h3  { font-size: 1.2rem; }
     #accesos p   { font-size: 0.8rem; line-height: 1.2rem; }
+    .breadcrumb  { font-size: 1.0rem; }
     footer       { font-size: 0.8rem; line-height: 1.2rem; }
 }
 
@@ -171,6 +180,7 @@ footer .footer-light a:hover   { color:#212530; }
     blockquote   { font-size: 1.2em; padding: 0.4em; }
     #accesos h3  { font-size: 1.1rem; }
     #accesos p   { font-size: 0.8rem; line-height: 1.1rem; }
+    .breadcrumb  { font-size: 0.9rem; }
     footer       { font-size: 0.8rem; line-height: 1.1rem; }
 }
 
@@ -188,5 +198,6 @@ footer .footer-light a:hover   { color:#212530; }
     blockquote   { font-size: 1.1em; padding: 0.4em; }
     #accesos h3  { font-size: 1.0rem; }
     #accesos p   { font-size: 0.7rem; line-height: 1.0rem; }
+    .breadcrumb  { font-size: 0.8rem; }
     footer       { font-size: 0.7rem; line-height: 1.0rem; }
 }
