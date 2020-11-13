@@ -10,30 +10,29 @@
  * -----------
  */
 
-body             { font-family: 'Lato', sans-serif; font-weight: 300; font-size: 1.2rem; line-height: 2.0rem; }
-h1               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; }
-h2               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0rem; }
-h3               { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4rem; }
-h4               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2rem; }
-h5               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1rem; }
-h6               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0rem; }
-p,
-p.lead           { font-size: 1.2rem; }
-blockquote       { font-size: 1.6rem; line-height: 2.4rem; font-style: italic; }
+body             { font-family: 'Lato', sans-serif; font-weight: 300; }
+h1               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.4em; }
+h2               { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 2.0em; }
+h3               { font-family: 'Lato', sans-serif; font-weight: 900; font-size: 1.4em; }
+h4               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.2em; }
+h5               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.1em; }
+h6               { font-family: 'Lato', sans-serif; font-weight: 700; font-size: 1.0em; }
+p                { font-size: 1.2em; line-height: 1.8em; }
+blockquote       { font-size: 1.6em; line-height: 2.4em; font-style: italic; }
 b,
 strong           { font-weight: 900; }
 
-#navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0rem; line-height: 1.2rem; }
-.navegacion_icon { font-size: 0.7rem; }
-#accesos h3      { font-size: 1.3rem; }
-#accesos p       { font-size: 0.8rem; line-height: 1.2rem; }
-#novedades p     { font-size: 0.9rem; }
+#navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0em; line-height: 1.2em; }
+.navegacion_icon { font-size: 0.7em; }
+#accesos h3      { font-size: 1.3em; }
+#accesos p       { font-size: 0.8em; line-height: 1.2em; }
+#novedades p     { font-size: 0.9em; }
 
-.breadcrumb      { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3rem; }
+.breadcrumb      { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3em; }
 
-footer           { font-size: 0.9rem; line-height: 1.2rem; }
-footer .btn      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; }
-footer p         { line-height: 1.4rem; }
+footer           { font-size: 0.9em; line-height: 1.2em; }
+footer .btn      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
+footer p         { line-height: 1.4em; }
 
 /* --------
  * Espacios
@@ -54,14 +53,14 @@ article                  { min-height: 800px; }
 
 #navegacion_menu         { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
 #accesos                 { min-height: 400px; }
-.accesos-card .card-body { padding: 0.5rem; }
+.accesos-card .card-body { padding: 0.5em; }
 #novedades               { min-height: 400px; }
 #novedades h3            { margin-top: 0.8em; margin-bottom: 0; padding-bottom: 0; }
-#novedades p             { margin-top: 0; margin-bottom: 0.2em; padding-top: 0; }
+#novedades p             { margin-top: 0.2em; margin-bottom: 0.2em; padding-top: 0; }
 #recomendaciones         { min-height: 400px; }
 #sitios_interes          { min-height: 200px; }
 
-.breadcrumb              { padding: 0.8rem 0; }
+.breadcrumb              { padding: 0.8em 0; }
 
 footer                   { min-height: 200px; }
 footer ul li             { padding: 0.2em 0; }
@@ -144,7 +143,7 @@ footer .footer-light a:hover   { color:#212530; }
  * --------
  */
 
-.carousel-indicators li { width: 1.1rem; height: 1.1rem; border-radius: 100%; }
+.carousel-indicators li { width: 1.1em; height: 1.1em; border-radius: 100%; }
 
 /* ----------
  * Responsivo
@@ -153,51 +152,50 @@ footer .footer-light a:hover   { color:#212530; }
 
 @media only screen and (max-width: 990px) {
     h1           { font-size: 2.2em; margin-bottom: 0.3em; }
-    h2           { font-size: 1.8em; margin-bottom: 0.3em; }
-    h3           { font-size: 1.3em; margin-bottom: 0.2em; }
-    h4           { font-size: 1.1em; margin-bottom: 0.2em; }
-    h5           { font-size: 1.0em; margin-bottom: 0.1em; }
-    h6           { font-size: 1.0em; margin-bottom: 0.1em; }
-    h1.display-4 { font-size: 2.2em }
-    blockquote   { font-size: 1.4em; padding: 0.4em; }
-    #accesos h3  { font-size: 1.2rem; }
-    #accesos p   { font-size: 0.8rem; line-height: 1.2rem; }
-    .breadcrumb  { font-size: 1.0rem; }
-    footer       { font-size: 0.8rem; line-height: 1.2rem; }
-}
-
-@media only screen and (max-width: 580px) {
-    body         { font-size: 0.9em; line-height: 1.4rem; }
-    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
-    h2           { font-size: 1.5em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.6em; margin-bottom: 0.3em; }
     h3           { font-size: 1.2em; margin-bottom: 0.2em; }
     h4           { font-size: 1.1em; margin-bottom: 0.2em; }
     h5           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h6           { font-size: 1.0em; margin-bottom: 0.1em; }
+    h1.display-4 { font-size: 2.2em; }
+    p            { font-size: 1.1em; line-height: 1.4em; padding: 0.4em 0; }
+    blockquote   { font-size: 1.4em; padding: 1.0em; }
+    #accesos h3  { font-size: 1.2em; }
+    #accesos p   { font-size: 0.8em; line-height: 1.2em; }
+    .breadcrumb  { font-size: 1.0em; }
+    footer       { font-size: 0.8em; line-height: 1.2em; }
+}
+
+@media only screen and (max-width: 580px) {
+    body         { font-size: 0.9em; line-height: 1.4em; }
+    h1           { font-size: 2.0em; margin-bottom: 0.3em; }
+    h2           { font-size: 1.4em; margin-bottom: 0.3em; }
+    h3           { font-size: 1.1em; margin-bottom: 0.2em; }
+    h4           { font-size: 1.1em; margin-bottom: 0.2em; }
+    h5           { font-size: 1.0em; margin-bottom: 0.1em; }
     h6           { font-size: 0.9em; margin-bottom: 0.1em; }
-    h1.display-4 { font-size: 2.0em }
-    p            { font-size: 1.1em; padding: 0.1em 0; }
-    p.lead       { font-size: 1.1em; }
-    blockquote   { font-size: 1.2em; padding: 0.4em; }
-    #accesos h3  { font-size: 1.1rem; }
-    #accesos p   { font-size: 0.8rem; line-height: 1.1rem; }
-    .breadcrumb  { font-size: 0.9rem; }
-    footer       { font-size: 0.8rem; line-height: 1.1rem; }
+    h1.display-4 { font-size: 2.0em; }
+    p            { font-size: 1.0em; line-height: 1.2em; padding: 0.2em 0; }
+    blockquote   { font-size: 1.2em; padding: 0.8em; }
+    #accesos h3  { font-size: 1.1em; }
+    #accesos p   { font-size: 0.8em; line-height: 1.1em; }
+    .breadcrumb  { font-size: 0.9em; }
+    footer       { font-size: 0.8em; line-height: 1.1em; }
 }
 
 @media only screen and (max-width: 300px) {
     body         { font-size: 0.8em; }
     h1           { font-size: 1.4em; margin-bottom: 0.2em; }
     h2           { font-size: 1.2em; margin-bottom: 0.2em; }
-    h3           { font-size: 1.1em; margin-bottom: 0.1em; }
+    h3           { font-size: 1.0em; margin-bottom: 0.1em; }
     h4           { font-size: 1.0em; margin-bottom: 0.1em; }
     h5           { font-size: 0.9em; margin-bottom: 0.0em; }
     h6           { font-size: 0.8em; margin-bottom: 0.0em; }
-    h1.display-4 { font-size: 1.8em }
-    p            { font-size: 1.0em; padding: 0.1em 0; }
-    p.lead       { font-size: 1.0em; }
-    blockquote   { font-size: 1.1em; padding: 0.4em; }
-    #accesos h3  { font-size: 1.0rem; }
-    #accesos p   { font-size: 0.7rem; line-height: 1.0rem; }
-    .breadcrumb  { font-size: 0.8rem; }
-    footer       { font-size: 0.7rem; line-height: 1.0rem; }
+    h1.display-4 { font-size: 1.8em; }
+    p            { font-size: 1.0em; line-height: 1.1em; padding: 0.1em 0; }
+    blockquote   { font-size: 1.1em; padding: 0.6em; }
+    #accesos h3  { font-size: 1.0em; }
+    #accesos p   { font-size: 0.7em; line-height: 1.0em; }
+    .breadcrumb  { font-size: 0.8em; }
+    footer       { font-size: 0.7em; line-height: 1.0em; }
 }
