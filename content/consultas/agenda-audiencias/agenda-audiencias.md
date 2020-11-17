@@ -8,6 +8,13 @@ Modified: 2020-06-01 16:00
 JavaScripts: consultas-agenda-audiencias.js, https://apis.google.com/js/api.js
 
 
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../">Consultas</a></li>
+<li class="breadcrumb-item active" aria-current="page">Agenda de Audiencias</li>
+</ol>
+</nav>
+
 <div id="elegirAgendaAudiencias" class="form-row mb-3">
 <div class="col">
 <select id="distritoSelect"></select>

@@ -7,6 +7,13 @@ Date: 2020-06-17 10:42
 Modified: 2020-06-17 10:42
 
 
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../">Consultas</a></li>
+<li class="breadcrumb-item active" aria-current="page">Abogados Registrados</li>
+</ol>
+</nav>
+
 > Las y los abogados registrados en el **Poder Judicial del estado de Coahuila de Zaragoza.**
 
 ## Descargar
