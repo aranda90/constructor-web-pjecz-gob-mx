@@ -25,6 +25,7 @@ PATH = 'content'
 ARTICLE_PATHS = [
     'acuerdos-del-consejo',
     'comunicados',
+    'sala-de-prensa',
     'sesiones',
 ]
 
@@ -46,7 +47,6 @@ PAGE_PATHS = [
     'observatorio-judicial',
     'podcasts',
     'politicas-de-uso',
-    'sala-de-prensa',
     'tramites-y-servicios',
     'transparencia',
     'transparencia-tca',

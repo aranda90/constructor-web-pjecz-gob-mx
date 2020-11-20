@@ -73,8 +73,13 @@
                     <div class="col-md-6">
                         <h2 class="text-center">Noticias y eventos</h2>
 {%   for article in articles_page.object_list %}
-                        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                        {{ article.summary }}
+                        <div class="media">
+                            {% if article.preview %}<a href="{{ SITEURL }}/{{ article.url }}"><img class="m-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>{% endif %}
+                            <div class="media-body">
+                                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                                {{ article.summary }}
+                            </div>
+                        </div>
 {%   endfor %}
 {%   if articles_page %}
                         <nav>
@@ -122,8 +127,13 @@
         <section id="novedades">
             <div class="container pt-4 pb-2">
 {%   for article in articles_page.object_list %}
-                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                {{ article.summary }}
+                        <div class="media">
+                            {% if article.preview %}<a href="{{ SITEURL }}/{{ article.url }}"><img class="m-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>{% endif %}
+                            <div class="media-body">
+                                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                                {{ article.summary }}
+                            </div>
+                        </div>
 {%   endfor %}
 {%   if articles_page %}
                 <nav>
