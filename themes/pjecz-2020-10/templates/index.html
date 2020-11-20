@@ -58,11 +58,12 @@
 {% block content %}
     <!-- Contenido -->
     <main>
+{# Página inicial usa dos columnas: red social twitter y noticias #}
 {% if output_file == 'index.html' %}
 {%   include 'inicial-carrusel.html' %}
 {%   include 'inicial-accesos-directos.html' %}
 {%   include 'inicial-transmisiones-sesiones.html' %}
-        <!-- Inicial dos columnas Twitter y Noticias/Eventos -->
+        <!-- Novedades -->
         <section id="novedades">
             <div class="container pt-4 pb-2">
                 <div class="row">
@@ -72,50 +73,8 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="text-center">Noticias y eventos</h2>
-{%   for article in articles_page.object_list %}
-                        <div class="media">
-                            {% if article.preview %}<a href="{{ SITEURL }}/{{ article.url }}"><img class="m-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>{% endif %}
-                            <div class="media-body">
-                                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                                {{ article.summary }}
-                            </div>
-                        </div>
-{%   endfor %}
-{%   if articles_page %}
-                        <nav>
-                            <ul class="pagination justify-content-center">
-{%     if articles_page.has_previous() %}
-                                <li class="page-item">
-{%       if articles_page.previous_page_number() == 1 %}
-                                    <a class="page-link" aria-label="Previous" href="/{{ page_name }}.html">
-                                        <span aria-hidden="true">&laquo;</span>
-                                        <span class="sr-only">Anterior</span>
-                                    </a>
-{%       else %}
-                                    <a class="page-link movimientolibre-page-link" aria-label="Previous" href="/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
-                                        &#60;&#60;
-                                    </a>
-{%       endif %}
-                                </li>
-{%     endif %}
-{%     for page_number in range(1, 1 + articles_paginator.num_pages) %}
-{%       if (page_number - articles_page.number < 3) and (page_number - articles_page.number > -3) %}
-                                <li class="page-item">
-                                    <a class="page-link" href="/{{ page_name }}{{ page_number if page_number > 1 else '' }}.html">{{ page_number }}</a>
-                                </li>
-{%       endif %}
-{%     endfor %}
-{%     if articles_page.has_next() %}
-                                <li class="page-item">
-                                    <a class="page-link" aria-label="Next" href="/{{ page_name }}{{ articles_page.next_page_number() }}.html">
-                                        <span aria-hidden="true">&raquo;</span>
-                                        <span class="sr-only">Siguiente</span>
-                                    </a>
-                                </li>
-{%     endif %}
-                            </ul>
-                        </nav>
-{%   endif%}
+{%   include 'index_list.html' %}
+{%   include 'index_pagination.html' %}
                     </div>
                 </div>
             </div>
@@ -123,53 +82,11 @@
 {%   include 'inicial-recomendaciones.html' %}
 {%   include 'inicial-sitios-interes.html' %}
 {% else %}
-        <!-- Una columna para índices de artículos -->
+{# Índices de artículos #}
         <section id="novedades">
             <div class="container pt-4 pb-2">
-{%   for article in articles_page.object_list %}
-                        <div class="media">
-                            {% if article.preview %}<a href="{{ SITEURL }}/{{ article.url }}"><img class="m-3" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>{% endif %}
-                            <div class="media-body">
-                                <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                                {{ article.summary }}
-                            </div>
-                        </div>
-{%   endfor %}
-{%   if articles_page %}
-                <nav>
-                    <ul class="pagination justify-content-center">
-{%     if articles_page.has_previous() %}
-                        <li class="page-item">
-{%       if articles_page.previous_page_number() == 1 %}
-                            <a class="page-link" aria-label="Previous" href="/{{ page_name }}.html">
-                                <span aria-hidden="true">&laquo;</span>
-                                <span class="sr-only">Anterior</span>
-                            </a>
-{%       else %}
-                            <a class="page-link movimientolibre-page-link" aria-label="Previous" href="/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
-                                &#60;&#60;
-                            </a>
-{%       endif %}
-                        </li>
-{%     endif %}
-{%     for page_number in range(1, 1 + articles_paginator.num_pages) %}
-{%       if (page_number - articles_page.number < 3) and (page_number - articles_page.number > -3) %}
-                        <li class="page-item">
-                            <a class="page-link" href="/{{ page_name }}{{ page_number if page_number > 1 else '' }}.html">{{ page_number }}</a>
-                        </li>
-{%       endif %}
-{%     endfor %}
-{%     if articles_page.has_next() %}
-                        <li class="page-item">
-                            <a class="page-link" aria-label="Next" href="/{{ page_name }}{{ articles_page.next_page_number() }}.html">
-                                <span aria-hidden="true">&raquo;</span>
-                                <span class="sr-only">Siguiente</span>
-                            </a>
-                        </li>
-{%     endif %}
-                    </ul>
-                </nav>
-{%   endif%}
+{%   include 'index_list.html' %}
+{%   include 'index_pagination.html' %}
             </div>
         </section>
 {% endif %}

@@ -145,6 +145,27 @@ footer .footer-light a:hover   { color:#212530; }
 
 .carousel-indicators li { width: 1.1em; height: 1.1em; border-radius: 100%; }
 
+/* ------
+ * Badges
+ * ------
+ */
+.badge-capacitacion      { background-color: #463f59; }
+.badge-derechos-humanos  { background-color: #00808d; }
+.badge-defensa-publica   { background-color: #8abbbc; }
+.badge-juzgados          { background-color: #89c6ce; }
+.badge-innovacion        { background-color: #004560; }
+.badge-justicia-abierta  { background-color: #ddd1c1; color: black; }
+.badge-justicia-expedita { background-color: #ddd1c1; color: black; }
+.badge-justicia-medible  { background-color: #ddd1c1; color: black; }
+.badge-justicia-pronta   { background-color: #ddd1c1; color: black; }
+.badge-m-civil           { background-color: #8abbbc; }
+.badge-m-familiar        { background-color: #e2c0b7; color: black; }
+.badge-m-mercantil       { background-color: #d1a372; }
+.badge-m-penal           { background-color: #6c7b95; }
+.badge-mediacion         { background-color: #6d8093; }
+.badge-psicologia-ts     { background-color: #607991; }
+
+
 /* ----------
  * Responsivo
  * ----------
