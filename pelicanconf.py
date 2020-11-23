@@ -25,7 +25,8 @@ PATH = 'content'
 ARTICLE_PATHS = [
     'acuerdos-del-consejo',
     'comunicados',
-    'sala-de-prensa',
+    'news-letters',
+    'noticias',
     'sesiones',
 ]
 
@@ -69,8 +70,9 @@ STATIC_PATHS = [
     'derechos-humanos-e-igualdad-de-genero',
     'json',
     'magistrados',
+    'news-letters',
+    'noticias',
     'observatorio-judicial',
-    'sala-de-prensa',
     'sesiones',
     'tramites-y-servicios',
     'transparencia',
@@ -96,6 +98,9 @@ ARTICLE_SAVE_AS = '{category}/{date:%Y}/{slug}/index.html'
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Monterrey'
 
+# Formato para las fechas d) dia, B) nombre del mes, Y) año
+DEFAULT_DATE_FORMAT = '%d de %B de %Y'
+
 # Para desarrollo se desactiva la generacion de feeds
 FEED_ALL_ATOM = None
 FEED_ALL_RSS = None
@@ -114,7 +119,7 @@ OUTPUT_RETENTION = ['.git', '.gitignore']
 # Paginacion
 # DEFAULT_PAGINATION = False
 DEFAULT_PAGINATION = True
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 6
 DEFAULT_ORPHANS = 2
 
 # Para desarrollo BORRAR todo el directorio de salida
