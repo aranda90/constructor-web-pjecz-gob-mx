@@ -25,6 +25,7 @@ PATH = 'content'
 ARTICLE_PATHS = [
     'acuerdos-del-consejo',
     'comunicados',
+    'noticias',
     'sesiones',
 ]
 
@@ -64,6 +65,7 @@ STATIC_PATHS = [
     'edictos-de-declaracion-de-ausencia',
     'derechos-humanos-e-igualdad-de-genero',
     'json',
+    'noticias',
     'observatorio-judicial',
     'sesiones',
     'tramites-y-servicios',
