@@ -8,12 +8,12 @@
     {% endif %}
     <div class="media-body">
         <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-        {{ article.summary }}
         {% if article.tags %}
             {% for tag in article.tags %}
             <a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-pill badge-primary badge-{{ tag.slug }}">{{ tag.name }}</span></a>
             {% endfor %}
         {% endif %}
+        {{ article.summary }}
     </div>
 </div>
 {% endfor %}

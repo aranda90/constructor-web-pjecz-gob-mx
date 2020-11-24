@@ -24,11 +24,11 @@ strong           { font-weight: 900; }
 
 #navegacion_menu { font-family: 'Saira', sans-serif; font-weight: 700; font-size: 1.0em; line-height: 1.2em; }
 .navegacion_icon { font-size: 0.7em; }
+.breadcrumb      { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3em; }
+
 #accesos h3      { font-size: 1.3em; }
 #accesos p       { font-size: 0.8em; line-height: 1.2em; }
 #novedades p     { font-size: 0.9em; }
-
-.breadcrumb      { font-family: 'Saira Condensed', sans-serif; font-weight: 400; font-size: 1.3em; }
 
 footer           { font-size: 0.9em; line-height: 1.2em; }
 footer .btn      { font-family: 'Saira Condensed', sans-serif; font-weight: 700; font-size: 1.6em; }
@@ -52,6 +52,9 @@ main                     { min-height: 800px; }
 article                  { min-height: 800px; }
 
 #navegacion_menu         { padding-top: 0.2em; padding-bottom: 0.2em; margin-bottom: 4px; }
+#navegacion_secundaria   { margin: 0.4em 0; }
+.breadcrumb              { padding: 0.8em 0; }
+
 #accesos                 { min-height: 400px; }
 .accesos-card .card-body { padding: 0.5em; }
 #novedades               { min-height: 400px; }
@@ -59,8 +62,6 @@ article                  { min-height: 800px; }
 #novedades p             { margin-top: 0.2em; margin-bottom: 0.2em; padding-top: 0; }
 #recomendaciones         { min-height: 400px; }
 #sitios_interes          { min-height: 200px; }
-
-.breadcrumb              { padding: 0.8em 0; }
 
 footer                   { min-height: 200px; }
 footer ul li             { padding: 0.2em 0; }
@@ -91,6 +92,8 @@ a.navegacion_icon:visited      { color: #dbb993; }
 a.navegacion_icon:active,
 a.navegacion_icon:hover        { color: #a36e33; }
 #navegacion_menu               { background-color: #004360; border-bottom: 6px solid #dbb993; }
+.breadcrumb                    { background-color: #ffffff; }
+
 #carrusel                      { background-color: #ffffff; }
 #accesos                       { background-color: #ffffff; }
 .accesos-card                  { background-color: #ffffff; border:none; }
@@ -99,8 +102,6 @@ a.navegacion_icon:hover        { color: #a36e33; }
 #recomendaciones               { background-color: #ffffff; }
 #sitios_interes                { background-color: #efebe8; }
 #transmisiones_sesiones        { background-color: #ffffff; }
-
-.breadcrumb                    { background-color: #ffffff; }
 
 footer .footer-dark            { color: #ffffff; background-color: #212530; }
 footer .card                   { color: #ffffff; background-color: #212530; }
@@ -145,10 +146,11 @@ footer .footer-light a:hover   { color:#212530; }
 
 .carousel-indicators li { width: 1.1em; height: 1.1em; border-radius: 100%; }
 
-/* ------
- * Badges
- * ------
+/* ----------------
+ * Etiquetas (tags)
+ * ----------------
  */
+
 .badge-capacitacion      { background-color: #463f59; }
 .badge-derechos-humanos  { background-color: #00808d; }
 .badge-defensa-publica   { background-color: #8abbbc; }
@@ -165,6 +167,13 @@ footer .footer-light a:hover   { color:#212530; }
 .badge-mediacion         { background-color: #6d8093; }
 .badge-psicologia-ts     { background-color: #607991; }
 
+.badge-pleno-del-tribunal-superior-de-justicia { background-color: #00808d; }
+.badge-sala-civil-y-familiar                   { background-color: #8abbbc; }
+.badge-sala-penal                              { background-color: #e2c0b7; color: black; }
+.badge-sala-regional                           { background-color: #d1a372; }
+.badge-tribunal-constitucional                 { background-color: #6c7b95; }
+.badge-votos-disidentes                        { background-color: #ddd1c1; color: black; }
+.badge-votos-particulares                      { background-color: #ddd1c1; color: black; }
 
 /* ----------
  * Responsivo

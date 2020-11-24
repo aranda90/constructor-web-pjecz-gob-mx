@@ -1,5 +1,18 @@
 {% extends "index.html" %}
 
-{% block title %}Etiqueta {{ tag }} - {{ SITENAME }}{% endblock %}
+{% block title %}{{ tag }} - {{ SITENAME }}{% endblock %}
 
-{% block heading_title %}Etiqueta {{ tag }}{% endblock %}
+{% block heading_title %}{{ tag }}{% endblock %}
+
+{% block second_navigation %}
+    {% if tag in (
+        'Pleno del Tribunal Superior de Justicia',
+        'Sala Civil y Familiar',
+        'Sala Penal',
+        'Sala Regional',
+        'Tribunal Constitucional',
+        'Votos Disidentes',
+        'Votos Particulares') %}
+        {% include 'navegacion_sesiones.html' %}
+    {% endif %}
+{% endblock %}

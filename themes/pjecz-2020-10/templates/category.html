@@ -3,3 +3,9 @@
 {% block title %}{{ category }} - {{ SITENAME }}{% endblock %}
 
 {% block heading_title %}{{ category }}{% endblock %}
+
+{% block second_navigation %}
+    {% if category == 'Sesiones' %}
+        {% include 'navegacion_sesiones.html' %}
+    {% endif %}
+{% endblock %}
