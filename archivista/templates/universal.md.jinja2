@@ -1,14 +1,18 @@
 Title: {{ title }}
 Slug: {{ slug }}
-Summary: {{ summary }}
+{% if summary %}Summary: {{ summary }}
+{% endif %}
 Category: {{ category }}
-Tags: {{ tags }}
+{% if tags %}Tags: {{ tags }}
+{% endif %}
 URL: {{ url }}
 Save_As: {{ save_as }}
 Date: {{ date }}
 Modified: {{ modified }}
-{% if preview != '' %}Preview: {{ preview }}{% endif %}
-{% if status != '' %}Status: {{ status }}{% endif %}
+{% if preview %}Preview: {{ preview }}
+{% endif %}
+{% if status %}Status: {{ status }}
+{% endif %}
 
 
 {{ content }}
