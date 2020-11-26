@@ -5,6 +5,14 @@
         <div class="card my-2 mx-1">
             {% if article.preview %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
+            {% elif 'Pleno del Tribunal Superior de Justicia' in article.tags  %}
+                <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-pleno.jpg" alt="Previa"></a>
+            {% elif 'Sala Civil y Familiar' in article.tags  %}
+                <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-civil-familiar.jpg" alt="Previa"></a>
+            {% elif 'Sala Penal' in article.tags  %}
+                <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-penal.jpg" alt="Previa"></a>
+            {% elif 'Sala Regional' in article.tags  %}
+                <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-regional.jpg" alt="Previa"></a>
             {% else %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>
             {% endif %}
