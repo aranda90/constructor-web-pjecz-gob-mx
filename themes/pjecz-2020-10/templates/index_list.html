@@ -2,17 +2,20 @@
 {% for article in articles_page.object_list %}
 <div class="media">
     {% if article.preview %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-2" style="width: 120px; height: auto;" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
+    {% elif 'Pleno del Tribunal Superior de Justicia' in article.tags  %}
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-pleno.jpg" alt="Previa"></a>
+    {% elif 'Sala Civil y Familiar' in article.tags  %}
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-civil-familiar.jpg" alt="Previa"></a>
+    {% elif 'Sala Penal' in article.tags  %}
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-penal.jpg" alt="Previa"></a>
+    {% elif 'Sala Regional' in article.tags  %}
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-regional.jpg" alt="Previa"></a>
     {% else %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-2" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>
+        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>
     {% endif %}
     <div class="media-body">
         <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-        {% if article.tags %}
-            {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-pill badge-primary badge-{{ tag.slug }}">{{ tag.name }}</span></a>
-            {% endfor %}
-        {% endif %}
         {{ article.summary }}
     </div>
 </div>

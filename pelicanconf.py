@@ -82,6 +82,9 @@ STATIC_PATHS = [
     'robots.txt',
 ]
 
+# Para evitar que se hagan summary automaticos
+SUMMARY_MAX_LENGTH = 0
+
 # NO usar el directorio como la categoria
 USE_FOLDER_AS_CATEGORY = False
 

@@ -58,8 +58,8 @@ article                  { min-height: 800px; }
 #accesos                 { min-height: 400px; }
 .accesos-card .card-body { padding: 0.5em; }
 #novedades               { min-height: 400px; }
-#novedades h3            { margin-top: 0.8em; margin-bottom: 0; padding-bottom: 0; }
-#novedades p             { margin-top: 0.2em; margin-bottom: 0.2em; padding-top: 0; }
+#novedades h3            { margin-top: 0; margin-bottom: 0; padding-bottom: 0; }
+#novedades p             { margin-top: 0.2em; margin-bottom: 0.4em; padding-top: 0; }
 #recomendaciones         { min-height: 400px; }
 #sitios_interes          { min-height: 200px; }
 
