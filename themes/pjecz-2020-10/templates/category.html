@@ -5,7 +5,14 @@
 {% block heading_title %}{{ category }}{% endblock %}
 
 {% block second_navigation %}
-    {% if category == 'Sesiones' %}
-        {% include 'navegacion_sesiones.html' %}
+    {% if category in (
+        'Pleno del Tribunal Superior de Justicia',
+        'Sala Civil y Familiar',
+        'Sala Penal',
+        'Sala Regional',
+        'Tribunal Constitucional',
+        'Votos Disidentes',
+        'Votos Particulares') %}
+        {% include 'navegacion-sesiones.html' %}
     {% endif %}
 {% endblock %}

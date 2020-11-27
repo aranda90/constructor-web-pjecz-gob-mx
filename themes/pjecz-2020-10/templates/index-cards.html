@@ -5,27 +5,27 @@
         <div class="card my-2 mx-1">
             {% if article.preview %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
-            {% elif 'Pleno del Tribunal Superior de Justicia' in article.tags  %}
+            {% elif article.category == 'Pleno del Tribunal Superior de Justicia'  %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-pleno.jpg" alt="Previa"></a>
-            {% elif 'Sala Civil y Familiar' in article.tags  %}
+            {% elif article.category == 'Sala Civil y Familiar'  %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-civil-familiar.jpg" alt="Previa"></a>
-            {% elif 'Sala Penal' in article.tags  %}
+            {% elif article.category == 'Sala Penal'  %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-penal.jpg" alt="Previa"></a>
-            {% elif 'Sala Regional' in article.tags  %}
+            {% elif article.category == 'Sala Regional'  %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-regional.jpg" alt="Previa"></a>
             {% else %}
                 <a href="{{ SITEURL }}/{{ article.url }}"><img class="card-img-top" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>
             {% endif %}
             <div class="card-body">
-                <h3 class="card-title mb-2"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
-                {% if article.tags %}
-                <div class="my-2">
+                <div class="mb-2">
                     {% for tag in article.tags %}
                     <a href="{{ SITEURL }}/{{ tag.url }}"><span class="badge badge-pill badge-primary badge-{{ tag.slug }}">{{ tag.name }}</span></a>
                     {% endfor %}
                 </div>
+                <p class="card-subtitle text-muted">{{ article.locale_date }}</p>
+                <h3 class="card-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+                {% if article.tags %}
                 {% endif %}
-                <p class="card-subtitle mb-2 text-muted">{{ article.locale_date }}</p>
                 <p class="card-text">
                     {{ article.summary | striptags }}
                 </p>

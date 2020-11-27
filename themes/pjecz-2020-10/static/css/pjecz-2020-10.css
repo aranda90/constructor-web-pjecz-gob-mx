@@ -65,15 +65,18 @@ article                  { min-height: 800px; }
 #accesos                 { margin: 0; }
 #accesos p               { padding-top: 0.2em; padding-bottom: 0.4em; }
 
+#transmisiones_sesiones h3 { margin-bottom: 0; padding-bottom: 0; }
+#transmisiones_sesiones p  { margin-top: 0; padding-top: 0; }
+
 #novedades               { min-height: 400px; }
-#novedades h3            { margin: 0; }
-#novedades p             { padding-top: 0.2em; padding-bottom: 0.4em; }
+#novedades h3,
+#novedades p             { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
 
 #recomendaciones         { min-height: 400px; }
 #sitios_interes          { min-height: 200px; }
 
-#indices h3              { margin: 0; }
-#indices p               { padding-top: 0.2em; padding-bottom: 0.4em; }
+#indices h3,
+#indices p               { padding: 0; margin-top: 0; margin-bottom: 0.2em; }
 
 footer                   { min-height: 200px; }
 footer ul li             { padding: 0.2em 0; }

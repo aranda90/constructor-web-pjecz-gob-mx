@@ -3,13 +3,13 @@
 <div class="media">
     {% if article.preview %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
-    {% elif 'Pleno del Tribunal Superior de Justicia' in article.tags  %}
+    {% elif article.category == 'Pleno del Tribunal Superior de Justicia'  %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-pleno.jpg" alt="Previa"></a>
-    {% elif 'Sala Civil y Familiar' in article.tags  %}
+    {% elif article.category == 'Sala Civil y Familiar'  %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-civil-familiar.jpg" alt="Previa"></a>
-    {% elif 'Sala Penal' in article.tags  %}
+    {% elif article.category == 'Sala Penal'  %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-penal.jpg" alt="Previa"></a>
-    {% elif 'Sala Regional' in article.tags  %}
+    {% elif article.category == 'Sala Regional'  %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-regional.jpg" alt="Previa"></a>
     {% else %}
         <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>

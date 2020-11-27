@@ -58,7 +58,7 @@
 {% block content %}
     <!-- Contenido -->
     <main>
-{# Página inicial usa dos columnas: red social twitter y noticias #}
+{# -------- Pagina inicial usa dos columnas -------- #}
 {% if output_file == 'index.html' %}
 {%   include 'inicial-carrusel.html' %}
 {%   include 'inicial-accesos-directos.html' %}
@@ -75,8 +75,8 @@
                     </div>
                     <div class="col-md-6">
                         <h2 class="text-center">Noticias y eventos</h2>
-{%   include 'index_list.html' %}
-{%   include 'index_pagination.html' %}
+{%   include 'index-list.html' %}
+{%   include 'index-pagination.html' %}
                     </div>
                 </div>
             </div>
@@ -84,11 +84,12 @@
 {%   include 'inicial-recomendaciones.html' %}
 {%   include 'inicial-sitios-interes.html' %}
 {% else %}
-{# Índices de artículos #}
+{# -------- Paginas con indices de articulos -------- #}
+        <!-- Indice -->
         <section id="indices">
             <div class="container pt-4 pb-2">
-{%   include 'index_cards.html' %}
-{%   include 'index_pagination.html' %}
+{%   include 'index-cards.html' %}
+{%   include 'index-pagination.html' %}
             </div>
         </section>
 {% endif %}

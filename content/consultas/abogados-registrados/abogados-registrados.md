@@ -1,5 +1,4 @@
 Title: Abogados Registrados
-Summary:
 Slug: consultas-abogados-registrados
 URL: consultas/abogados-registrados/
 Save_As: consultas/abogados-registrados/index.html

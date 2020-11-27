@@ -1,5 +1,4 @@
 Title: Versión Pública de Sentencias
-Summary:
 Slug: consultas-sentencias
 URL: consultas/sentencias/
 Save_As: consultas/sentencias/index.html

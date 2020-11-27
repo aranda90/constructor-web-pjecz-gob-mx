@@ -1,10 +1,10 @@
-// Navegacion que se depliege al pasar el raton
+// Navegacion
 
+// Que se depliege con tan solo pasar el raton
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");
 const showClass = "show";
-
 $(window).on("load resize", function() {
   if (this.matchMedia("(min-width: 768px)").matches) {
     $dropdown.hover(
