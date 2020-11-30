@@ -1,6 +1,6 @@
 <!-- Navegacion -->
 <header>
-    <!-- Navegacion logo y redes -->
+    <!-- Navegacion logotipo y redes -->
     <nav id="navegacion_logo" class="navbar navbar-expand-md py-2">
         <div class="container">
             <a class="navbar-brand" href="{{ SITEURL }}"><img src="{{ SITEURL }}/theme/images/navegacion-logotipo.png" alt="PJECZ" width="340px"></a>
@@ -51,48 +51,66 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarsNavegacion">
                 <ul class="navbar-nav mr-auto">
+                    <!-- CONOCENOS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConocenos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conócenos</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownConocenos">
-                            <a class="dropdown-item" href="{{ SITEURL }}/conocenos/quienes-somos/bienvenida/">Bienvenida</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/conocenos/estructura/tribunal-superior-de-justicia/">Tribunal Superior de Justicia</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/conocenos/estructura/consejo-de-la-judicatura/">Consejo de la Judicatura</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/observatorio-judicial/">Observatorio Judicial</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/derechos-humanos-e-igualdad-de-genero/">DD.HH. e Igualdad de Género</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConocenos" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownConocenos">
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/conocenos/quienes-somos/bienvenida/">Bienvenida</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/conocenos/estructura/tribunal-superior-de-justicia/">Tribunal Superior de Justicia</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/conocenos/estructura/consejo-de-la-judicatura/">Consejo de la Judicatura</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/observatorio-judicial/">Observatorio Judicial</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/derechos-humanos-e-igualdad-de-genero/">DD.HH. e Igualdad de Género</a></li>
+                        </ul>
                     </li>
+                    <!-- CONSULTAS -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConsultas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consultas</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownConsultas">
-                            <a class="dropdown-item" href="{{ SITEURL }}/acuerdos-del-consejo/">Acuerdos del Consejo</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/buzon-electronico/">Buzón Electrónico</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/citas/">Citas</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/consultas/edictos/">Edictos en Línea</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/consultas/expediente-virtual/">Expediente Virtual</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/consultas/listas-de-acuerdos/">Listas de Acuerdos</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/tramites-y-servicios/">Trámites y Servicios</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/consultas/sentencias/">Versión Pública de Sentencias</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/consultas/">Más...</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownConsultas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Consultas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownConsultas">
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/acuerdos-del-consejo/">Acuerdos del Consejo</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/buzon-electronico/">Buzón Electrónico</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/citas/">Citas</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/consultas/edictos/">Edictos en Línea</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/consultas/expediente-virtual/">Expediente Virtual</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/consultas/listas-de-acuerdos/">Listas de Acuerdos</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/tramites-y-servicios/">Trámites y Servicios</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/consultas/sentencias/">Versión Pública de Sentencias</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/consultas/">Más...</a></li>
+                        </ul>
                     </li>
+                    <!-- SALA DE PRENSA -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownSalaDePrensa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sala de Prensa</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownSalaDePrensa">
-                            <a class="dropdown-item" href="{{ SITEURL }}/boletines-judiciales/">Boletines Judiciales</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/calendario-de-labores/">Calendario de Labores</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/category/comunicados.html">Comunicados</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/category/noticias.html">Noticias</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/category/news-letters.html">News Letters</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/category/sesiones.html">Sesiones</a>
-                        </div>
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownSalaDePrensa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sala de Prensa
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownSalaDePrensa">
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/boletines-judiciales/">Boletines Judiciales</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/calendario-de-labores/">Calendario de Labores</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/category/comunicados.html">Comunicados</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/category/noticias.html">Noticias</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/category/news-letters.html">News Letters</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="dropdownSesiones" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sesiones</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownSesiones">
+                                    <li><a class="dropdown-item" href="{{ SITEURL }}/category/pleno-del-tribunal-superior-de-justicia.html">Pleno del TSJ</a></li>
+                                    <li><a class="dropdown-item" href="{{ SITEURL }}/category/sala-civil-y-familiar.html">Sala Civil y Familiar</a></li>
+                                    <li><a class="dropdown-item" href="{{ SITEURL }}/category/sala-penal.html">Sala Penal</a></li>
+                                    <li><a class="dropdown-item" href="{{ SITEURL }}/category/sala-regional.html">Sala Regional</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
+                    <!-- TRANSPARENCIA -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-uppercase" href="#" id="dropdownTransparencia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Transparencia</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownTransparencia">
-                            <a class="dropdown-item" href="{{ SITEURL }}/transparencia/">Transparencia</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/transparencia-tca/">Transparencia TCA</a>
-                            <a class="dropdown-item" href="{{ SITEURL }}/armonizacion-contable/">Armonización Contable</a>
-                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownTransparencia">
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/transparencia/">Transparencia</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/transparencia-tca/">Transparencia TCA</a></li>
+                            <li><a class="dropdown-item" href="{{ SITEURL }}/armonizacion-contable/">Armonización Contable</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <div class="navbar-form navbar-right" style="min-width: 300px;">

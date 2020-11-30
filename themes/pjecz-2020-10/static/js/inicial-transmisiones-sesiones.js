@@ -1,6 +1,4 @@
-// Pagina inicial
-// Transmisiones de las Sesiones
-// Crear imagenes/encabezados/descripciones a partir de los RSS feeds
+// Pagina inicial- Transmisiones de las Sesiones
 
 function fechaEnEspanol(tiempo) {
   var tiempo = new Date(tiempo)
@@ -40,6 +38,8 @@ $(document).ready(function() {
         // Agregar a la celda
         celda_tsj.appendChild(vinculo)
         celda_tsj.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_tsj_spinner').hide();
       })
     })
   }
@@ -75,6 +75,8 @@ $(document).ready(function() {
         // Agregar a la celda
         celda_scf.appendChild(vinculo)
         celda_scf.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_scf_spinner').hide();
       })
     })
   }
@@ -110,6 +112,8 @@ $(document).ready(function() {
         // Agregar a la celda
         celda_sp.appendChild(vinculo)
         celda_sp.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_sp_spinner').hide();
       })
     })
   }
@@ -145,6 +149,8 @@ $(document).ready(function() {
         // Agregar a la celda
         celda_sr.appendChild(vinculo)
         celda_sr.appendChild(descripcion)
+        // Ocultar spinner
+        $('#transmisiones_sesiones_sr_spinner').hide();
       })
     })
   }

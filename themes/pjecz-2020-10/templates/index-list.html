@@ -1,21 +1,30 @@
 <!-- Índice como listado sencillo de arriba a abajo -->
 {% for article in articles_page.object_list %}
 <div class="media">
+    <a href="{{ SITEURL }}/{{ article.url }}">
     {% if article.preview %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Previa"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/{{ article.url }}{{ article.preview }}" alt="Imagen previa">
     {% elif article.category == 'Pleno del Tribunal Superior de Justicia'  %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-pleno.jpg" alt="Previa"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-pleno-del-tribunal-superior-de-justicia.jpg" alt="Pleno del TSJ">
     {% elif article.category == 'Sala Civil y Familiar'  %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-civil-familiar.jpg" alt="Previa"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-sala-civil-y-familiar.jpg" alt="Sala Civil y Familiar">
     {% elif article.category == 'Sala Penal'  %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-penal.jpg" alt="Previa"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-sala-penal.jpg" alt="Sala Penal">
     {% elif article.category == 'Sala Regional'  %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/transmisiones-sesiones-regional.jpg" alt="Previa"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-sala-regional.jpg" alt="Sala Regional">
+    {% elif article.category == 'Comunicados'  %}
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-comunicados.jpg" alt="Comunicados">
+    {% elif article.category == 'Noticias'  %}
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-noticias.jpg" alt="Noticias">
+    {% elif article.category == 'News Letters'  %}
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/categoria-news-letters.jpg" alt="News Letters">
     {% else %}
-        <a href="{{ SITEURL }}/{{ article.url }}"><img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen genérica"></a>
+        <img class="mr-2 mb-4" style="width: 120px; height: auto;" src="{{ SITEURL }}/theme/images/generic.jpg" alt="Imagen previa">
     {% endif %}
+    </a>
     <div class="media-body">
         <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <p class="text-muted"><small>{{ article.locale_date }}</small></p>
         {{ article.summary }}
     </div>
 </div>
