@@ -14,22 +14,7 @@ from pelicanconf import *
 SITEURL = 'https://www.pjecz.gob.mx'
 RELATIVE_URLS = False
 
-# Para producción se activa la generacion de feeds
-FEED_DOMAIN = SITEURL
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
-TAG_FEED_ATOM = None
-TAG_FEED_RSS = None
-TRANSLATION_FEED_ATOM = None
-TRANSLATION_FEED_RSS = None
-FEED_MAX_ITEMS = 24
-RSS_FEED_SUMMARY_ONLY = True
-
-# Pelican plugins
+# Plugins
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican_javascript', 'sitemap']
 SITEMAP = {
@@ -40,23 +25,26 @@ SITEMAP = {
         'pages': 1,
     },
     'changefreqs': {
-        'articles': 'weekly',
+        'articles': 'daily',
         'indexes': 'daily',
-        'pages': 'monthly',
+        'pages': 'weekly',
     },
     'exclude': [
         'archives.html',
-        'tags.html',
         'categories.html',
+        'tags.html',
         'author/',
+        'category/',
+        'tag/',
     ],
 }
 
-# Para producción NO BORRAR todo el directorio de salida
-DELETE_OUTPUT_DIRECTORY = False
+# BORRAR todo el directorio de salida
+DELETE_OUTPUT_DIRECTORY = True
 
-# Para producción activar el caché
-LOAD_CONTENT_CACHE = True
+# DESACTIVAR el caché
+LOAD_CONTENT_CACHE = False
 
-# Para producción SI hay cargas desde Internet
+# HABILITAR dependencias desde Internet
 USE_REMOTE_SERVICES = True
+GOOGLE_ANALYTICS = 'UA-164475591-1'

@@ -2,6 +2,7 @@
 .directory
 .vscode
 .~lock.*
+.DS_Store
 *.egg-info
 *.pyc
 __pycache__

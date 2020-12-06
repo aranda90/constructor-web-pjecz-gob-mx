@@ -7,6 +7,13 @@ Date: 2020-07-06 08:30
 Modified: 2020-07-15 16:08
 
 
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/consultas/">Consultas</a></li>
+<li class="breadcrumb-item active" aria-current="page">Buzón Electrónico</li>
+</ol>
+</nav>
+
 > El **Poder Judicial del Estado de Coahuila de Zaragoza** pone al servicio de la ciudadanía el Buzón Electrónico, que permite el envío de demandas iniciales y promociones mediante una plataforma en línea.
 
 ## Video

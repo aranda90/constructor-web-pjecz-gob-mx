@@ -8,7 +8,20 @@ Modified: 2020-05-20 12:32
 JavaScripts: consultas-listas-de-acuerdos.js
 
 
-**Instrucciones:** Primero elija la entidad/distrito, luego la autoridad/juzgado, después presione el botón Mostrar. Espere a que se cargue la lista. Para buscar use el campo filtrar; una fecha se escribe como año-mes-día, por ejemplo _2020-05-20_ es 20 de mayo 2020.
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../">Consultas</a></li>
+<li class="breadcrumb-item active" aria-current="page">Listas de Acuerdos</li>
+</ol>
+</nav>
+
+## Instrucciones
+
+1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos incluyendo tribunales salas y pleno).
+2. Seleccione el **Juzgado de la Materia,** donde encontará los de ese distrito.
+3. Posteriormente presione el botón **Mostrar** y espere a que se carguen las listas de acuerdo. Esta opción las desplegará por fecha reciente.
+4. Para buscar por fecha favor de ingresar en la opción **Filtrar** el Año–Mes-Dia que desee encontrar; por ejemplo **2020-05-20** es 20 de mayo 2020.
+5. **Nota:** Si la lista de acuerdo de una fecha en particular no se encuentra en el listado favor de revisar con el juzgado correspondiente.
 
 <div id="elegirListaDeAcuerdos" class="form-row mb-3">
 <div class="col"><select id="distritoSelect"></select></div>

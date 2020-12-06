@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 # Tema
-THEME = 'themes/pjecz-2020-04'
+THEME = 'themes/pjecz-2020-10'
 
 # Para desarrollo
 SITEURL = 'http://localhost:8000'
@@ -12,6 +12,7 @@ RELATIVE_URLS = False
 # Metadatos de todo el sitio web
 SITENAME = 'Poder Judicial del Estado de Coahuila de Zaragoza'
 SITELOGO = 'theme/images/pjecz.png'
+SITEPREVIEW = 'theme/images/generic.jpg'
 SITEDESCRIPTION = 'Responsables de impartir justicia en el Estado, de dirimir diferencias entre particulares, de conciliar, y de promover con el ejemplo una cultura de la legalidad y justicia cotidiana.'
 SITETWITTER = '@PJCoah'
 
@@ -25,6 +26,7 @@ PATH = 'content'
 ARTICLE_PATHS = [
     'acuerdos-del-consejo',
     'comunicados',
+    'news-letters',
     'noticias',
     'sesiones',
 ]
@@ -37,11 +39,13 @@ PAGE_PATHS = [
     'buzon-electronico',
     'calendario-de-labores',
     'citas',
+    'comisiones',
     'conocenos',
     'consultas',
     'derechos-humanos-e-igualdad-de-genero',
     'edictos-de-declaracion-de-ausencia',
     'licencias',
+    'magistrados',
     'observatorio-judicial',
     'podcasts',
     'politicas-de-uso',
@@ -59,12 +63,15 @@ STATIC_PATHS = [
     'buzon-electronico',
     'calendario-de-labores',
     'citas',
+    'comisiones',
     'comunicados',
     'conocenos',
     'consultas',
-    'edictos-de-declaracion-de-ausencia',
     'derechos-humanos-e-igualdad-de-genero',
+    'edictos-de-declaracion-de-ausencia',
     'json',
+    'magistrados',
+    'news-letters',
     'noticias',
     'observatorio-judicial',
     'sesiones',
@@ -75,6 +82,9 @@ STATIC_PATHS = [
     'favicon.ico',
     'robots.txt',
 ]
+
+# Para evitar que se hagan summary automaticos
+SUMMARY_MAX_LENGTH = 0
 
 # NO usar el directorio como la categoria
 USE_FOLDER_AS_CATEGORY = False
@@ -92,17 +102,23 @@ ARTICLE_SAVE_AS = '{category}/{date:%Y}/{slug}/index.html'
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Monterrey'
 
-# Para desarrollo se desactiva la generacion de feeds
+# Formato para las fechas d) dia, B) nombre del mes, Y) año
+DEFAULT_DATE_FORMAT = '%d de %B de %Y'
+
+# Feeds
+FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = None
-FEED_ALL_RSS = None
+FEED_ALL_RSS = 'feeds/all.rss.xml'
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 CATEGORY_FEED_ATOM = None
-CATEGORY_FEED_RSS = None
+CATEGORY_FEED_RSS = 'feeds/{slug}.rss.xml'
 TAG_FEED_ATOM = None
 TAG_FEED_RSS = None
 TRANSLATION_FEED_ATOM = None
 TRANSLATION_FEED_RSS = None
+FEED_MAX_ITEMS = 48
+RSS_FEED_SUMMARY_ONLY = True
 
 # NO BORRAR de output los siguientes directorios y archivos
 OUTPUT_RETENTION = ['.git', '.gitignore']
@@ -110,18 +126,18 @@ OUTPUT_RETENTION = ['.git', '.gitignore']
 # Paginacion
 # DEFAULT_PAGINATION = False
 DEFAULT_PAGINATION = True
-DEFAULT_PAGINATION = 8
+DEFAULT_PAGINATION = 6
 DEFAULT_ORPHANS = 2
 
-# Para desarrollo BORRAR todo el directorio de salida
-DELETE_OUTPUT_DIRECTORY = True
-
-# Para desarrollo DESACTIVAR el caché
-LOAD_CONTENT_CACHE = False
-
-# Para desarrollo NO hay cargas desde Internet
-USE_REMOTE_SERVICES = False
-
-# Pelican plugins
+# Plugins
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican_javascript']
+
+# Mantener lo viejo en el directorio de salida
+DELETE_OUTPUT_DIRECTORY = False
+
+# Activar el caché
+LOAD_CONTENT_CACHE = True
+
+# NO hay cargas de dependencias de Internet
+USE_REMOTE_SERVICES = False

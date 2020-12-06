@@ -7,6 +7,13 @@ Date: 2020-06-08 08:30
 Modified: 2020-06-08 08:30
 
 
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/consultas/">Consultas</a></li>
+<li class="breadcrumb-item active" aria-current="page">Citas</li>
+</ol>
+</nav>
+
 > El **Poder Judicial del Estado de Coahuila de Zaragoza** pone al servicio de la ciudadanía el [Sistema de Citas](https://citas.poderjudicialcoahuila.gob.mx/) que te permitirá agendar tu visita a nuestros órganos jurisdiccionales mediante una sencilla herramienta en línea.
 
 ## Video
