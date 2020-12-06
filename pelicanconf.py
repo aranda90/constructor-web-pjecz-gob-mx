@@ -12,6 +12,7 @@ RELATIVE_URLS = False
 # Metadatos de todo el sitio web
 SITENAME = 'Poder Judicial del Estado de Coahuila de Zaragoza'
 SITELOGO = 'theme/images/pjecz.png'
+SITEPREVIEW = 'theme/images/generic.jpg'
 SITEDESCRIPTION = 'Responsables de impartir justicia en el Estado, de dirimir diferencias entre particulares, de conciliar, y de promover con el ejemplo una cultura de la legalidad y justicia cotidiana.'
 SITETWITTER = '@PJCoah'
 

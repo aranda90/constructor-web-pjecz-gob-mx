@@ -5,19 +5,27 @@
 {% block meta_tags %}
     <meta name="description" content="{{ page.summary|striptags }}">
     <meta name="author" content="{{ page.author.name }}">
-    <!-- Facebook open graph configuration -->
+    <!-- Facebook open graph -->
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
-    <meta property="og:image" content="{{ SITEURL }}/{{ SITELOGO }}">
+{% if page.preview %}
+    <meta property="og:image" content="{{ SITEURL }}/{{ page.preview }}">
+{% else %}
+    <meta property="og:image" content="{{ SITEURL }}/{{ SITEPREVIEW }}">
+{% endif %}
     <meta property="og:description" content="{{ page.summary|striptags }}">
     <meta property="og:site_name" content="{{ SITENAME }}">
-    <!-- Twitter card configuration -->
+    <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ SITETWITTER }}">
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.summary|striptags }}">
-    <meta name="twitter:image" content="{{ SITEURL }}/{{ SITELOGO }}">
+{% if page.preview %}
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ page.preview }}">
+{% else %}
+    <meta name="twitter:image" content="{{ SITEURL }}/{{ SITEPREVIEW }}">
+{% endif %}
 {% endblock %}
 
 {% block header %}
@@ -27,7 +35,9 @@
             <div class="row h-100 align-items-center">
                 <div class="col-lg-12">
                     <h1 class="display-4 mt-5 mb-2">{{ page.title }}</h1>
-                    {% if page.summary|striptags != '' %}<p class="lead mb-5">{{ page.summary|striptags }}</p>{% endif %}
+{% if page.summary|striptags != '' %}
+                    <p class="lead mb-5">{{ page.summary|striptags }}</p>
+{% endif %}
                 </div>
             </div>
         </div>
@@ -57,6 +67,7 @@
                 "dateCreated": "{{ page.date }}",
                 "datePublished": "{{ page.date }}",
                 "dateModified": "{{ page.modified }}",
+                "image": {% if page.preview %}"{{ SITEURL }}/{{ page.preview }}",{% else %}"{{ SITEURL }}/{{ SITEPREVIEW }}",{% endif %}
                 "url": "{{ SITEURL }}/{{ page.url }}"
             }
         </script>
