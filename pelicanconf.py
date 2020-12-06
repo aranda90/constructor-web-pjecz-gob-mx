@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-# Tema se recibe como parametro del comando pelican
-# THEME = 'themes/pjecz-2020-10'
+# Tema
+THEME = 'themes/pjecz-2020-10'
 
 # Para desarrollo
 SITEURL = 'http://localhost:8000'
