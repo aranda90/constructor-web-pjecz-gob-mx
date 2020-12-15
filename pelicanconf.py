@@ -7,7 +7,7 @@ THEME = 'themes/pjecz-2020-10'
 
 # Para desarrollo
 SITEURL = 'http://localhost:8000'
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 # Metadatos de todo el sitio web
 SITENAME = 'Poder Judicial del Estado de Coahuila de Zaragoza'
@@ -131,7 +131,16 @@ DEFAULT_ORPHANS = 2
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican_javascript']
+PLUGINS = ['articles_lists_json', 'pelican_javascript']
+
+# Articles Lists JSON
+ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
+ARTICLES_LISTS_JSON_OUTPUT_ALL = 'all.json'
+ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
+    ('noticias.json', ('Comunicados', 'News Letters', 'Noticias')),
+    ('sesiones.json', ('Sala Civil y Familiar', 'Sala Penal', 'Sala Regional')),
+]
+ARTICLES_LISTS_JSON_LIMIT = 48
 
 # Mantener lo viejo en el directorio de salida
 DELETE_OUTPUT_DIRECTORY = False
