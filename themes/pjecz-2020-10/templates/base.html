@@ -15,7 +15,12 @@
     <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png" sizes="152x152">
     <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon-180x180.png" sizes="180x180">
 {% if FEED_ALL_RSS %}
-    <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="{{ SITENAME }} Full RSS Feed" />
+    <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="PJECZ Todos" />
+{% endif %}
+{% if CATEGORY_FEED_RSS %}
+{%   for category, null in categories|sort %}
+    <link rel="alternate" href="{{ SITEURL }}/feeds/{{ category.slug }}.rss.xml" type="application/rss+xml" title="PJECZ {{ category.name }}" />
+{%   endfor %}
 {% endif %}
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap/css/bootstrap.min.css">
