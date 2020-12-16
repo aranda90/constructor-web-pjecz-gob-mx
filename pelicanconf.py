@@ -137,8 +137,7 @@ PLUGINS = ['articles_lists_json', 'pelican_javascript']
 ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = 'all.json'
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
-    ('noticias.json', ('Comunicados', 'News Letters', 'Noticias')),
-    ('sesiones.json', ('Sala Civil y Familiar', 'Sala Penal', 'Sala Regional')),
+    ('noticias.json', ['noticias']),
 ]
 ARTICLES_LISTS_JSON_LIMIT = 48
 

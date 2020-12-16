@@ -32,7 +32,6 @@ class Articles_Lists_JSON_Generator(object):
         self.limit = 48
         if settings.get('ARTICLES_LISTS_JSON_LIMIT'):
             self.limit = int(settings.get('ARTICLES_LISTS_JSON_LIMIT'))
-        self.nodes = []
 
     def agregar_nodo(self, item):
         """ Add node """
@@ -65,24 +64,33 @@ class Articles_Lists_JSON_Generator(object):
             'url': page_url,
             'preview': page_preview,
         }
-        # Acumular
-        self.nodes.append(node)
+        # Entregar
+        return node
 
     def generate_output(self, writer):
         """ Generate output """
+        # Acumular
+        all_nodes = []
+        categories_nodes = {}
+        for page in self.context['articles']:
+            node = self.agregar_nodo(page)
+            all_nodes.append(node)
+            for category_file_name, categories in self.categories_filters:
+                # if node['category'] in categories:
+                categories_nodes[category_file_name].append(node)
+        # Directorio
         output_dir = Path(self.output_path, self.json_output_path)
         output_dir.mkdir(parents=True, exist_ok=True)
-        output_file = Path(output_dir, self.output_all)
-        # Juntar
-        count = 0
-        for page in self.context['articles']:
-            self.agregar_nodo(page)
-            count += 1
-            if count >= self.limit:
-                break
-        raiz_nodo = {'pages': self.nodes }
-        # Guardar
-        with open(output_file, 'w', encoding='utf-8') as pointer:
+        # Guardar cada categoría en su JSON
+        # for category_file_name, nodes in categories_nodes.items():
+        #     category_output_file = Path(output_dir, category_file_name)
+        #     raiz_nodo = { 'data': nodes }
+        #     with open(category_output_file, 'w', encoding='utf-8') as pointer:
+        #         pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
+        # Guardar todos los nodos en su JSON
+        all_output_file = Path(output_dir, self.output_all)
+        raiz_nodo = { 'data': all_nodes }
+        with open(all_output_file, 'w', encoding='utf-8') as pointer:
             pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
 
 
