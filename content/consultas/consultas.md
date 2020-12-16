@@ -12,6 +12,11 @@ Modified: 2020-06-01 16:29
 
 ### [Agenda de Audiencias](agenda-audiencias/)
 
+### Artículos como información
+
+- [Tabla con las Noticias y Eventos](articulos/noticias-eventos/)
+- [Tabla con las Tramisiones de las Sesiones en Vivo](articulos/transmisiones-sesiones/)
+
 ### [Buzón Electrónico](/buzon-electronico/)
 
 ### [Citas](/citas/)

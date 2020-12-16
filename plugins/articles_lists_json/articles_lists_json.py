@@ -2,7 +2,7 @@
 Articles Lists JSON
 ===================
 
-Create lists in JSON from articles and pages.
+Create lists in JSON from articles.
 
 """
 import json
@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from pelican import signals
 
 
-class Articles_Lists_JSON_Generator(object):
+class ArticlesListsJSONGenerator():
     """ Description """
 
     def __init__(self, context, settings, path, theme, output_path, *null):
@@ -25,78 +25,92 @@ class Articles_Lists_JSON_Generator(object):
             self.json_output_path = settings.get('ARTICLES_LISTS_JSON_OUTPUT_PATH')
         self.output_all = 'all.json'
         if settings.get('ARTICLES_LISTS_JSON_OUTPUT_ALL'):
-            self.json_output_all_file = settings.get('ARTICLES_LISTS_JSON_OUTPUT_ALL')
-        self.categories_filters = []
+            self.output_all = settings.get('ARTICLES_LISTS_JSON_OUTPUT_ALL')
+        self.categories_filters = None
         if settings.get('ARTICLES_LISTS_JSON_CATEGORIES_FILTERS'):
             self.categories_filters = settings.get('ARTICLES_LISTS_JSON_CATEGORIES_FILTERS')
-        self.limit = 48
+        self.limit = None
         if settings.get('ARTICLES_LISTS_JSON_LIMIT'):
             self.limit = int(settings.get('ARTICLES_LISTS_JSON_LIMIT'))
 
     def agregar_nodo(self, item):
         """ Add node """
-        # Descartar si no está publicado
+        # Omit when is not published
         if getattr(item, 'status', 'published') != 'published':
             return
-        # Obtener título
+        # Set date
+        page_date = str(item.date) if item.date is not None else ''
+        # Set title
         soup_title = BeautifulSoup(item.title.replace('&nbsp;', ' '), 'html.parser')
         page_title = soup_title.get_text(' ', strip=True).replace('“', '"').replace('”', '"').replace('’', "'").replace('^', '&#94;')
-        # Determinar resumen
+        # Set summary
         page_summary = ''
         if getattr(item, 'summary', 'None') != 'None':
             soup_summary = BeautifulSoup(item.summary, 'html.parser')
             page_summary = soup_summary.get_text()
-        # Obtener categoría
+        # Set category
         page_category = item.category.name if getattr(item, 'category', 'None') != 'None' else ''
-        # Determinar URL
+        # Set URL
         page_url = '.'
         if item.url:
             page_url = item.url if self.relative_urls else (self.siteurl + '/' + item.url)
-        # Obtener imagen previa
+        # Set preview image
         page_preview = ''
         if getattr(item, 'preview', 'None') != 'None':
-            page_preview = page_url + '/' + getattr(item, 'preview', 'None')
-        # Diccionario con el nodo
+            page_preview = page_url + getattr(item, 'preview', 'None')
+        # Node as dictionary
         node = {
+            'date': page_date,
             'title': page_title,
             'summary': page_summary,
             'category': page_category,
             'url': page_url,
             'preview': page_preview,
         }
-        # Entregar
+        # Return node
         return node
 
     def generate_output(self, writer):
         """ Generate output """
-        # Acumular
+        if self.output_all is None and self.categories_filters is None:
+            return
+        # All nodes
         all_nodes = []
-        categories_nodes = {}
         for page in self.context['articles']:
             node = self.agregar_nodo(page)
             all_nodes.append(node)
-            for category_file_name, categories in self.categories_filters:
-                # if node['category'] in categories:
-                categories_nodes[category_file_name].append(node)
-        # Directorio
+        # Make directory for JSON files
         output_dir = Path(self.output_path, self.json_output_path)
         output_dir.mkdir(parents=True, exist_ok=True)
-        # Guardar cada categoría en su JSON
-        # for category_file_name, nodes in categories_nodes.items():
-        #     category_output_file = Path(output_dir, category_file_name)
-        #     raiz_nodo = { 'data': nodes }
-        #     with open(category_output_file, 'w', encoding='utf-8') as pointer:
-        #         pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
-        # Guardar todos los nodos en su JSON
-        all_output_file = Path(output_dir, self.output_all)
-        raiz_nodo = { 'data': all_nodes }
-        with open(all_output_file, 'w', encoding='utf-8') as pointer:
-            pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
+        # Save all nodes JSON file
+        if self.output_all is not None:
+            if self.limit is None:
+                raiz_nodo = { 'data': all_nodes }
+            else:
+                raiz_nodo = { 'data': all_nodes[:self.limit] }
+            all_output_file = Path(output_dir, self.output_all)
+            with open(all_output_file, 'w', encoding='utf-8') as pointer:
+                pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
+        # Save filtered categories JSON files
+        if self.categories_filters is not None:
+            for category_file_name, categories in self.categories_filters:
+                category_nodes = []
+                count = 0
+                for node in all_nodes:
+                    if node['category'] in categories:
+                        category_nodes.append(node)
+                        count += 1
+                        if self.limit is not None and count >= self.limit:
+                            break
+                raiz_nodo = { 'data': category_nodes }
+                category_output_file = Path(output_dir, category_file_name)
+                with open(category_output_file, 'w', encoding='utf-8') as pointer:
+                    pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
 
 
 def get_generators(generators):
     """ Get generators """
-    return Articles_Lists_JSON_Generator
+    return ArticlesListsJSONGenerator
 
 
 def register():
