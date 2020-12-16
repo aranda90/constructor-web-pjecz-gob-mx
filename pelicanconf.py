@@ -131,9 +131,9 @@ DEFAULT_ORPHANS = 2
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['articles_lists_json', 'pelican_javascript']
+PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
-# Articles Lists JSON
+# Plugin Articles Lists JSON
 # ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
@@ -141,6 +141,29 @@ ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
     ('transmisiones-sesiones.json', ['Pleno del Tribunal Superior de Justicia', 'Sala Civil y Familiar', 'Sala Penal', 'Sala Regional']),
 ]
 ARTICLES_LISTS_JSON_LIMIT = 100
+
+# Plugin sitemap
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 1,
+        'indexes': 0.5,
+        'pages': 1,
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'indexes': 'daily',
+        'pages': 'weekly',
+    },
+    'exclude': [
+        'archives.html',
+        'categories.html',
+        'tags.html',
+        'author/',
+        'category/',
+        'tag/',
+    ],
+}
 
 # Mantener lo viejo en el directorio de salida
 DELETE_OUTPUT_DIRECTORY = False
