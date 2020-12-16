@@ -1,5 +1,5 @@
 Title: Tabla con las Tramisiones de las Sesiones en Vivo
-Summary: Esta página muestra una tabla con las últimas tramisiones de las sesiones en vivo.
+Summary: Información de los Artículos en las categorías de las Tramisiones de las Sesiones en Vivo.
 Slug: consultas-articulos-transmisiones-sesiones
 URL: consultas/articulos/transmisiones-sesiones/
 Save_As: consultas/articulos/transmisiones-sesiones/index.html

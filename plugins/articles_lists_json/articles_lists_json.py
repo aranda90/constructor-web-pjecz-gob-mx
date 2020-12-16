@@ -23,7 +23,7 @@ class ArticlesListsJSONGenerator():
         self.json_output_path = 'json'
         if settings.get('ARTICLES_LISTS_JSON_OUTPUT_PATH'):
             self.json_output_path = settings.get('ARTICLES_LISTS_JSON_OUTPUT_PATH')
-        self.output_all = 'all.json'
+        self.output_all = None
         if settings.get('ARTICLES_LISTS_JSON_OUTPUT_ALL'):
             self.output_all = settings.get('ARTICLES_LISTS_JSON_OUTPUT_ALL')
         self.categories_filters = None
@@ -85,12 +85,12 @@ class ArticlesListsJSONGenerator():
         # Save all nodes JSON file
         if self.output_all is not None:
             if self.limit is None:
-                raiz_nodo = { 'data': all_nodes }
+                root_node = { 'data': all_nodes }
             else:
-                raiz_nodo = { 'data': all_nodes[:self.limit] }
-            all_output_file = Path(output_dir, self.output_all)
-            with open(all_output_file, 'w', encoding='utf-8') as pointer:
-                pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
+                root_node = { 'data': all_nodes[:self.limit] }
+            output_file = Path(output_dir, self.output_all)
+            with open(output_file, 'w', encoding='utf-8') as pointer:
+                pointer.write(json.dumps(root_node, separators=(',', ':'), ensure_ascii=False))
         # Save filtered categories JSON files
         if self.categories_filters is not None:
             for category_file_name, categories in self.categories_filters:
@@ -102,10 +102,10 @@ class ArticlesListsJSONGenerator():
                         count += 1
                         if self.limit is not None and count >= self.limit:
                             break
-                raiz_nodo = { 'data': category_nodes }
-                category_output_file = Path(output_dir, category_file_name)
-                with open(category_output_file, 'w', encoding='utf-8') as pointer:
-                    pointer.write(json.dumps(raiz_nodo, separators=(',', ':'), ensure_ascii=False))
+                root_node = { 'data': category_nodes }
+                output_file = Path(output_dir, category_file_name)
+                with open(output_file, 'w', encoding='utf-8') as pointer:
+                    pointer.write(json.dumps(root_node, separators=(',', ':'), ensure_ascii=False))
 
 
 def get_generators(generators):

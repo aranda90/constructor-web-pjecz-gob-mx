@@ -1,17 +1,17 @@
 // Consultas
 $(document).ready(function() {
 
-    $('#articulosTransmisionesSesiones').DataTable( {
-        "ajax": '/json/transmisiones-sesiones.json',
+    $('#articulosAcuerdosConsejo').DataTable( {
+        "ajax": '/json/acuerdos-consejo.json',
         "columns": [
             { "data": "date", "title": "Fecha" },
-            { "data": "category", "title": "Sala" },
             { "data": "title", "title": "Vínculo",
                 "fnCreatedCell": function (nTd, sData, oData, iRow, iCol)
                 {
                     $(nTd).html("<a href='"+oData.url+"'>"+oData.title+"</a>");
                 }
-            }
+            },
+            { "data": "summary", "title": "Resumen" }
         ],
         "pageLength": 10,
         "order": [[ 0, "desc" ]],

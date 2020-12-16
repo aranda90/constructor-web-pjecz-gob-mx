@@ -14,6 +14,7 @@ Modified: 2020-06-01 16:29
 
 ### Artículos como información
 
+- [Tabla con los Acuerdos del Consejo](articulos/acuerdos-consejo/)
 - [Tabla con las Noticias y Eventos](articulos/noticias-eventos/)
 - [Tabla con las Tramisiones de las Sesiones en Vivo](articulos/transmisiones-sesiones/)
 

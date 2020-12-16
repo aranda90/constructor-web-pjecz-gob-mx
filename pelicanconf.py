@@ -134,13 +134,23 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
 # Plugin Articles Lists JSON
-# ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
+ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
-    ('noticias-eventos.json', ['Comunicados', 'News Letters', 'Noticias']),
-    ('transmisiones-sesiones.json', ['Pleno del Tribunal Superior de Justicia', 'Sala Civil y Familiar', 'Sala Penal', 'Sala Regional']),
+    ('acuerdos-consejo.json', ['Acuerdos del Consejo']),
+    ('noticias-eventos.json', [
+        'Comunicados',
+        'News Letters',
+        'Noticias'
+    ]),
+    ('transmisiones-sesiones.json', [
+        'Pleno del Tribunal Superior de Justicia',
+        'Sala Civil y Familiar',
+        'Sala Penal',
+        'Sala Regional'
+    ]),
 ]
-ARTICLES_LISTS_JSON_LIMIT = 100
+ARTICLES_LISTS_JSON_LIMIT = 400
 
 # Plugin sitemap
 SITEMAP = {
