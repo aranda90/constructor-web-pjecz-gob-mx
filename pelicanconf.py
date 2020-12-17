@@ -141,13 +141,14 @@ ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
     ('noticias-eventos.json', [
         'Comunicados',
         'News Letters',
-        'Noticias'
+        'Noticias',
     ]),
     ('transmisiones-sesiones.json', [
         'Pleno del Tribunal Superior de Justicia',
         'Sala Civil y Familiar',
         'Sala Penal',
-        'Sala Regional'
+        'Sala Regional',
+        'Tribunal Constitucional',
     ]),
 ]
 ARTICLES_LISTS_JSON_LIMIT = 400
