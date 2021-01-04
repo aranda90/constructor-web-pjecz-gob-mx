@@ -44,6 +44,7 @@ PAGE_PATHS = [
     'consultas',
     'derechos-humanos-e-igualdad-de-genero',
     'edictos-de-declaracion-de-ausencia',
+    'inicial',
     'licencias',
     'magistrados',
     'observatorio-judicial',
@@ -83,6 +84,10 @@ STATIC_PATHS = [
     'robots.txt',
 ]
 
+# Directorio de salida
+OUTPUT_PATH = 'output/'
+DELETE_OUTPUT_DIRECTORY = True
+
 # Para evitar que se hagan summary automaticos
 SUMMARY_MAX_LENGTH = 0
 
@@ -90,13 +95,13 @@ SUMMARY_MAX_LENGTH = 0
 USE_FOLDER_AS_CATEGORY = False
 
 # Los artículos van en directorios por /categoria/YYYY/slug/
-ARTICLE_URL = '{category}/{date:%Y}/{slug}/'
-ARTICLE_SAVE_AS = '{category}/{date:%Y}/{slug}/index.html'
+# ARTICLE_URL = '../{category}/{date:%Y}/{slug}/'
+# ARTICLE_SAVE_AS = '../{category}/{date:%Y}/{slug}/index.html'
 
 # En cada pagina debe haber metadatos url y save_as
 # por lo que no necesitamos esto
-# PAGE_URL = 'directorio/directorio/'
-# PAGE_SAVE_AS = 'directorio/directorio/index.html'
+# PAGE_URL = '../{slug}/'
+# PAGE_SAVE_AS = '../{slug}/index.html'
 
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
@@ -125,15 +130,20 @@ OUTPUT_RETENTION = ['.git', '.gitignore']
 
 # Paginacion
 # DEFAULT_PAGINATION = False
-DEFAULT_PAGINATION = True
-DEFAULT_PAGINATION = 6
-DEFAULT_ORPHANS = 2
+DEFAULT_PAGINATION = 12
+# DEFAULT_ORPHANS = 2
+
+# Los indices comienzan con index1.html para que la pagina inicial NO lo sea
+# Se construye index.html con content/inicial/inicial.html
+PAGINATION_PATTERNS = (
+    (1, '{name}{number}{extension}', '{name}{number}{extension}'),
+)
 
 # Plugins
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
-# Plugin Articles Lists JSON
+# Plugin articles_lists_json
 ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
@@ -175,9 +185,6 @@ SITEMAP = {
         'tag/',
     ],
 }
-
-# Mantener lo viejo en el directorio de salida
-DELETE_OUTPUT_DIRECTORY = False
 
 # Activar el caché
 LOAD_CONTENT_CACHE = True

@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <title>PJECZ</title>
+        <meta name="summary" content="PJECZ">
+        <meta name="slug" content="inicial">
+        <meta name="url" content="/">
+        <meta name="save_as" content="index.html">
+        <meta name="date" content="2021-01-01 12:00:00">
+        <meta name="modified" content="2021-01-01 12:00:00">
+    </head>
+<body>
+    <!-- Inicial Carrusel -->
+    <section id="carrusel">
+        <div id="carruselCarusel" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carruselCarusel" data-slide-to="0" class="active"></li>
+                <li data-target="#carruselCarusel" data-slide-to="1"></li>
+                <li data-target="#carruselCarusel" data-slide-to="2"></li>
+                <li data-target="#carruselCarusel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="8000">
+                    <a href="noticias/2020/2020-12-15-centro-de-justicia-de-acuna/"><img class="d-block w-100" src="theme/images/carrusel-inauguracion-centro-de-justicia-ciudad-acuna.jpg"></a>
+                </div>
+                <div class="carousel-item" data-interval="8000">
+                    <a href="#"><img class="d-block w-100" src="theme/images/carrusel-notificaciones.jpg"></a>
+                </div>
+                <div class="carousel-item" data-interval="8000">
+                    <a href="#"><img class="d-block w-100" src="theme/images/carrusel-digitalizacion-de-archivos-y-portal-de-pagos.jpg"></a>
+                </div>
+                <div class="carousel-item" data-interval="8000">
+                    <a href="#"><img class="d-block w-100" src="theme/images/carrusel-whatsapp.jpg"></a>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carruselCarusel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carruselCarusel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- Inicial Accesos Directos -->
+    <section id="accesos">
+        <div class="container pt-4">
+            <h2 class="text-center">Accesos Directos</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="https://expedientevirtual.pjecz.gob.mx/Login.php">
+                        <div class="card accesos-card mb-2">
+                            <img class="card-img-top" src="theme/images/accesos-expediente-virtual.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">Expediente Virtual 2.0</h3>
+                                <p>Consulta los Expedientes Virtuales de los Juzgados en materia Civil, Mercantil, Familiar y Penal. </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://citas.poderjudicialcoahuila.gob.mx/">
+                        <div class="card accesos-card mb-2">
+                            <img class="card-img-top" src="theme/images/accesos-sistema-de-citas.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">Sitema de Citas</h3>
+                                <p>En esta sección puedes agendar tu visita a nuestros órganos jurisdiccionales.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://buzon.pjecz.gob.mx/">
+                        <div class="card accesos-card mb-2">
+                            <img class="card-img-top" src="theme/images/accesos-buzon-electronico.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">Buzón Electrónico</h3>
+                                <p>Aquí podrás enviar demandas iniciales y promociones mediante una plataforma en línea.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="https://www.pjecz.gob.mx/consultas/listas-de-acuerdos/">
+                        <div class="card accesos-card mb-2">
+                            <img class="card-img-top" src="theme/images/accesos-listas-de-acuerdos.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title mb-0">Listas de Acuerdo</h3>
+                                <p>Este apartado muestra el listado en donde se incluyen autos, acuerdos, sentencias, exhortos y audiencias..</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inicial Transmisiones Sesiones -->
+    <section id="transmisiones_sesiones">
+        <div class="container pb-4">
+            <h2 class="text-center pb-4">Transmisiones de sesiones en vivo</h2>
+            <div class="row">
+                <div id="transmisiones_sesiones_tsj" class="col-md-3 text-center">
+                    <div id="transmisiones_sesiones_tsj_spinner" class="spinner-border" role="status">
+                        <span class="sr-only">Cargando...</span>
+                    </div>
+                </div>
+                <div id="transmisiones_sesiones_scf" class="col-md-3 text-center">
+                    <div id="transmisiones_sesiones_scf_spinner" class="spinner-border" role="status">
+                        <span class="sr-only">Cargando...</span>
+                    </div>
+                </div>
+                <div id="transmisiones_sesiones_sp" class="col-md-3 text-center">
+                    <div id="transmisiones_sesiones_sp_spinner" class="spinner-border" role="status">
+                        <span class="sr-only">Cargando...</span>
+                    </div>
+                </div>
+                <div id="transmisiones_sesiones_sr" class="col-md-3 text-center">
+                    <div id="transmisiones_sesiones_sr_spinner" class="spinner-border" role="status">
+                        <span class="sr-only">Cargando...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inicial Redes Sociles, Noticias y Eventos -->
+    <section id="novedades">
+        <div class="container py-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-center">Red Social Twitter</h2>
+                    <a class="twitter-timeline" data-height="400" href="https://twitter.com/PJCoah?ref_src=twsrc%5Etfw">Tweets by PJCoah</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <h2 class="text-center mt-0">Videos</h2>
+                    <div style='padding:56.25% 0 0 0;position:relative;'><iframe src='https://vimeo.com/showcase/7856876/embed' allowfullscreen frameborder='0' style='position:absolute;top:0;left:0;width:100%;height:100%;'></iframe></div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">Noticias y eventos</h2>
+                    <div id="inicial_noticias_eventos">
+                        <div class="text-center">
+                            <div id="inicial_noticias_eventos_spinner" class="spinner-border" role="status">
+                                <span class="sr-only">Cargando...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inicial Recomendaciones -->
+    <section id="recomendaciones">
+        <div class="container pt-4 pb-2">
+            <h2 class="text-center">Recomendaciones</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-estatal-de-defensoria-publica/">
+                        <img class="rounded-circle" src="theme/images/tema-defensa-publica.png">
+                        <p><strong>Defensa</strong> Pública</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/cemasc/">
+                        <img class="rounded-circle" src="theme/images/tema-mediacion.png">
+                        <p><strong>Mediación</strong></p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/instituto-de-especializacion-judicial/">
+                         <img class="rounded-circle" src="theme/images/tema-capacitacion-judicial.png">
+                         <p>Capacitación <strong>Judicial</strong></p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="derechos-humanos-e-igualdad-de-genero/">
+                        <img class="rounded-circle" src="theme/images/tema-derechos-humanos-e-igualdad-de-genero.png">
+                        <p><strong>Derechos</strong> Humanos</p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-no-jurisdiccionales/centro-de-evaluacion-psicosocial/">
+                        <img class="rounded-circle" src="theme/images/tema-psicologia-y-trabajo-social.png">
+                        <p><strong>Psicología</strong> y Trabajo Social</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="comisiones/">
+                        <img class="rounded-circle" src="theme/images/tema-comisiones.png">
+                        <p><strong>Comisiones</strong></p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-materia/">
+                        <img class="rounded-circle" src="theme/images/tema-juzgados-por-materia.png">
+                        <p>Juzgados por <strong>Materia</strong></p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="conocenos/estructura/tribunal-superior-de-justicia/organos-jurisdiccionales/juzgados-por-distrito/">
+                        <img class="rounded-circle" src="theme/images/tema-juzgados-por-distrito.png">
+                        <p>Juzgados por <strong>Distrito</strong></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Inicial Sitios de Interes -->
+    <section id="sitios_interes">
+        <div class="container py-4 text-center">
+            <h2 class="">Sitios de Interés</h2>
+            <!-- Coahuila de Zaragoza -->
+            <a href="https://coahuila.gob.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-gobcoah.png" alt="Gobierno del Estado de Coahuila"></a>
+            <a href="http://congresocoahuila.gob.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-congresocoah.png" alt="Congreso del Estado"></a>
+            <a href="https://www.seacoahuila.org.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-saec.png" alt="Sistema Anticorrupicón del Estado"></a>
+            <!-- Nacionales -->
+            <a href="https://www.scjn.gob.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-scjn.png" alt="Suprema Corte de Justicia de la Nación"></a>
+            <a href="http://conatrib.org.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-conatrib.png" alt="CONATRIB"></a>
+            <a href="https://conatrib.pjecz.gob.mx/"><img class="m-4" src="theme/images/sitios-interes-udheg-conatrib.png" alt="CONATRIB"></a>
+            <a href="https://www.pjecz.gob.mx/observatorio-judicial/"><img class="m-4" src="theme/images/sitios-interes-observatorio.png" alt="CONATRIB"></a>
+            <a href="https://www.plataformadetransparencia.org.mx/" target="_blank"><img class="m-4" src="theme/images/sitios-interes-pnt.png" alt="Plataforma Nacional de Transparencia"></a>
+        </div>
+    </section>
+</body>
+</html>
