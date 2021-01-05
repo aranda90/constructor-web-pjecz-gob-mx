@@ -60,8 +60,8 @@ $(document).ready(function() {
           media.classList.add('mb-3')
           // Agregar al contenedor
           contenedor.appendChild(media)
-          // Máximo 6 elementos (del 0 al 5)
-          if (i >= 5) {
+          // Máximo 4 elementos (del 0 al 3)
+          if (i >= 3) {
             break;
           }
         }

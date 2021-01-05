@@ -94,15 +94,6 @@ SUMMARY_MAX_LENGTH = 0
 # NO usar el directorio como la categoria
 USE_FOLDER_AS_CATEGORY = False
 
-# Los artículos van en directorios por /categoria/YYYY/slug/
-# ARTICLE_URL = '../{category}/{date:%Y}/{slug}/'
-# ARTICLE_SAVE_AS = '../{category}/{date:%Y}/{slug}/index.html'
-
-# En cada pagina debe haber metadatos url y save_as
-# por lo que no necesitamos esto
-# PAGE_URL = '../{slug}/'
-# PAGE_SAVE_AS = '../{slug}/index.html'
-
 # Lenguaje y zona horaria
 DEFAULT_LANG = 'es'
 TIMEZONE = 'America/Monterrey'
@@ -111,6 +102,10 @@ TIMEZONE = 'America/Monterrey'
 DEFAULT_DATE_FORMAT = '%d de %B de %Y'
 
 # Feeds
+# En página inicial la sección Tramisiones de las sesiones
+# Toma output/feeds
+# Con el programa themes/pjecz-2020-10/static/js/inicial-noticias-eventos.js
+# Lea https://www.pjecz.gob.mx/consultas/fuentes-rss/
 FEED_DOMAIN = SITEURL
 FEED_ALL_ATOM = None
 FEED_ALL_RSS = 'feeds/all.rss.xml'
@@ -129,12 +124,11 @@ RSS_FEED_SUMMARY_ONLY = True
 OUTPUT_RETENTION = ['.git', '.gitignore']
 
 # Paginacion
-# DEFAULT_PAGINATION = False
 DEFAULT_PAGINATION = 12
-# DEFAULT_ORPHANS = 2
+DEFAULT_ORPHANS = 3
 
-# Los indices comienzan con index1.html para que la pagina inicial NO lo sea
-# Se construye index.html con content/inicial/inicial.html
+# Crear indices como index1.html, index2.html, index3.html...
+# La página inicial será index.html con content/inicial/inicial.html
 PAGINATION_PATTERNS = (
     (1, '{name}{number}{extension}', '{name}{number}{extension}'),
 )
@@ -144,13 +138,15 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
 # Plugin articles_lists_json
+# Sirve para crear listados de los artículos por categorías
+# La página inicial toma output/json/noticias-eventos.json
+# Gracias al programa themes/pjecz-2020-10/static/js/inicial-noticias-eventos.js
 ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
     ('acuerdos-consejo.json', ['Acuerdos del Consejo']),
     ('noticias-eventos.json', [
         'Comunicados',
-        'News Letters',
         'Noticias',
     ]),
     ('transmisiones-sesiones.json', [
