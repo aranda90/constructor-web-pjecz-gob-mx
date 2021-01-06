@@ -1,5 +1,5 @@
 Title: Tabla con los Acuerdos del Consejo
-Summary: Información de los Artículos en la categoría Acuerdos del Consejo.
+Summary: Herramienta para buscar en los Acuerdos del Consejo.
 Slug: consultas-articulos-acuerdos-consejo
 URL: consultas/articulos/acuerdos-consejo/
 Save_As: consultas/articulos/acuerdos-consejo/index.html
