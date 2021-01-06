@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }} - {{ SITENAME }}{% endblock %}
+{% block title %}{% if page.slug == 'inicial' %}{{ SITENAME }}{% else %}{{ page.title }} - {{ SITENAME }}{% endif %}{% endblock %}
 
 {% block meta_tags %}
     <meta name="description" content="{{ page.summary|striptags }}">
     <meta name="author" content="{{ page.author.name }}">
     <!-- Facebook open graph -->
     <meta property="og:title" content="{{ page.title }}">
+{% if page.slug == 'inicial' %}
+    <meta property="og:type" content="website">
+{% else %}
     <meta property="og:type" content="article">
+{% endif %}
     <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
 {% if page.preview %}
     <meta property="og:image" content="{{ SITEURL }}/{{ page.preview }}">
@@ -68,7 +72,9 @@
         "description": "{{ SITEDESCRIPTION }}"
     }
     </script>
+    <main>
 {{ page.content }}
+    </main>
 {%   else %}
     <!-- Contenido -->
 	<article>
