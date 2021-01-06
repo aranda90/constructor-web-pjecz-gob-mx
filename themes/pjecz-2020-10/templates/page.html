@@ -9,10 +9,11 @@
     <meta property="og:title" content="{{ page.title }}">
 {% if page.slug == 'inicial' %}
     <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ SITEURL }}">
 {% else %}
     <meta property="og:type" content="article">
-{% endif %}
     <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}">
+{% endif %}
 {% if page.preview %}
     <meta property="og:image" content="{{ SITEURL }}/{{ page.preview }}">
 {% else %}
