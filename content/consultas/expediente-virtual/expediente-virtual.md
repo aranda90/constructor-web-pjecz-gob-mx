@@ -1,4 +1,4 @@
-Title: Expediente Virtual
+Title: Expediente Virtual 2.0
 Summary: Consulta de expedientes en línea.
 Slug: consultas-expediente-virtual
 URL: consultas/expediente-virtual/

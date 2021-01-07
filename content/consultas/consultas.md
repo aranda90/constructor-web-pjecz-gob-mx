@@ -6,29 +6,31 @@ Date: 2020-04-22 16:30
 Modified: 2020-06-01 16:29
 
 
-### [Acuerdos del Consejo](/acuerdos-del-consejo/)
+### [Acuerdos del Consejo](../category/acuerdos-del-consejo1.html)
+
+### [Acuerdos del Pleno](../category/acuerdos-del-pleno1.html)
 
 ### [Abogados Registrados](abogados-registrados/)
 
 ### [Agenda de Audiencias](agenda-audiencias/)
 
-### Artículos como información
+### Artículos en este sitio web
 
-- [Tabla con los Acuerdos del Consejo](articulos/acuerdos-consejo/)
-- [Tabla con las Noticias y Eventos](articulos/noticias-eventos/)
+- [Tabla con los Acuerdos del Consejo y del Pleno](articulos/acuerdos/)
+- [Tabla con los Comunicados y Noticias](articulos/comunicados-noticias/)
 - [Tabla con las Tramisiones de las Sesiones en Vivo](articulos/transmisiones-sesiones/)
 
-### [Buzón Electrónico](/buzon-electronico/)
+### [Boletas de Central de Actuarios](boletas/)
 
-### [Citas](/citas/)
+### [Buzón Electrónico](../buzon-electronico/)
 
-### [Consulta de Boletas](boletas/)
+### [Citas](../citas/)
 
 ### [Edictos en Línea](edictos/)
 
 ### [Edictos de Declaración de Ausencia](../edictos-de-declaracion-de-ausencia/)
 
-### [Expediente Virtual](expediente-virtual/)
+### [Expediente Virtual 2.0](expediente-virtual/)
 
 ### [Fuentes RSS](fuentes-rss/)
 
@@ -36,6 +38,6 @@ Modified: 2020-06-01 16:29
 
 ### [Listas de Acuerdos](listas-de-acuerdos/)
 
-### [Trámites y Servicios](/tramites-y-servicios/)
+### [Trámites y Servicios](../tramites-y-servicios/)
 
 ### [Versión Pública de Sentencias](sentencias/)

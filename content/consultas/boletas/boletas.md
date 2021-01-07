@@ -1,4 +1,4 @@
-Title: Consulta de Boletas
+Title: Boletas de Central de Actuarios
 Slug: consultas-boletas
 URL: consultas/boletas/
 Save_As: consultas/boletas/index.html

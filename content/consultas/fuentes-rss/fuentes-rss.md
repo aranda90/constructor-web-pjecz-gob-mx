@@ -17,14 +17,14 @@ Por medio de una **fuentes RSS** puede recibir notificaciones de las novedades s
 El sitio web del **Poder Judicial del Estado de Coahuila de Zaragoza** ofrece las siguientes **fuentes RSS**...
 
 <div class="row" id="botones">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <h3 class="text-center">Consultas/Sala de Prensa</h3>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-consejo.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Acuerdos del Consejo</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-pleno.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Acuerdos del Pleno</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/comunicados.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Comunicados</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/noticias.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Noticias</a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-5">
         <h3 class="text-center">Tramisiones de las Sesiones</h3>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/pleno-del-tribunal-superior-de-justicia.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Pleno del Tribunal Superior de Justicia</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/sala-civil-y-familiar.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Sala Civil y Familiar</a>

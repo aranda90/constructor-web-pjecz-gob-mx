@@ -140,8 +140,8 @@ PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 
 # Plugin articles_lists_json
 # Sirve para crear listados de los artículos por categorías
-# La página inicial toma output/json/noticias-eventos.json
-# Gracias al programa themes/pjecz-2020-10/static/js/inicial-noticias-eventos.js
+# La página inicial toma output/json/comunicados-noticias.json
+# Gracias al programa themes/pjecz-2020-10/static/js/inicial-comunicados-noticias.js
 ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
@@ -149,7 +149,7 @@ ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
         'Acuerdos del Consejo',
         'Acuerdos del Pleno',
     ]),
-    ('noticias-eventos.json', [
+    ('comunicados-noticias.json', [
         'Comunicados',
         'Noticias',
     ]),
