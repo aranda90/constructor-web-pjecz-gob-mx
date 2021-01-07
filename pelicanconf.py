@@ -25,6 +25,7 @@ PATH = 'content'
 # Directorios que tienen los articulos
 ARTICLE_PATHS = [
     'acuerdos-del-consejo',
+    'acuerdos-del-pleno',
     'comunicados',
     'news-letters',
     'noticias',
@@ -144,7 +145,10 @@ PLUGINS = ['articles_lists_json', 'pelican_javascript', 'sitemap']
 ARTICLES_LISTS_JSON_OUTPUT_PATH = 'json'
 ARTICLES_LISTS_JSON_OUTPUT_ALL = None
 ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
-    ('acuerdos-consejo.json', ['Acuerdos del Consejo']),
+    ('acuerdos.json', [
+        'Acuerdos del Consejo',
+        'Acuerdos del Pleno',
+    ]),
     ('noticias-eventos.json', [
         'Comunicados',
         'Noticias',

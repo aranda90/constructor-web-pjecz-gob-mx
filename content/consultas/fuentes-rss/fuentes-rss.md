@@ -18,8 +18,9 @@ El sitio web del **Poder Judicial del Estado de Coahuila de Zaragoza** ofrece la
 
 <div class="row" id="botones">
     <div class="col-md-3">
-        <h3 class="text-center">Sala de Prensa</h3>
+        <h3 class="text-center">Consultas/Sala de Prensa</h3>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-consejo.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Acuerdos del Consejo</a>
+        <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/acuerdos-del-pleno.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Acuerdos del Pleno</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/comunicados.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Comunicados</a>
         <a class="btn btn-primary btn-block my-2" href="https://www.pjecz.gob.mx/feeds/noticias.rss.xml"><span class="icono"><i class="fa fa-rss-square"></i></span> Noticias</a>
     </div>
