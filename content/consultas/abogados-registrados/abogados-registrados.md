@@ -61,12 +61,10 @@ JavaScripts: consultas-abogados-registrados.js
     <div class="card-body">
         <table id="abogadosRegistradosTable" class="table" style="width: 100%;">
             <thead>
-                <th>libro</th>
-                <th>nombre</th>
-                <th>fecha</th>
-                <th>estatus</th>
-                <th>numero</th>
-                <th>id</th>
+                <th>Fecha</th>
+                <th>Libro</th>
+                <th>Número</th>
+                <th>Nombre</th>
             </thead>
         </table>
     </div>

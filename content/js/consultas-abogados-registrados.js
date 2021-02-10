@@ -1,7 +1,8 @@
 // Consultas Abogados Registrados
 $(document).ready(function () {
 
-    const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8000/abogados"
+    //const ABOGADOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/abogados"
+    const ABOGADOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/abogados"
 
     // Al dar clic en el botón mostrar
     $('#consultarButton').click(function () {
@@ -21,18 +22,26 @@ $(document).ready(function () {
             },
             'dataType': "json",
             'success': function (data) {
-                var mapeado = data.map(el => Object.values(el));
-                alRecibirResultados(mapeado);
+                //var mapeado = data.map(el => Object.values(el));
+                //alRecibirResultados(mapeado);
+                alRecibirResultados(data);
             }
         });
 
     }); // Al dar clic en el botón mostrar
 
     // Al recibir los datos de la API
-    function alRecibirResultados(mapeado) {
+    function alRecibirResultados(data) {
+
+        // Si tiene datos, limpiar la tabla
+        console.log("Tenía " + $('#abogadosRegistradosTable').length + " renglones.");
+        if ($('#abogadosRegistradosTable').length > 0) {
+            $('#abogadosRegistradosTable').DataTable().clear();
+            $('#abogadosRegistradosTable').DataTable().destroy();
+        };
 
         // Si no hay resultados, muestra mensaje y termina
-        if (mapeado.length == 0) {
+        if (data.length == 0) {
             $('#cargandoButton').hide();
             $('#consultarButton').show();
             $('#sinResultados').show();
@@ -40,31 +49,17 @@ $(document).ready(function () {
             return;
         };
 
-        // Si tiene datos, limpiar la tabla
-        if ($('#abogadosRegistradosTable').DataTable().data().length > 0) {
-            $('#abogadosRegistradosTable').DataTable().clear();
-            $('#abogadosRegistradosTable').DataTable().destroy();
-        };
-
         // Mostrar tabla
         $('#abogadosRegistrados').show();
 
         // DataTable
         $('#abogadosRegistradosTable').DataTable({
-            'data': mapeado,
+            'data': data,
             'columns': [
-                { 'title': "Libro" },
-                { 'title': "Nombre" },
-                { 'title': "Fecha" },
-                { 'title': "Estatus" },
-                { 'title': "Número" },
-                { 'title': "ID" }
-            ],
-            'columnDefs': [
-                {
-                    'targets': [3, 5],
-                    'visible': false
-                }
+                { 'data': "fecha", 'width': "20%" },
+                { 'data': "libro", 'width': "20%" },
+                { 'data': "numero", 'width': "20%" },
+                { 'data': "nombre", 'width': "40%" }
             ],
             'pageLength': 10,
             'language': {
