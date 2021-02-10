@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 THEME = "themes/pjecz-2020-10"
 
 # Para desarrollo
-SITEURL = "http://localhost:8001"
+SITEURL = "http://localhost:8000"
 RELATIVE_URLS = False
 
 # Metadatos de todo el sitio web

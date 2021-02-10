@@ -22,8 +22,6 @@ $(document).ready(function () {
             },
             'dataType': "json",
             'success': function (data) {
-                //var mapeado = data.map(el => Object.values(el));
-                //alRecibirResultados(mapeado);
                 alRecibirResultados(data);
             }
         });
