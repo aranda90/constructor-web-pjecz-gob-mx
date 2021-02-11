@@ -70,3 +70,12 @@ JavaScripts: consultas-abogados-registrados.js
         </table>
     </div>
 </div>
+
+## Requisitos para el Registro de Títulos de Abogados
+
+1. Título Legalizado (Registrado en la Dirección de Procedimientos y Trámites, Calle Victoria 608 entre Xicoténcatl y Obregón. Cuarto Piso. Tel: 844-411-1200).
+2. Original y Copia del Título.
+3. Escrito dirigido al **Lic. Miguel Felipe Mery Ayup Presidente del Tribunal Superior de Justicia del Estado de Coahuila de Zaragoza,** solicitando el Registro del Título y Expedición de la Constancia del registro (original y copia).
+4. Copia de Identificación con fotografía.
+5. 3 Fotografías tamaño infantil.
+6. $6.00 por copia del Título y Constancia del Registro del Título (para archivo).
