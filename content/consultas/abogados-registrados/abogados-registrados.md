@@ -1,10 +1,10 @@
 Title: Abogados Registrados
-Summary: Las y los abogados registrados en el Poder Judicial del estado de Coahuila de Zaragoza.
+Summary: Consultar las y los abogados registrados en el Poder Judicial del Estado de Coahuila de Zaragoza.
 Slug: consultas-abogados-registrados
 URL: consultas/abogados-registrados/
 Save_As: consultas/abogados-registrados/index.html
 Date: 2020-06-17 10:42:00
-Modified: 2021-02-08 20:00:00
+Modified: 2021-02-15 10:38:00
 JavaScripts: consultas-abogados-registrados.js
 
 
@@ -17,10 +17,10 @@ JavaScripts: consultas-abogados-registrados.js
 
 ## Instrucciones
 
-1. Seleccione el año de registro.
-2. Opcionalmente puede escribir parte del nombre.
-3. Presione el botón **Consultar** y espere a que se carguen los abogados registrados. Tiene un límite de 100 resultados.
-4. Puede usar el campo **Filtrar** para encontrar algo específico en los resultados.
+1. Escriba parte del nombre; preferentemente los apellidos paterno y materno. No use acentos, eñes, diéresis o caracteres especiales.
+2. Puede cambiar el rango de años de registro. El año "desde" debe ser igual o menor al año "hasta".
+3. Presione el botón **Consultar** y espere a que se carguen. Como máximo verá 100 resultados.
+4. Puede usar el campo **Filtrar** para encontrar algo específico entre los resultados.
 
 <div class="card mb-2">
     <div class="card-body">
@@ -32,7 +32,7 @@ JavaScripts: consultas-abogados-registrados.js
             <div class="form-group">
                 <label for="nombreInput">Nombre</label>
                 <input id="nombreInput" type="text" class="form-control" aria-describedby="nombreInputHelp">
-                <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes y caracteres especiales.</small>
+                <small id="nombreInputHelp" class="form-text text-muted">No use acentos, eñes, diéresis o caracteres especiales.</small>
             </div>
             <button id="consultarButton" type="button" class="btn btn-primary">
                 Consultar
@@ -55,10 +55,12 @@ JavaScripts: consultas-abogados-registrados.js
     <div class="card-body">
         <table id="abogadosRegistradosTable" class="table" style="width: 100%;">
             <thead>
-                <th>Fecha</th>
-                <th>Libro</th>
-                <th>Número</th>
-                <th>Nombre</th>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Libro</th>
+                    <th>Número</th>
+                    <th>Nombre</th>
+                </tr>
             </thead>
         </table>
     </div>
