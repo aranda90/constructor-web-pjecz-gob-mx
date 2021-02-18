@@ -16,6 +16,11 @@ JavaScripts: consultas-ubicacion-expedientes.js
 </nav>
 
 ## Instrucciones
+1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos incluyendo tribunales salas y pleno).
+2. Seleccione el **Juzgado de la Materia**, donde encontará los del distrito seleccionado.
+3. Posteriormente presione el botón **Consultar** y espere a que se carguen los expedientes.
+4. Para buscar por expediente favor de ingresar en la opción **Filtrar** el número de expediente que desee encontrar; por ejemplo **0025/2021**.
+5. **Nota:** Si un expediente en particular no se encuentra en el listado favor de revisar con el juzgado correspondiente.
 
 <div class="card mb-2">
     <div class="card-body">
