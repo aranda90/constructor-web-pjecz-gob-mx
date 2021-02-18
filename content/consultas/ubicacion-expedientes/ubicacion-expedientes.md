@@ -1,5 +1,5 @@
 Title: Versión Pública Ubicación de Expedientes
-Summary: .
+Summary: Servicio para informar a los justiciables de dónde se encuentran los Expedientes.
 Slug: consultas-ubicacion-expedientes
 URL: consultas/ubicacion-expedientes/
 Save_As: consultas/ubicacion-expedientes/index.html
@@ -16,7 +16,8 @@ JavaScripts: consultas-ubicacion-expedientes.js
 </nav>
 
 ## Instrucciones
-1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos incluyendo tribunales salas y pleno).
+
+1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos incluyendo tribunales, salas y pleno).
 2. Seleccione el **Juzgado de la Materia**, donde encontará los del distrito seleccionado.
 3. Posteriormente presione el botón **Consultar** y espere a que se carguen los expedientes.
 4. Para buscar por expediente favor de ingresar en la opción **Filtrar** el número de expediente que desee encontrar; por ejemplo **0025/2021**.
