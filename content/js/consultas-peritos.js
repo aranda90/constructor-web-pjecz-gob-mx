@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 
     // Para producción
-    //const DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-    //const PERITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos"
+    const DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
+    const PERITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos"
 
     // Llamar a la API de Distritos para alimentar distritoSelect
     $.ajax({
