@@ -16,10 +16,9 @@ JavaScripts: consultas-peritos.js
 
 ## Instrucciones
 1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos).
-2. Seleccione el **Tipo**.
-3. Escriba parte del nombre; preferentemente los apellidos paterno y materno.
-4. Posteriormente presione el botón **Consultar** y espere a que se carguen el listado de peritos.
-5. Para filtrar los datos de la búsqueda favor de ingresar el Distrito, Tipo o Nombre en la opción **Filtrar** .
+2. Escriba parte del nombre; preferentemente los apellidos paterno y materno.
+3. Posteriormente presione el botón **Consultar** y espere a que se carguen el listado de peritos.
+4. Para filtrar los datos de la búsqueda favor de ingresar el Distrito, Tipo o Nombre en la opción **Filtrar** .
 
 <div class="card mb-2">
     <div class="card-body">
