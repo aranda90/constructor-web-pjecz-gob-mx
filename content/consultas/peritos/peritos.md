@@ -7,6 +7,7 @@ Date: 2021-02-22 13:00:00
 Modified: 2021-02-22 13:00:00
 JavaScripts: consultas-peritos.js
 
+
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="../">Consultas</a></li>
@@ -15,6 +16,7 @@ JavaScripts: consultas-peritos.js
 </nav>
 
 ## Instrucciones
+
 1. Favor de seleccionar el **Distrito Judicial** (lista desplegable con los 8 distritos).
 2. Puede dejar el campo del **nombre** vacío para mostrar todos los peritos del distrito. O escribir parte del nombre, preferentemente los apellidos.
 3. Luego presione el botón **Consultar** y espere a que se cargue el listado.
@@ -70,3 +72,23 @@ JavaScripts: consultas-peritos.js
         </table>
     </div>
 </div>
+
+## Requisitos para el Registro de Peritos
+
+1. Solicitud dirigida al **Pleno del Tribunal Superior de Justicia,** en la que se exprese:
+    - Nombre y Apellidos del solicitante.
+    - Fecha de nacimientos.
+    - Domicilio y número telefónico.
+    - Manifestación de SI realiza funciones en cualquier organismo o dependencia del Estado o Municipio y SI percibe sueldo por cargos oficiales.
+    - Distrito Judicial en el que desea actuar.
+    - Correo electrónico.
+2. Documentos que deberán acompañarse a la solicitud:
+    - Identificación oficial (copia certificada).
+    - Título y cédula profesional (copia certificada).
+    - Carta de no antecedentes penales (original).
+    - Documentos que acrediten práctica y experiencia en la especialidad que desea desempeñar (copia certificada de las constancias).
+    - Dos fotografías (tamaño infantil).
+
+### Auxiliares prácticos
+
+Quienes deseen desempeñar el cargo de auxiliares prácticos, además de los requisitos señalados en el punto número 1, señalarán en su solicitud, bajo protesta de decir verdad, las circunstancias por las que se adquirieron conocimientos sobre la ciencia, técnica o arte con la que se desea figurar en la lista, y agregarán copias certificadas de las constancias que se tengan al respecto.

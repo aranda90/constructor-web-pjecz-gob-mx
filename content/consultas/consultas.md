@@ -6,11 +6,11 @@ Date: 2020-04-22 16:30
 Modified: 2020-06-01 16:29
 
 
+### [Abogados Registrados](abogados-registrados/)
+
 ### [Acuerdos del Consejo](../category/acuerdos-del-consejo1.html)
 
 ### [Acuerdos del Pleno](../category/acuerdos-del-pleno1.html)
-
-### [Abogados Registrados](abogados-registrados/)
 
 ### [Agenda de Audiencias](agenda-audiencias/)
 
@@ -34,14 +34,12 @@ Modified: 2020-06-01 16:29
 
 ### [Fuentes RSS](fuentes-rss/)
 
-### [Lista de Peritos](../transparencia/articulo-27/f20-lista-de-peritos/)
-
 ### [Listas de Acuerdos](listas-de-acuerdos/)
 
 ### [Peritos](peritos/)
 
 ### [Trámites y Servicios](../tramites-y-servicios/)
 
-### [Ubicación de Expediente](ubicacion-expedientes/)
+### [Ubicación de Expedientes](ubicacion-expedientes/)
 
 ### [Versión Pública de Sentencias](sentencias/)
