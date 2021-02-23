@@ -1,27 +1,33 @@
 // Consultas Peritos
-$(document).ready(function() {
+$(document).ready(function () {
 
-    // Para desarrollo
-    //const DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/distritos"
-    //const PERITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/peritos"
-
-
-    // Para producción
-    const DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-    const PERITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos"
+    // Variables
+    if (location.hostname === "localhost") {
+        // Para desarrollo
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/distritos"
+        var PERITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/peritos"
+    } else if (location.hostname === "127.0.0.1") {
+        // Para desarrollo
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/distritos"
+        var PERITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/peritos"
+    } else {
+        // Para producción
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
+        var PERITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/peritos"
+    }
 
     // Llamar a la API de Distritos para alimentar distritoSelect
     $.ajax({
         'url': DISTRITOS_PLATAFORMA_WEB_API_URL,
         'type': "GET",
         'dataType': "json",
-        'success': function(dataDistritos) {
+        'success': function (dataDistritos) {
             alRecibirDistritos(dataDistritos);
         }
     });
 
     function alRecibirDistritos(dataDistritos) {
-        $.each(dataDistritos, function(i, distrito) {
+        $.each(dataDistritos, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
                 text: distrito.nombre
@@ -29,9 +35,8 @@ $(document).ready(function() {
         });
     };
 
-
     // Al dar clic en el botón Consultar
-    $('#consultarButton').click(function() {
+    $('#consultarButton').click(function () {
 
         // Validar
         var valido = true;
@@ -52,11 +57,11 @@ $(document).ready(function() {
                 'url': PERITOS_PLATAFORMA_WEB_API_URL,
                 'type': "GET",
                 'data': {
-                    'distrito': $('#autoridadSelect').val(),
+                    'distrito_id': $('#distritoSelect').val(),
                     'nombre': $('#nombreInput').val().trim()
                 },
                 'dataType': "json",
-                'success': function(data) {
+                'success': function (data) {
                     alRecibirResultados(data);
                 }
             });
@@ -93,7 +98,7 @@ $(document).ready(function() {
         $('#peritosRegistradosTable').DataTable({
             'data': data,
             'columns': [
-                { 'data': "distrito", 'width': "30%" },
+                { 'data': "distrito_id", 'width': "30%" },
                 { 'data': "tipo", 'width': "30%" },
                 { 'data': "nombre", 'width': "40%" }
             ],

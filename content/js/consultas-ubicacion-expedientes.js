@@ -2,11 +2,16 @@
 $(document).ready(function () {
 
     // Variables
-    if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
+    if (location.hostname === "localhost") {
         // Para desarrollo
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8000/distritos"
-        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/autoridades"
-        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://localhost:8000/ubicaciones_expedientes"
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/distritos"
+        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://localhost:8001/autoridades"
+        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://localhost:8001/ubicaciones_expedientes"
+    } else if (location.hostname === "127.0.0.1") {
+        // Para desarrollo
+        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/distritos"
+        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/autoridades"
+        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/ubicaciones_expedientes"
     } else {
         // Para producción
         var DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
