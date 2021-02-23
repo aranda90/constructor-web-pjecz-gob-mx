@@ -40,10 +40,10 @@ $(document).ready(function () {
 
         // Validar
         var valido = true;
-        if ($('#nombreInput').val().trim() == '') {
-            $('#revisarParametrosAlert').text("Falta el nombre.");
-            valido = false;
-        };
+        //if ($('#nombreInput').val().trim() == '') {
+        //    $('#revisarParametrosAlert').text("Falta el nombre.");
+        //    valido = false;
+        //};
 
         // Si es válido el formulario
         if (valido) {
@@ -93,14 +93,19 @@ $(document).ready(function () {
 
         // Mostrar tabla
         $('#peritosRegistrados').show();
+        $('#peritosRegistradosTitle').text($('#distritoSelect option:selected').text()); // Toma el texto del distrito elegido
 
         // DataTable
         $('#peritosRegistradosTable').DataTable({
             'data': data,
             'columns': [
-                { 'data': "distrito_id", 'width': "30%" },
-                { 'data': "tipo", 'width': "30%" },
-                { 'data': "nombre", 'width': "40%" }
+                { 'data': "tipo", 'width': "10%" },
+                { 'data': "nombre", 'width': "30%" },
+                { 'data': "domicilio", 'width': "10%" },
+                { 'data': "telefono_fijo", 'width': "10%" },
+                { 'data': "telefono_celular", 'width': "10%" },
+                { 'data': "email", 'width': "10%" },
+                { 'data': "notas", 'width': "20%" }
             ],
             'pageLength': 10,
             'language': {
