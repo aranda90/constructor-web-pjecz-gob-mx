@@ -5,12 +5,9 @@
 {% block header_title %}Autores{% endblock %}
 
 {% block content %}
-    <!-- Contenido -->
-    <main>
-        <ul>
-{% for author, articles in authors|sort %}
-            <li><a href="/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
-{% endfor %}
-        </ul>
-    </main>
+<ul>
+    {% for author, articles in authors|sort %}
+    <li><a href="/{{ author.url }}">{{ author }}</a> ({{ articles|count }})</li>
+    {% endfor %}
+</ul>
 {% endblock %}

@@ -5,12 +5,9 @@
 {% block header_title %}Categorías{% endblock %}
 
 {% block content %}
-    <!-- Contenido -->
-    <main>
-        <ul>
-{% for category, articles in categories|sort %}
-            <li><a href="/{{ category.url }}">{{ category }}</a> ({{ articles|count }})</li>
-{% endfor %}
-        </ul>
-    </main>
+<ul>
+    {% for category, articles in categories|sort %}
+    <li><a href="/{{ category.url }}">{{ category }}</a> ({{ articles|count }})</li>
+    {% endfor %}
+</ul>
 {% endblock %}
