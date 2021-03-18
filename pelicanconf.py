@@ -29,6 +29,7 @@ ARTICLE_PATHS = [
     "acuerdos-del-consejo",
     "acuerdos-del-pleno",
     "comunicados",
+    "entrevistas",
     "news-letters",
     "noticias",
     "sesiones",
@@ -74,6 +75,7 @@ STATIC_PATHS = [
     "consultas",
     "derechos-humanos-e-igualdad-de-genero",
     "edictos-de-declaracion-de-ausencia",
+    "entrevistas",
     "json",
     "magistrados",
     "mujer-segura",
@@ -158,6 +160,7 @@ ARTICLES_LISTS_JSON_CATEGORIES_FILTERS = [
         "comunicados-noticias.json",
         [
             "Comunicados",
+            "Entrevistas",
             "Noticias",
         ],
     ),
