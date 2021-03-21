@@ -1,9 +1,9 @@
-Title: Tabla con los Comunicados y las Noticias
-Summary: Herramienta para buscar en Comunicados y Noticias.
+Title: Tabla con Comunicados, Noticias y Entrevistas
+Summary: Herramienta para buscar en Comunicados, Noticias y Entrevistas.
 Slug: consultas-articulos-comunicados-noticias
 URL: consultas/articulos/comunicados-noticias/
 Save_As: consultas/articulos/comunicados-noticias/index.html
-Date: 2020-12-16 13:29:00
+Date: 2021-03-21 09:50:00
 JavaScripts: consultas-articulos-comunicados-noticias.js
 
 
