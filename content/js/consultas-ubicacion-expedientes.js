@@ -40,6 +40,7 @@ $(document).ready(function () {
                 distrito_id_max = distrito.id;
             };
         });
+        console.log(distrito_id_max);
         // Cargar autoridades
         $.ajax({
             'url': AUTORIDADES_PLATAFORMA_WEB_API_URL,
@@ -54,11 +55,11 @@ $(document).ready(function () {
                 autoridades_opciones.push([]);
             }
             $.each(dataAutoridades, function (i, autoridad) {
-                console.log();
-                autoridades_opciones[autoridad.distrito_id - 1].push({
-                    value: autoridad.id,
-                    text: autoridad.autoridad
-                });
+                console.log(autoridad.distrito_id);
+            //    autoridades_opciones[autoridad.distrito_id - 1].push({
+            //        value: autoridad.id,
+            //        text: autoridad.autoridad
+            //    });
             });
         };
     };
