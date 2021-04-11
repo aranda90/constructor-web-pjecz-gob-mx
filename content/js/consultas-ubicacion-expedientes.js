@@ -1,29 +1,38 @@
-// Consultas Ubicación de Expedientes
+'use strict';
+
+let distritos_plataforma_web_api_url;
+let autoridades_plataforma_web_api_url;
+let ubicaciones_expedientes_plataforma_web_api_url;
+let distritos = [];
+
+/* 
+ * Consultas Ubicación de Expedientes
+ */
 $(document).ready(function () {
 
-    // Variables
-    if (location.hostname === "localhost") {
-        // Para desarrollo
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://localhost:8001/distritos"
-        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://localhost:8001/autoridades"
-        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://localhost:8001/ubicaciones_expedientes"
-    } else if (location.hostname === "127.0.0.1") {
-        // Para desarrollo
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/distritos"
-        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/autoridades"
-        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "http://127.0.0.1:8001/ubicaciones_expedientes"
-    } else {
-        // Para producción
-        var DISTRITOS_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
-        var AUTORIDADES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades"
-        var UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes"
+    switch (location.hostname) {
+        case "localhost":
+            // Para desarrollo
+            distritos_plataforma_web_api_url = "http://localhost:8001/distritos"
+            autoridades_plataforma_web_api_url = "http://localhost:8001/autoridades"
+            ubicaciones_expedientes_plataforma_web_api_url = "http://localhost:8001/ubicaciones_expedientes"
+            break;
+        case "127.0.0.1":
+            // Para desarrollo
+            distritos_plataforma_web_api_url = "http://127.0.0.1:8001/distritos"
+            autoridades_plataforma_web_api_url = "http://127.0.0.1:8001/autoridades"
+            ubicaciones_expedientes_plataforma_web_api_url = "http://127.0.0.1:8001/ubicaciones_expedientes"
+            break;
+        default:
+            // Para producción
+            distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos"
+            autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades"
+            ubicaciones_expedientes_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/ubicaciones_expedientes"
     }
-    var distrito_id_max = 0
-    var autoridades_opciones = []
 
     // Cargar distritos
     $.ajax({
-        'url': DISTRITOS_PLATAFORMA_WEB_API_URL,
+        'url': distritos_plataforma_web_api_url,
         'type': "GET",
         'dataType': "json",
         'success': function (dataDistritos) {
@@ -32,18 +41,19 @@ $(document).ready(function () {
     });
     function alRecibirDistritos(dataDistritos) {
         $.each(dataDistritos, function (i, distrito) {
+            distritos.push({
+                id: distrito.id,
+                nombre: distrito.distrito,
+                autoridades: []
+            });
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
                 text: distrito.distrito
             }));
-            if (distrito.id > distrito_id_max) {
-                distrito_id_max = distrito.id;
-            };
         });
-        console.log(distrito_id_max);
         // Cargar autoridades
         $.ajax({
-            'url': AUTORIDADES_PLATAFORMA_WEB_API_URL,
+            'url': autoridades_plataforma_web_api_url,
             'type': "GET",
             'dataType': "json",
             'success': function (dataAutoridades) {
@@ -51,27 +61,31 @@ $(document).ready(function () {
             }
         });
         function alRecibirAutoridades(dataAutoridades) {
-            for (let i = 0; i < distrito_id_max; i++) {
-                autoridades_opciones.push([]);
-            }
+            // Acumular autoridades en cada distrito
             $.each(dataAutoridades, function (i, autoridad) {
-                console.log(autoridad.distrito_id);
-            //    autoridades_opciones[autoridad.distrito_id - 1].push({
-            //        value: autoridad.id,
-            //        text: autoridad.autoridad
-            //    });
+                var foundIndex = distritos.findIndex(x => x.id == autoridad.distrito_id);
+                if (foundIndex !== undefined && foundIndex !== -1) {
+                    distritos[foundIndex]['autoridades'].push({
+                        value: autoridad.id,
+                        text: autoridad.autoridad
+                    });
+                }
             });
-        };
-    };
+            // Poner las autoridades del primer distrito
+            distritos[0]['autoridades'].forEach(
+                datos => $('#autoridadSelect').append($('<option>', datos))
+            );
+        }
+    }
 
     // Al cambiar el select distrito, cambiar las opciones de autoridad
     $("#distritoSelect").change(function () {
         $('#autoridadSelect').empty();
-        autoridades_opciones[$(this).val() - 1].forEach(cargarAutoridades);
+        var foundIndex = distritos.findIndex(x => x.id == $(this).val());
+        distritos[foundIndex]['autoridades'].forEach(
+            datos => $('#autoridadSelect').append($('<option>', datos))
+        );
     });
-    function cargarAutoridades(value, index, array) {
-        $("#autoridadSelect").append($('<option>', value));
-    };
 
     // Al dar clic en el botón Consultar
     $('#consultarButton').click(function () {
@@ -92,7 +106,7 @@ $(document).ready(function () {
             $('#sinResultados').hide();
             // Llamar a la API y ejecutar acciones hasta recibir resultados
             $.ajax({
-                'url': UBICACIONES_EXPEDIENTES_PLATAFORMA_WEB_API_URL,
+                'url': ubicaciones_expedientes_plataforma_web_api_url,
                 'type': "GET",
                 'data': {
                     'autoridad_id': $('#autoridadSelect').val(),
