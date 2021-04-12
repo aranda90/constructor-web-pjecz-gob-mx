@@ -4,6 +4,8 @@ let distritos_plataforma_web_api_url;
 let autoridades_plataforma_web_api_url;
 let ubicaciones_expedientes_plataforma_web_api_url;
 let distritos = [];
+let encontradoIndice;
+let formularioEsValido;
 
 /* 
  * Consultas Ubicación de Expedientes
@@ -41,11 +43,13 @@ $(document).ready(function () {
     });
     function alRecibirDistritos(dataDistritos) {
         $.each(dataDistritos, function (i, distrito) {
+            // Alimentar arreglo con objetos
             distritos.push({
                 id: distrito.id,
                 nombre: distrito.distrito,
                 autoridades: []
             });
+            // Agregar opciones a distritoSelect
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
                 text: distrito.distrito
@@ -63,9 +67,10 @@ $(document).ready(function () {
         function alRecibirAutoridades(dataAutoridades) {
             // Acumular autoridades en cada distrito
             $.each(dataAutoridades, function (i, autoridad) {
-                var foundIndex = distritos.findIndex(x => x.id == autoridad.distrito_id);
-                if (foundIndex !== undefined && foundIndex !== -1) {
-                    distritos[foundIndex]['autoridades'].push({
+                // Buscar distrito en el listado de objetos, acumular opción de autoridad
+                encontradoIndice = distritos.findIndex(x => x.id == autoridad.distrito_id);
+                if (encontradoIndice !== undefined && encontradoIndice !== -1) {
+                    distritos[encontradoIndice]['autoridades'].push({
                         value: autoridad.id,
                         text: autoridad.autoridad
                     });
@@ -73,7 +78,7 @@ $(document).ready(function () {
             });
             // Poner las autoridades del primer distrito
             distritos[0]['autoridades'].forEach(
-                datos => $('#autoridadSelect').append($('<option>', datos))
+                valor_texto => $('#autoridadSelect').append($('<option>', valor_texto))
             );
         }
     }
@@ -81,9 +86,9 @@ $(document).ready(function () {
     // Al cambiar el select distrito, cambiar las opciones de autoridad
     $("#distritoSelect").change(function () {
         $('#autoridadSelect').empty();
-        var foundIndex = distritos.findIndex(x => x.id == $(this).val());
-        distritos[foundIndex]['autoridades'].forEach(
-            datos => $('#autoridadSelect').append($('<option>', datos))
+        encontradoIndice = distritos.findIndex(x => x.id == $(this).val());
+        distritos[encontradoIndice]['autoridades'].forEach(
+            valor_texto => $('#autoridadSelect').append($('<option>', valor_texto))
         );
     });
 
@@ -91,14 +96,14 @@ $(document).ready(function () {
     $('#consultarButton').click(function () {
 
         // Validar
-        var valido = true;
+        formularioEsValido = true;
         if ($('#expedienteInput').val().trim() == '') {
             $('#revisarParametrosAlert').text("Falta el número de expediente.");
-            valido = false;
+            formularioEsValido = false;
         };
 
         // Si es válido el formulario
-        if (valido) {
+        if (formularioEsValido) {
             // Mostrar botón Cargando...
             $('#consultarButton').hide();
             $('#cargandoButton').show();
