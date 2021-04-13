@@ -14,10 +14,6 @@ Modified: 2020-05-22 14:00
 </ol>
 </nav>
 
-<div class="text-center py-3">
-<img class="img-fluid" src="aviso-urgente-fuera-de-servicio.jpg" alt="Fuera de servicio">
-</div>
-
 Las y los abogados litigantes que se han registrado en el [Buzón Electrónico](/buzon-electronico) pueden usar su misma cuenta para que con previa autorización en el Juzgado Civil, Mercantil, Familiar y Penal en el que tengan negocio judicial hagan consultas vía Internet en el Expediente Virtual versión 2.0.
 
 1. Si ya tiene una cuenta en la versión anterior, puede acceder igual al Expediente Virtual en la versión 2.0.
