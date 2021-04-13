@@ -1,5 +1,5 @@
 Title: Tabla con las Tramisiones de las Sesiones en Vivo
-Summary: Herramenta para buscar en las Tramisiones de las Sesiones en Vivo (Pleno del Tribunal Superior de Justicia, Sala Civil y Familiar, Sala Penal, Sala Regional y Tribunal Constitucional).
+Summary: Herramienta para buscar en las Tramisiones de las Sesiones en Vivo (Pleno del Tribunal Superior de Justicia, Sala Civil y Familiar, Sala Penal, Sala Regional y Tribunal Constitucional).
 Slug: consultas-articulos-transmisiones-sesiones
 URL: consultas/articulos/transmisiones-sesiones/
 Save_As: consultas/articulos/transmisiones-sesiones/index.html
