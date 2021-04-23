@@ -84,6 +84,7 @@ STATIC_PATHS = [
     "noticias",
     "observatorio-judicial",
     "sesiones",
+    "sistemas",
     "tramites-y-servicios",
     "transparencia",
     "transparencia-tca",
