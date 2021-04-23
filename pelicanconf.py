@@ -55,6 +55,7 @@ PAGE_PATHS = [
     "observatorio-judicial",
     "podcasts",
     "politicas-de-uso",
+    "sistemas",
     "tramites-y-servicios",
     "transparencia",
     "transparencia-tca",
