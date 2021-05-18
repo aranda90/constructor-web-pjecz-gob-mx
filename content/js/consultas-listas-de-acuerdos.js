@@ -126,6 +126,10 @@ function consulta(api, id = 0) {
                     // Para desarrollo
                     distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
                     break;
+                case "172.30.37.233":
+                    // Para desarrollo
+                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
+                    break;
                 default:
                     // Para producción
                     distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos";
@@ -141,6 +145,10 @@ function consulta(api, id = 0) {
                     // Para desarrollo
                     autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
                     break;
+                case "172.30.37.233":
+                    // Para desarrollo
+                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    break;
                 default:
                     // Para producción
                     autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?distrito_id=" + id;
@@ -155,6 +163,10 @@ function consulta(api, id = 0) {
                 case "127.0.0.1":
                     // Para desarrollo
                     listas_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id;
+                    break;
+                case "172.30.37.233":
+                    // Para desarrollo
+                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id;
                     break;
                 default:
                     // Para producción
