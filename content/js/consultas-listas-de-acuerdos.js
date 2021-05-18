@@ -147,7 +147,7 @@ function consulta(api, id = 0) {
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
                     break;
                 default:
                     // Para producción
@@ -166,7 +166,7 @@ function consulta(api, id = 0) {
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id;
                     break;
                 default:
                     // Para producción
