@@ -14,11 +14,14 @@ Modified: 2021-05-18 11:55
 </ol>
 </nav>
 
-Las y los abogados litigantes que se han registrado en [Poder en Línea](https://poderenlinea.pjecz.gob.mx/) pueden hacer consultas y envíos por Internet, por medio de su cuenta y con previa autorización en el Juzgado en el que tengan asuntos judiciales. Usted podrá:
+El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
 
-- Consultar los "Expedientes Electrónicos" de los Juzgados en materia Civil, Mercantil, Familiar y Penal.
-- Enviar demandas iniciales y promociones en línea por medio del "Buzón Electrónico".
-- Y acceder al "Sistema de Citas" para agendar su trabajo en los órganos jurisdiccionales.
+- El Sistema de Citas en Línea para agendar su trabajo en los órganos jurisdiccionales.
+- El Buzón Electrónico para Demandas y Promociones.
+- El Expediente Virtual 2.0 para consultar los expedientes electrónicos de los Juzgados en materia Civil, Mercantil, Familiar y Penal.
+- Y el nuevo Sistema de Boletas Electrónicas de Gestión Actuarial.
+
+Para accesar use la combinación de usuario y contraseña de tu cuenta ya registrada para Buzón Electrónico o Expediente Virtual.
 
 <div class="container pt-4 pb-2">
     <div class="row">
@@ -48,3 +51,12 @@ Las y los abogados litigantes que se han registrado en [Poder en Línea](https:/
         </div>
     </div>
 </div>
+
+Para solicitar el registro acudir al módulo de registro más cercano y llevar los siguientes documentos:
+
+- Identificación oficial con fotografía.
+- Copia de la cédula profesional.
+- Copia de tu CURP.
+- Y un teléfono móvil con un número celular para recibir NIPs dinámicos mediante mensaje de texto.
+
+Si tienes alguna duda puedes contactarnos en nuestra línea de atención de WhatsApp 844 277 5774 y con gusto te atenderemos.
