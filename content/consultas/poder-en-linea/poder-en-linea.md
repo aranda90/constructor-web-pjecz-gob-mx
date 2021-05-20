@@ -1,5 +1,5 @@
 Title: Poder en Línea
-Summary: Ahora Buzón Electrónico y Expediente Virtual v2.0 se integran en Poder en Línea, una plataforma única para acceder a estos servicios y más.
+Summary: Una plataforma que integra en un sólo punto las herramientas de justicia digital.
 Slug: consultas-poder-en-linea
 URL: consultas/poder-en-linea/
 Save_As: consultas/poder-en-linea/index.html
@@ -43,7 +43,7 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
         </div>
         <div class="col-md-4">
             <div class="card destacados-card mb-2">
-                <a href="https://poderenlinea.pjecz.gob.mx/"><img class="card-img-top" src="imagen-acceso-expediente-virtual-v2.jpg"></a>
+                <a href="https://poderenlinea.pjecz.gob.mx/"><img class="card-img-top" src="imagen-acceso-poder-en-linea.jpg"></a>
                 <div class="card-body">
                     <a href="https://poderenlinea.pjecz.gob.mx/"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
                 </div>
@@ -52,11 +52,11 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
     </div>
 </div>
 
-Para solicitar el registro acudir al módulo de registro más cercano y llevar los siguientes documentos:
+Para solicitar el registro acudir al módulo más cercano y llevar los siguientes documentos:
 
 - Identificación oficial con fotografía.
 - Copia de la cédula profesional.
 - Copia de tu CURP.
 - Y un teléfono móvil con un número celular para recibir NIPs dinámicos mediante mensaje de texto.
 
-Si tienes alguna duda puedes contactarnos en nuestra línea de atención de WhatsApp 844 277 5774 y con gusto te atenderemos.
+Si tienes alguna duda puedes contactarnos en nuestra línea de atención de [WhatsApp 844 277 5774](https://wa.me/528442775774) y con gusto te atenderemos.
