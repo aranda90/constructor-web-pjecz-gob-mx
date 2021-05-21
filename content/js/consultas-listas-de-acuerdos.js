@@ -3,6 +3,7 @@ let autoridades_plataforma_web_api_url;
 let listas_plataforma_web_api_url;
 
 $(document).ready(function() {
+    $('#divcargando').hide();
 
     getDistritos();
 
@@ -178,6 +179,7 @@ function consulta(api, id = 0) {
 }
 
 function getDistritos() {
+    $('#divcargando').show();
     consulta("distritos");
     $.ajax({
         'url': distritos_plataforma_web_api_url,
@@ -190,11 +192,14 @@ function getDistritos() {
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
             $('.list-countDistritos').text(jobCount + ' Distritos');
+            $('#divcargando').hide();
         }
     });
+
 }
 
 function getAutoridades(distrito) {
+    $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').show();
     $('#tablaResultado').hide();
@@ -209,19 +214,22 @@ function getAutoridades(distrito) {
         'success': function(response) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="getListas(this.value);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
+                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
                 nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
             $('.list-countAutoridades').text(jobCount + ' Autoridades');
             $('#consultaDistrito').html(nombreDistrito);
+            $('#divcargando').hide();
         }
     });
 
+
 }
 
-function getListas(autoridad) {
+function resultadoConsulta(autoridad) {
+    $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').hide();
     $('#tablaResultado').show();
@@ -253,8 +261,9 @@ function getListas(autoridad) {
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "fecha", 'width': "40%" },
-                    { 'data': "descripcion", 'width': "40%" },
+                    { 'data': "fecha", 'width': "20%" },
+                    { 'data': "sentencia", 'width': "30%" },
+                    { 'data': "expediente", 'width': "30%" },
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
@@ -273,9 +282,7 @@ function getListas(autoridad) {
                     }
                 }
             });
+            $('#divcargando').hide();
         }
     });
-
-
-
 }

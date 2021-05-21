@@ -138,6 +138,7 @@ JavaScripts: consultas-listas-de-acuerdos.js
   border-left:5px solid #004360;
   padding:10px 20px;
 }
+
 </style>
 
 <div class="container">
@@ -150,7 +151,12 @@ JavaScripts: consultas-listas-de-acuerdos.js
     <div class="col-2"></div>
   </div>
 </div>
-
+<div class="d-flex justify-content-center" >
+  <button id="divcargando" class="btn btn-lg btn-light"  type="button" disabled>
+    <span class="spinner-border spinner-border-lg" role="status" aria-hidden="true"></span>
+    Cargando...
+  </button>
+</div>
 <div class="container" id="distritos">
   <div class="row">
     <div class="col-3"></div>
@@ -168,7 +174,6 @@ JavaScripts: consultas-listas-de-acuerdos.js
     <div class="col-3"></div>
   </div>
 </div>
-
 <div class="container" id="autoridades">
   <div class="row">
     <div class="col-2"></div>
