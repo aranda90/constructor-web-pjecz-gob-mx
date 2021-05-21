@@ -99,6 +99,7 @@ $(document).ready(function() {
     });
 
     $("#btnbackDistritos").click(function() {
+        $('#divcargando').hide();
         $('#distritos').show();
         $('#autoridades').hide();
         $('#tablaResultado').hide();
@@ -106,6 +107,7 @@ $(document).ready(function() {
     });
 
     $("#btnbackAutoridades").click(function() {
+        $('#divcargando').hide();
         $('#distritos').hide();
         $('#autoridades').show();
         $('#tablaResultado').hide();
@@ -261,9 +263,8 @@ function resultadoConsulta(autoridad) {
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "fecha", 'width': "20%" },
-                    { 'data': "sentencia", 'width': "30%" },
-                    { 'data': "expediente", 'width': "30%" },
+                    { 'data': "fecha", 'width': "40%" },
+                    { 'data': "descripcion", 'width': "40%" },
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
