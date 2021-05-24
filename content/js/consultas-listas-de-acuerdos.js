@@ -205,7 +205,6 @@ function getAutoridades(distrito) {
     $('#distritos').hide();
     $('#autoridades').show();
     $('#tablaResultado').hide();
-    $('#consultaDistrito').val("");
     $('#consultaJuzgado').val("");
     consulta("autoridades", distrito);
     var nombreDistrito = "";
@@ -226,8 +225,6 @@ function getAutoridades(distrito) {
             $('#divcargando').hide();
         }
     });
-
-
 }
 
 function resultadoConsulta(autoridad) {
@@ -257,7 +254,6 @@ function resultadoConsulta(autoridad) {
                     return false;
                 }
             });
-            $('#consultaDistrito').html(nombreDistrito);
             $('#consultaJuzgado').html(nombreAutoridad);
             // DataTable
             $('#ListasTable').DataTable({
