@@ -264,6 +264,9 @@ function resultadoConsulta(autoridad) {
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
+                "order": [
+                    [0, "desc"]
+                ],
                 'language': {
                     'lengthMenu': "Mostrar _MENU_",
                     'search': "Filtrar:",
