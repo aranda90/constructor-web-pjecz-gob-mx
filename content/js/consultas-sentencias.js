@@ -268,6 +268,9 @@ function resultadoConsulta(autoridad) {
                 'language': {
                     'lengthMenu': "Mostrar _MENU_",
                     'search': "Filtrar:",
+                    "order": [
+                        [0, "desc"]
+                    ],
                     'zeroRecords': "Cargando información...",
                     'info': "Página _PAGE_ de _PAGES_",
                     'infoEmpty': "No hay registros",
