@@ -25,7 +25,7 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
 
 <div class="container pt-4 pb-2">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card destacados-card mb-2">
                 <a href="aviso-de-privacidad.html"><img class="card-img-top" src="imagen-aviso-de-privacidad.jpg"></a>
                 <div class="card-body">
@@ -33,7 +33,15 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
+            <div class="card destacados-card mb-2">
+                <a href="terminos-condiciones.html"><img class="card-img-top" src="imagen-terminos-condiciones.jpg"></a>
+                <div class="card-body">
+                    <a href="terminos-condiciones.html"><h3 class="card-title mb-0">Términos y Condiciones de Uso</h3></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
             <div class="card destacados-card mb-2">
                 <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf"><img class="card-img-top" src="imagen-manual.jpg"></a>
                 <div class="card-body">
@@ -41,7 +49,7 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="card destacados-card mb-2">
                 <a href="https://poderenlinea.pjecz.gob.mx/"><img class="card-img-top" src="imagen-acceso-poder-en-linea.jpg"></a>
                 <div class="card-body">
