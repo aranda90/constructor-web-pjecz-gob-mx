@@ -27,17 +27,17 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
     <div class="row">
         <div class="col-md-4">
             <div class="card destacados-card mb-2">
-                <a href="#"><img class="card-img-top" src="imagen-aviso-de-privacidad.jpg"></a>
+                <a href="aviso-de-privacidad.html"><img class="card-img-top" src="imagen-aviso-de-privacidad.jpg"></a>
                 <div class="card-body">
-                    <a href="#"><h3 class="card-title mb-0">Aviso de Privacidad</h3></a>
+                    <a href="aviso-de-privacidad.html"><h3 class="card-title mb-0">Aviso de Privacidad</h3></a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card destacados-card mb-2">
-                <a href="#"><img class="card-img-top" src="imagen-manual.jpg"></a>
+                <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf"><img class="card-img-top" src="imagen-manual.jpg"></a>
                 <div class="card-body">
-                    <a href="#"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
+                    <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
                 </div>
             </div>
         </div>
