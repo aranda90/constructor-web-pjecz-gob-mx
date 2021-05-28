@@ -183,13 +183,14 @@ function consulta(api, id = 0) {
 function getDistritos() {
     $('#divcargando').show();
     consulta("distritos");
+    var imagen = "icono-distrito-";
     $.ajax({
         'url': distritos_plataforma_web_api_url,
         'type': "GET",
         'dataType': "json",
         'success': function(response) {
             $.each(response, function(i, distrito) {
-                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="https://picsum.photos/40/40?random"></a> ' + distrito.distrito + ' </li> ');
+                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
             });
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
@@ -197,7 +198,6 @@ function getDistritos() {
             $('#divcargando').hide();
         }
     });
-
 }
 
 function getAutoridades(distrito) {
