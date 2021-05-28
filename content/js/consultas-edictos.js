@@ -142,19 +142,19 @@ function consulta(api, id = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id + '&con_notarias=true';
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id + '&con_notarias=true';
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id + '&con_notarias=true';
                     break;
                 default:
                     // Para producción
-                    autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?distrito_id=" + id + '&con_notarias=true';
             }
             break;
         case "listas":
