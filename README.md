@@ -9,18 +9,45 @@ Abra una **línea de comandos** y cámbiese al directorio donde tiene su copia l
 
 Sólo una vez habría la necesidad de crear el directorio `venv` con el entorno virtual
 
-    python -m venv venv
+    python3 -m venv venv
 
-Si ya está creada, la activamos con
+Si ya está creada, la activamos en Windows con
 
     cd env\Scripts
     activate
 
-E instalamos los paquetes **Pelican** y **Markdown** si no los tenemos
+En GNU/Linux con
 
-    pip install pelican markdown
+    . venv/bin/activate
+
+Actualize pip de ser necesario
+
+    pip list
+    pip install --upgrade pip
+
+Instale los paquetes necesarios
+
+    pip install -r requirements.txt
+
+## Archivista
+
+Cree el archivo de configuración settings.ini a partir del ejemplo settings-sample.ini
+
+Use el cliente de escritorio Nextcloud o RClone para bajar los contenidos
+
+Puede crear los contenidos de una rama en específico
+
+    archivista crear --rama sesiones
+
+O puede crear los contenidos de todas las ramas
+
+    archivista crear --rama sesiones
 
 ## Construir versión local del sitio web
+
+Ejecutar
+
+    pelican --delete-output-directory --listen content
 
 Para usar un tema específico, por ejemplo `pjecz-2020-10`, dentro del entono virtual ejecute
 
@@ -32,40 +59,3 @@ Y revise en su navegador
     http://127.0.0.1:8000
 
 Termine con CTRL-C, haga cambios y repita.
-
-## Construir el sitio web
-
-En los servidores **Tierra** y **Justicia** se tienen las herramientas y los archivos para una construcción completa.
-
-0. Con el par de llaves SSH ingrese al servidor con el usuario **constructor**
-
-    ssh constructor@<DIRECCION_IP>
-
-1. Sincronice los archivos de la rama que vaya actualizar (hace copia de Nextcloud al servidor al Google Storage)
-
-    sincronizar-pjecz-sesiones.sh
-
-2. Active el entorno virtual (donde están los comandos, insumos para Pelican y la configuración settings.ini)
-
-    constructor-pjecz-gob-mx
-
-3. Ejecute archivista con la orden crear y la rama (así se transforman los md de Nextcloud en md para Pelican)
-
-    archivista crear --rama sesiones
-
-4. Ejecute publicar (es un alias a Pelican para construir la versión de producción)
-
-    publicar
-
-5. Cámbiese al directorio donde está el repositorio pjecz.github.io
-
-    cd ../pjecz.github.io
-
-6. Ejecute los comandos GIT para revisar, juntar y subir las actualizaciones al hospedaje del sitio web
-
-    git status
-    git add -A
-    git commit -m "Actualización de Sesiones."
-    git push
-
-Espere por lo menos cinco minutos para revisar los cambios en el sitio web.
