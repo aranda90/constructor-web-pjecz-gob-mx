@@ -194,7 +194,7 @@ function getDistritos() {
             });
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
-            $('.list-countDistritos').text(jobCount + ' Distritos');
+            $('.list-countDistritos').text(jobCount + ' resultados');
             $('#divcargando').hide();
         }
     });
@@ -220,7 +220,7 @@ function getAutoridades(distrito) {
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
-            $('.list-countAutoridades').text(jobCount + ' Autoridades');
+            $('.list-countAutoridades').text(jobCount + ' resultados');
             $('#consultaDistrito').html(nombreDistrito);
             $('#divcargando').hide();
         }
