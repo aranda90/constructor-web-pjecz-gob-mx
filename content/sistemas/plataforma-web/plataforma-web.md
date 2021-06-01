@@ -1,4 +1,4 @@
-Title: Tres de Tres - Plataforma Web
+Title: Sistemas: Plataforma Web
 Slug: sistemas-plataforma-web
 Category: Sistemas
 URL: sistemas/plataforma-web/

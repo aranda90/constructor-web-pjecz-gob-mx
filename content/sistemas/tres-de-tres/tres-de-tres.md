@@ -1,4 +1,4 @@
-Title: Tres de Tres - Sistemas
+Title: Sistemas: Tres de Tres
 Slug: sistemas-tres-de-tres
 Category: Sistemas
 URL: sistemas/tres-de-tres/
