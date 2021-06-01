@@ -14,6 +14,8 @@ Modified: 2021-05-18 11:55
 </ol>
 </nav>
 
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/557622062?color=ecece6&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
 El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
 
 - El Sistema de Citas en Línea para agendar su trabajo en los órganos jurisdiccionales.
@@ -43,17 +45,17 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
         </div>
         <div class="col-md-3">
             <div class="card destacados-card mb-2">
-                <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf"><img class="card-img-top" src="imagen-manual.jpg"></a>
+                <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf" target="_blank"><img class="card-img-top" src="imagen-manual.jpg"></a>
                 <div class="card-body">
-                    <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
+                    <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf" target="_blank"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
                 </div>
             </div>
         </div>
         <div class="col-md-3">
             <div class="card destacados-card mb-2">
-                <a href="https://poderenlinea.pjecz.gob.mx/"><img class="card-img-top" src="imagen-acceso-poder-en-linea.jpg"></a>
+                <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><img class="card-img-top" src="imagen-acceso-poder-en-linea.jpg"></a>
                 <div class="card-body">
-                    <a href="https://poderenlinea.pjecz.gob.mx/"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
+                    <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
                 </div>
             </div>
         </div>
