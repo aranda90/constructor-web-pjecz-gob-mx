@@ -138,77 +138,81 @@ JavaScripts: consultas-sentencias.js
   padding:10px 20px;
 }
 
-</style>
+/* Large desktop */
+@media (min-width: 1200px) {
+  #consultas>div{
+        width: 60%;
+    }
+}
 
-<div class="container">
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <h1 id="consultaDistrito"></h1>
-      <h2 id="consultaJuzgado"></h2>
-    </div>
-    <div class="col-2"></div>
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+   #consultas>div{
+        width: 60%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+   #consultas>div{
+        width: 100%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+   #consultas>div{
+        width: 100%;
+    }
+}
+</style>
+<div id='consultas'>
+  <div class="container" style="overflow:auto;">
+        <h1 id="consultaDistrito"></h1>
+        <h2 id="consultaJuzgado"></h2>
   </div>
-</div>
-<div class="d-flex justify-content-center" >
-  <button id="divcargando" class="btn btn-lg btn-light"  type="button" disabled>
-    <span class="spinner-border spinner-border-lg" role="status" aria-hidden="true"></span>
-    Cargando...
-  </button>
-</div>
-<div class="container" id="distritos">
-  <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">
-      <div class="input-group">
-          <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
-          </div>
-          <input id="search-distrito" type="text" class="form-control" placeholder="Distrito" aria-describedby="basic-addon1">
-      </div>
-      <span class="list-countDistritos"></span>
-      <ul class ="titleDistritos-ul ul list-group" id="listDistritos">
-      </ul> 
-    </div>
-    <div class="col-3"></div>
+  <div class="d-flex justify-content-center" style="overflow:auto;">
+    <button id="divcargando" class="btn btn-lg btn-light"  type="button" disabled>
+      <span class="spinner-border spinner-border-lg" role="status" aria-hidden="true"></span>
+      Cargando...
+    </button>
   </div>
-</div>
-<div class="container" id="autoridades">
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <button id="btnbackDistritos" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Distritos</button>
-      <br><br>
-      <div class="input-group">
-          <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
-          </div>
-          <input id="search-autoridad" type="text" class="form-control" placeholder="Autoridad" aria-describedby="basic-addon2">
-      </div>
-      <span class="list-countAutoridades"></span>
-      <ul class ="titleAutoridades-ul ul list-group" id="listAutoridades">
-      </ul>
-    </div>
-    <div class="col-2"></div>
+  <div class="container" id="distritos" style="overflow:auto;">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
+            </div>
+            <input id="search-distrito" type="text" class="form-control" placeholder="Distrito" aria-describedby="basic-addon1">
+        </div>
+        <span class="list-countDistritos"></span>
+        <ul class ="titleDistritos-ul ul list-group" id="listDistritos">
+        </ul>
   </div>
-</div>
-<div class="container" id="tablaResultado">
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <button id="btnbackAutoridades" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Autoridades</button>
-      <br><br>
-      <table id="ListasTable" class="table table-striped table-bordered" style="width:100%">
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Sentencia</th> 
-            <th>Expediente</th> 
-            <th>Archivo</th>
-          </tr>
-        </thead>
-    </table>
-    </div>
-    <div class="col-2"></div>
+  <div class="container" id="autoridades" style="overflow:auto;">
+        <button id="btnbackDistritos" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Distritos</button>
+        <br><br>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon2"><i class="fa fa-search"></i></span>
+            </div>
+            <input id="search-autoridad" type="text" class="form-control" placeholder="Autoridad" aria-describedby="basic-addon2">
+        </div>
+        <span class="list-countAutoridades"></span>
+        <ul class ="titleAutoridades-ul ul list-group" id="listAutoridades">
+        </ul>
+  </div>
+  <div class="container" id="tablaResultado" style="overflow:auto;">
+        <button id="btnbackAutoridades" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Autoridades</button>
+        <br><br>
+        <table id="ListasTable" class="table table-striped table-bordered" style="width:100%">
+          <thead>
+            <tr>
+              <th>Fecha</th>
+              <th>Sentencia</th>
+              <th>Expediente</th>
+              <th>Archivo</th>
+            </tr>
+          </thead>
+      </table>
   </div>
 </div>
