@@ -210,6 +210,7 @@ JavaScripts: consultas-sentencias.js
               <th>Fecha</th>
               <th>Sentencia</th>
               <th>Expediente</th>
+              <th>P. de Género</th>
               <th>Archivo</th>
             </tr>
           </thead>
