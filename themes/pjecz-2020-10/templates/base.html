@@ -35,9 +35,9 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <!-- Stylesheets individuales -->
 {% if USE_REMOTE_SERVICES %}{% include 'google-analytics.html' %}{% endif %}
-{% if article %}
-{% if article.stylesheets %}
-{% for stylesheet in article.stylesheets %}
+{% if page %}
+{% if page.stylesheets %}
+{% for stylesheet in page.stylesheets %}
 {{ stylesheet }}
 {% endfor %}
 {% endif %}
