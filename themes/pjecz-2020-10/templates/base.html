@@ -16,9 +16,14 @@
     <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon-152x152.png" sizes="152x152">
     <link rel="apple-touch-icon" href="{{ SITEURL }}/theme/images/apple-touch-icon-180x180.png" sizes="180x180">
     <!-- RSS feeds -->
-    {% if FEED_ALL_RSS %}
-    <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="PJECZ Todos" /> {% endif %} {% if CATEGORY_FEED_RSS %} {% for category, null in categories|sort %}
-    <link rel="alternate" href="{{ SITEURL }}/feeds/{{ category.slug }}.rss.xml" type="application/rss+xml" title="PJECZ {{ category.name }}" /> {% endfor %} {% endif %}
+{% if FEED_ALL_RSS %}
+    <link rel="alternate" href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" title="PJECZ Todos" />
+{% endif %}
+{% if CATEGORY_FEED_RSS %}
+{% for category, null in categories|sort %}
+    <link rel="alternate" href="{{ SITEURL }}/feeds/{{ category.slug }}.rss.xml" type="application/rss+xml" title="PJECZ {{ category.name }}" />
+{% endfor %}
+{% endif %}
     <!-- Bootstrap -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pjecz-2020-10.css">
@@ -29,17 +34,27 @@
     <!-- DataTables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
     <!-- Stylesheets individuales -->
-    {% if USE_REMOTE_SERVICES %}{% include 'google-analytics.html' %}{% endif %}{% if article %}{% if article.stylesheets %}{% for stylesheet in article.stylesheets %}{{ stylesheet }}{% endfor %}{% endif %}{% endif %}
+{% if USE_REMOTE_SERVICES %}{% include 'google-analytics.html' %}{% endif %}
+{% if article %}
+{% if article.stylesheets %}
+{% for stylesheet in article.stylesheets %}
+{{ stylesheet }}
+{% endfor %}
+{% endif %}
+{% endif %}
 </head>
 
 <body>
     <header>
-        {% include 'navegacion-logotipo-redes.html' %} {% include 'navegacion-menu.html' %} {% block header %}{% endblock %} {% block second_navigation %}{% endblock %}
+{% include 'navegacion-logotipo-redes.html' %}
+{% include 'navegacion-menu.html' %}
+{% block header %}{% endblock %}
+{% block second_navigation %}{% endblock %}
     </header>
     <main>
-        {% block content %}{% endblock %}
+{% block content %}{% endblock %}
     </main>
-    {% include 'footer-collapse.html' %}
+{% include 'footer-collapse.html' %}
     <!-- JavaScripts Bootstrap -->
     <script src="{{ SITEURL }}/theme/vendor/jquery/jquery.min.js"></script>
     <script src="{{ SITEURL }}/theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -53,7 +68,13 @@
     <script src="{{ SITEURL }}/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="{{ SITEURL }}/theme/js/inicial-noticias-eventos.js"></script>
     <!-- JavaScripts individuales -->
-    {% if page %}{% if page.javascripts %}{% for javascript in page.javascripts %}{{ javascript }}{% endfor %}{% endif %}{% endif %}
+{% if page %}
+{% if page.javascripts %}
+{% for javascript in page.javascripts %}
+{{ javascript }}
+{% endfor %}
+{% endif %}
+{% endif %}
 </body>
 
 </html>
