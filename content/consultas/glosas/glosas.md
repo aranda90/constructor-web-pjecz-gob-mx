@@ -1,4 +1,5 @@
 Title: Glosas
+Summary: Publicación del resumen de la glosa de debate que se lleve a cabo en los órganos jurisdiccionales colegiados para la resolución de los asuntos que se substancian ante ellos. Esto se hará treinta días naturales después a aquél en que causa ejecutoria la resolución respectiva.
 Slug: glosas
 URL: consultas/glosas/
 Save_As: consultas/glosas/index.html
@@ -7,6 +8,8 @@ Modified: 2021-06-22 15:00
 JavaScripts: consultas-glosas.js
 Stylesheets: consultas-glosas.css
 
+
+### [Protocolo para la elaboración de la Glosa de Debate en los Órganos Jurisdiccionales del Poder Judicial del Estado de Coahuila.](https://storage.googleapis.com/pjecz-gob-mx/Acuerdos%20del%20Consejo/2015/2015-08-10%201200%20Acuerdo%20C-191%20Protocolo%20para%20la%20elaboraci%C3%B3n%20de%20la%20Glosa%20de%20Debate%20en%20los%20%C3%93rganos%20Jurisdiccionales/2015-08-10-acuerdoC-191.pdf)
 
 <div id='consultas'>
   <div class="container" style="overflow:auto;" >
