@@ -1,63 +1,19 @@
-let distritos_plataforma_web_api_url;
 let autoridades_plataforma_web_api_url;
 let listas_plataforma_web_api_url;
 let id_autoridad;
 
 $(document).ready(function() {
-    $('#divcargando').hide();
-
-    getDistritos();
+    getAutoridades();
 
     getYears();
+
+    $('#divcargando').hide();
 
     $('#ListasTable').removeClass('table-striped');
 
     $('#ListasTable').DataTable();
 
-    $('#distritos').show();
-    $('#autoridades').hide();
     $('#tablaResultado').hide();
-
-    $("#search-distrito").keyup(function() {
-        //$(this).addClass('hidden');
-
-        var searchTerm = $("#search-distrito").val();
-        var listItem = $('#listDistritos').children('li');
-
-        var searchSplit = searchTerm.replace(/ /g, "'):containsi('")
-
-        //extends :contains to be case insensitive
-        $.extend($.expr[':'], {
-            'containsi': function(elem, i, match, array) {
-                return (elem.textContent || elem.innerText || '').toLowerCase()
-                    .indexOf((match[3] || "").toLowerCase()) >= 0;
-            }
-        });
-
-        $("#listDistritos li").not(":containsi('" + searchSplit + "')").each(function(e) {
-            $(this).addClass('hiding out').removeClass('in');
-            setTimeout(function() {
-                $('.out').addClass('hidden');
-            }, 300);
-        });
-
-        $("#listDistritos li:containsi('" + searchSplit + "')").each(function(e) {
-            $(this).removeClass('hidden out').addClass('in');
-            setTimeout(function() {
-                $('.in').removeClass('hiding');
-            }, 1);
-        });
-
-        var jobCount = $('#listDistritos .in').length;
-        $('.list-countDistritos').text(jobCount + ' Elementos');
-
-        //shows empty state text when no jobs found
-        if (jobCount == '0') {
-            $('#listDistritos').addClass('empty');
-        } else {
-            $('#listDistritos').removeClass('empty');
-        }
-    });
 
     $("#search-autoridad").keyup(function() {
         //$(this).addClass('hidden');
@@ -101,17 +57,9 @@ $(document).ready(function() {
 
     });
 
-    $("#btnbackDistritos").click(function() {
-        $('#divcargando').hide();
-        $('#distritos').show();
-        $('#autoridades').hide();
-        $('#tablaResultado').hide();
-        $('#consultaDistrito').empty();
-    });
 
     $("#btnbackAutoridades").click(function() {
         $('#divcargando').hide();
-        $('#distritos').hide();
         $('#autoridades').show();
         var currentYear = new Date().getFullYear();
         $("#anio").val(currentYear);
@@ -141,95 +89,53 @@ function getYears() {
 
 function consulta(api, id = 0, anio = 0) {
     switch (api) {
-        case "distritos":
-            switch (location.hostname) {
-                case "localhost":
-                    // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
-                    break;
-                case "127.0.0.1":
-                    // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
-                    break;
-                case "172.30.37.233":
-                    // Para desarrollo
-                    distritos_plataforma_web_api_url = "http://172.30.37.233:8001/distritos";
-                    break;
-                default:
-                    // Para producción
-                    distritos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/distritos";
-            }
-            break;
         case "autoridades":
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?con_notarias=false&para_glosas=true";
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?con_notarias=false&para_glosas=true";
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "http://172.30.37.233:8001/autoridades?con_notarias=false&para_glosas=true";
                     break;
                 default:
                     // Para producción
-                    autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?distrito_id=" + id;
+                    autoridades_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/autoridades?con_notarias=false&para_glosas=true";
             }
             break;
         case "listas":
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/listas_de_acuerdos?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/glosas?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 default:
                     // Para producción
-                    listas_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/listas_de_acuerdos?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/glosas?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }
 }
 
-function getDistritos() {
+function getAutoridades() {
     $('#divcargando').show();
-    consulta("distritos");
-    var imagen = "icono-distrito-";
-    $.ajax({
-        'url': distritos_plataforma_web_api_url,
-        'type': "GET",
-        'dataType': "json",
-        'success': function(response) {
-            $.each(response, function(i, distrito) {
-                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="../../theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
-            });
-            $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
-            var jobCount = response.length;
-            $('.list-countDistritos').text(jobCount + ' Elementos');
-            $('#divcargando').hide();
-        }
-    });
-
-}
-
-function getAutoridades(distrito) {
-    $('#divcargando').show();
-    $('#distritos').hide();
     $('#autoridades').show();
     $('#tablaResultado').hide();
     $('#consultaJuzgado').val("");
-    consulta("autoridades", distrito);
-    var nombreDistrito = "";
+    consulta("autoridades", 0, 0);
     $.ajax({
         'url': autoridades_plataforma_web_api_url,
         'type': "GET",
@@ -238,21 +144,19 @@ function getAutoridades(distrito) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
                 $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
-                nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
             $('.list-countAutoridades').text(jobCount + '  Elementos');
-            $('#consultaDistrito').html(nombreDistrito);
             $('#divcargando').hide();
         }
     });
 }
 
+
 function resultadoConsulta(autoridad, anio) {
     id_autoridad = autoridad;
     $('#divcargando').show();
-    $('#distritos').hide();
     $('#autoridades').hide();
     $('#tablaResultado').show();
     $('#consultaJuzgado').val("");
@@ -268,7 +172,7 @@ function resultadoConsulta(autoridad, anio) {
     }
 
     consulta("listas", id_autoridad, anio);
-    var nombreDistrito = "";
+
     var nombreAutoridad = "";
     $.ajax({
         'url': listas_plataforma_web_api_url,
@@ -278,7 +182,6 @@ function resultadoConsulta(autoridad, anio) {
             $.each(result, function(i, lista) {
                 if (i == 0) {
                     nombreAutoridad = lista.autoridad;
-                    nombreDistrito = lista.distrito;
                     return false;
                 }
             });
@@ -287,9 +190,10 @@ function resultadoConsulta(autoridad, anio) {
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "fecha", 'width': "40%" },
-                    { 'data': "descripcion", 'width': "40%" },
-                    { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
+                    { 'data': "fecha", 'width': "20%" },
+                    { 'data': "expediente", 'width': "20%" },
+                    { 'data': "tipo_juicio", 'width': "30%" },
+                    { 'data': "url", 'width': "30%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
                 "order": [

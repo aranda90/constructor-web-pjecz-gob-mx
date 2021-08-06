@@ -1,37 +1,27 @@
-Title: Versión Pública de Sentencias
-Slug: consultas-sentencias
-URL: consultas/sentencias/
-Save_As: consultas/sentencias/index.html
-Date: 2020-05-11 16:00
-Modified: 2020-05-20 12:32
-JavaScripts: consultas-sentencias.js
-Stylesheets: consultas-sentencias.css
+Title: Glosas
+Summary: Publicación del resumen de la glosa de debate que se lleve a cabo en los órganos jurisdiccionales colegiados para la resolución de los asuntos que se substancian ante ellos. Esto se hará treinta días naturales después a aquél en que causa ejecutoria la resolución respectiva.
+Slug: glosas
+URL: consultas/glosas/
+Save_As: consultas/glosas/index.html
+Date: 2021-06-22 15:00
+Modified: 2021-06-22 15:00
+JavaScripts: consultas-glosas.js
+Stylesheets: consultas-glosas.css
 
+
+### [Protocolo para la elaboración de la Glosa de Debate en los Órganos Jurisdiccionales del Poder Judicial del Estado de Coahuila.](https://storage.googleapis.com/pjecz-gob-mx/Acuerdos%20del%20Consejo/2015/2015-08-10%201200%20Acuerdo%20C-191%20Protocolo%20para%20la%20elaboraci%C3%B3n%20de%20la%20Glosa%20de%20Debate%20en%20los%20%C3%93rganos%20Jurisdiccionales/2015-08-10-acuerdoC-191.pdf)
 
 <div id='consultas'>
-  <div class="container" style="overflow:auto;">
-        <h1 id="consultaDistrito"></h1>
+  <div class="container" style="overflow:auto;" >
         <h2 id="consultaJuzgado"></h2>
   </div>
-  <div class="d-flex justify-content-center" style="overflow:auto;">
+  <div class="container d-flex justify-content-center" style="overflow:auto;" >
     <button id="divcargando" class="btn btn-lg btn-light"  type="button" disabled>
       <span class="spinner-border spinner-border-lg" role="status" aria-hidden="true"></span>
       Cargando...
     </button>
   </div>
-  <div class="container" id="distritos" style="overflow:auto;">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search"></i></span>
-            </div>
-            <input id="search-distrito" type="text" class="form-control" placeholder="Distrito" aria-describedby="basic-addon1">
-        </div>
-        <span class="list-countDistritos"></span>
-        <ul class ="titleDistritos-ul ul list-group" id="listDistritos">
-        </ul>
-  </div>
-  <div class="container" id="autoridades" style="overflow:auto;">
-        <button id="btnbackDistritos" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Distritos</button>
+  <div class="container" id="autoridades"  style="overflow:auto;" >
         <br><br>
         <div class="input-group">
             <div class="input-group-prepend">
@@ -43,7 +33,7 @@ Stylesheets: consultas-sentencias.css
         <ul class ="titleAutoridades-ul ul list-group" id="listAutoridades">
         </ul>
   </div>
-  <div class="container" id="tablaResultado" style="overflow:auto;">
+  <div class="container" id="tablaResultado" style="overflow:auto;" >
         <button id="btnbackAutoridades" type="button" class="btn btn-secondary"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Autoridades</button>
         <br><br>
         <div class="row g-3 align-items-center">
@@ -59,9 +49,8 @@ Stylesheets: consultas-sentencias.css
           <thead>
             <tr>
               <th>Fecha</th>
-              <th>Sentencia</th>
               <th>Expediente</th>
-              <th>P. de Género</th>
+              <th>Tipo de Juicio</th>
               <th>Archivo</th>
             </tr>
           </thead>
