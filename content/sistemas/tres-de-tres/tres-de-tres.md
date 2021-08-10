@@ -1,11 +1,12 @@
-Title: Sistemas: Tres de Tres
+Title: Tres de Tres
 Slug: sistemas-tres-de-tres
 Category: Sistemas
 URL: sistemas/tres-de-tres/
 Save_As: sistemas/tres-de-tres/index.html
 Date: 2021-04-23 10:08:00
-Modified: 2021-04-23 10:08:00
+Modified: 2021-08-09 19:00:00
 JavaScripts: sistemas-tres-de-tres.js
+Status: hidden
 
 
 <div class="row">
