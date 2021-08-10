@@ -1,11 +1,12 @@
-Title: Sistemas: Plataforma Web
+Title: Plataforma Web
 Slug: sistemas-plataforma-web
 Category: Sistemas
 URL: sistemas/plataforma-web/
 Save_As: sistemas/plataforma-web/index.html
 Date: 2021-04-23 10:08:00
-Modified: 2021-04-23 10:08:00
+Modified: 2021-08-09 19:00:00
 JavaScripts: sistemas-plataforma-web.js
+Status: hidden
 
 
 <div class="row">

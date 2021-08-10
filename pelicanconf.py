@@ -56,6 +56,7 @@ PAGE_PATHS = [
     "podcasts",
     "politicas-de-uso",
     "ponte-trucha",
+    "pontetrucha",
     "sistemas",
     "tramites-y-servicios",
     "transparencia",
