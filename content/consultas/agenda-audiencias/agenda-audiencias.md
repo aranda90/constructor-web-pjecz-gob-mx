@@ -1,10 +1,12 @@
 Title: Agenda de Audiencias
+Summary: AVISO Esta página ya no es actualizada, VAYA A /consultas/audiencias
 Slug: consultas-agenda-audiencias
 URL: consultas/agenda-audiencias/
 Save_As: consultas/agenda-audiencias/index.html
 Date: 2020-06-01 16:00
 Modified: 2020-06-01 16:00
 JavaScripts: consultas-agenda-audiencias.js, https://apis.google.com/js/api.js
+Status: hidden
 
 
 <nav aria-label="breadcrumb">
