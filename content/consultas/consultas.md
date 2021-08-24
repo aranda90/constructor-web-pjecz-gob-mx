@@ -12,7 +12,7 @@ Modified: 2020-06-01 16:29
 
 ### [Acuerdos del Pleno](../category/acuerdos-del-pleno1.html)
 
-### [Agenda de Audiencias](agenda-audiencias/)
+### [Agenda de Audiencias](audiencias/)
 
 ### Artículos en este sitio web
 

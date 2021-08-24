@@ -15,9 +15,6 @@ Modified: 2021-04-23 10:08:00
             <div class="py-3">
                 <a href="plataforma-web/" class="btn btn-secondary text-white">Plataforma Web</a>
             </div>
-            <div class="py-3">
-                <a href="tres-de-tres/" class="btn btn-secondary text-white">Tres de Tres</a>
-            </div>
         </div>
     </div>
     <div class="col-md-3">
