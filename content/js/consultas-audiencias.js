@@ -1,7 +1,8 @@
 let distritos_plataforma_web_api_url;
 let autoridades_plataforma_web_api_url;
-let sentencias_plataforma_web_api_url;
+let listas_plataforma_web_api_url;
 let id_autoridad;
+let audiencia_categoria;
 
 $(document).ready(function() {
     $('#divcargando').hide();
@@ -115,7 +116,6 @@ $(document).ready(function() {
         $('#autoridades').show();
         var currentYear = new Date().getFullYear();
         $("#anio").val(currentYear);
-        $("option:selected", 0);
         id_autoridad = 0;
         $('#tablaResultado').hide();
         $('#consultaJuzgado').empty();
@@ -126,9 +126,8 @@ $(document).ready(function() {
     $('#anio').on('change', function(e) {
         var optionSelected = $("option:selected", this);
         var valueSelected = this.value;
-        resultadoConsulta(id_autoridad, valueSelected);
+        resultadoConsulta(id_autoridad, valueSelected, audiencia_categoria);
     });
-
 });
 
 function getYears() {
@@ -185,23 +184,22 @@ function consulta(api, id = 0, anio = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/audiencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/audiencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    sentencias_plataforma_web_api_url = "http://172.30.37.233:8001/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "http://172.30.37.233:8001/audiencias?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 default:
                     // Para producción
-                    sentencias_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/sentencias?autoridad_id=" + id + '&ano=' + anio;
+                    listas_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/audiencias?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }
-
 }
 
 function getDistritos() {
@@ -222,6 +220,7 @@ function getDistritos() {
             $('#divcargando').hide();
         }
     });
+
 }
 
 function getAutoridades(distrito) {
@@ -239,25 +238,27 @@ function getAutoridades(distrito) {
         'success': function(response) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
+                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0,\'' + autoridad.audiencia_categoria + '\');" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
                 nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
-            $('.list-countAutoridades').text(jobCount + ' Elementos');
+            $('.list-countAutoridades').text(jobCount + '  Elementos');
             $('#consultaDistrito').html(nombreDistrito);
             $('#divcargando').hide();
         }
     });
 }
 
-function resultadoConsulta(autoridad, anio) {
+function resultadoConsulta(autoridad, anio, audiencia) {
     id_autoridad = autoridad;
+    audiencia_categoria = audiencia;
     $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').hide();
     $('#tablaResultado').show();
     $('#consultaJuzgado').val("");
+
     // Si tiene datos, limpiar la tabla
     if ($('#ListasTable').length > 0) {
         $('#ListasTable').DataTable().clear();
@@ -270,11 +271,82 @@ function resultadoConsulta(autoridad, anio) {
     }
 
     consulta("listas", id_autoridad, anio);
-
     var nombreDistrito = "";
     var nombreAutoridad = "";
+
+    switch (audiencia_categoria) {
+        case "CIVIL FAMILIAR MERCANTIL LETRADO TCYA":
+            var hiddencolumns = [
+                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
+                { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
+                { 'targets': [3], 'visible': true, 'searchable': true }, // actores
+                { 'targets': [4], 'visible': true, 'searchable': true }, // demandados
+                { 'targets': [5], 'visible': false, 'searchable': false }, // sala
+                { 'targets': [6], 'visible': false, 'searchable': false }, // caracter
+                { 'targets': [7], 'visible': false, 'searchable': false }, // causa_penal
+                { 'targets': [8], 'visible': false, 'searchable': false }, // delitos
+                { 'targets': [9], 'visible': false, 'searchable': false }, // toca
+                { 'targets': [10], 'visible': false, 'searchable': false }, // expediente_origen
+                { 'targets': [11], 'visible': false, 'searchable': false }, // imputados
+                { 'targets': [12], 'visible': false, 'searchable': false }, // origen
+            ];
+            break;
+        case "MATERIA ACUSATORIO PENAL ORAL":
+            var hiddencolumns = [
+                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
+                { 'targets': [2], 'visible': false, 'searchable': false }, // expediente
+                { 'targets': [3], 'visible': false, 'searchable': false }, // actores
+                { 'targets': [4], 'visible': false, 'searchable': false }, // demandados
+                { 'targets': [5], 'visible': true, 'searchable': true }, // sala
+                { 'targets': [6], 'visible': true, 'searchable': true }, // caracter
+                { 'targets': [7], 'visible': true, 'searchable': true }, // causa_penal
+                { 'targets': [8], 'visible': true, 'searchable': true }, // delitos
+                { 'targets': [9], 'visible': false, 'searchable': false }, // toca
+                { 'targets': [10], 'visible': false, 'searchable': false }, // expediente_origen
+                { 'targets': [11], 'visible': false, 'searchable': false }, // imputados
+                { 'targets': [12], 'visible': false, 'searchable': false }, // origen
+            ];
+            break;
+        case "SALAS":
+            var hiddencolumns = [
+                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
+                { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
+                { 'targets': [3], 'visible': true, 'searchable': true }, // actores
+                { 'targets': [4], 'visible': true, 'searchable': true }, // demandados
+                { 'targets': [5], 'visible': false, 'searchable': false }, // sala
+                { 'targets': [6], 'visible': false, 'searchable': false }, // caracter
+                { 'targets': [7], 'visible': false, 'searchable': false }, // causa_penal
+                { 'targets': [9], 'visible': true, 'searchable': true }, // toca
+                { 'targets': [10], 'visible': true, 'searchable': true }, // expediente_origen
+                { 'targets': [11], 'visible': false, 'searchable': false }, // imputados
+                { 'targets': [8], 'visible': true, 'searchable': true }, // delitos
+                { 'targets': [12], 'visible': true, 'searchable': true }, // origen
+            ];
+            break;
+        case "DISTRITALES":
+            var hiddencolumns = [
+                { 'targets': [0], 'visible': true, 'searchable': true }, // tiempo
+                { 'targets': [1], 'visible': true, 'searchable': true }, // tipo_audiencia
+                { 'targets': [2], 'visible': true, 'searchable': true }, // expediente
+                { 'targets': [3], 'visible': true, 'searchable': true }, // actores
+                { 'targets': [4], 'visible': true, 'searchable': true }, // demandados
+                { 'targets': [5], 'visible': false, 'searchable': false }, // sala
+                { 'targets': [6], 'visible': false, 'searchable': false }, // caracter
+                { 'targets': [7], 'visible': false, 'searchable': false }, // causa_penal
+                { 'targets': [9], 'visible': true, 'searchable': true }, // toca
+                { 'targets': [10], 'visible': true, 'searchable': true }, // expediente_origen
+                { 'targets': [8], 'visible': false, 'searchable': false }, // delitos
+                { 'targets': [11], 'visible': true, 'searchable': true }, // imputados
+                { 'targets': [12], 'visible': false, 'searchable': false }, // origen
+            ];
+            break;
+    }
+
     $.ajax({
-        'url': sentencias_plataforma_web_api_url,
+        'url': listas_plataforma_web_api_url,
         'type': "GET",
         'dataType': "json",
         'success': function(result) {
@@ -290,12 +362,21 @@ function resultadoConsulta(autoridad, anio) {
             $('#ListasTable').DataTable({
                 'data': result,
                 'columns': [
-                    { 'data': "fecha", 'width': "20%" },
-                    { 'data': "sentencia", 'width': "20%" },
-                    { 'data': "expediente", 'width': "20%" },
-                    { 'data': "es_perspectiva_genero", 'width': "20%", "render": function(data, type, row) { return data == true ? "Si" : "No" } },
-                    { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
+                    { 'data': "tiempo", },
+                    { 'data': "tipo_audiencia", },
+                    { 'data': "expediente", },
+                    { 'data': "actores", },
+                    { 'data': "demandados", },
+                    { 'data': "sala", },
+                    { 'data': "caracter", },
+                    { 'data': "causa_penal", },
+                    { 'data': "delitos", },
+                    { 'data': "toca", },
+                    { 'data': "expediente_origen", },
+                    { 'data': "imputados", },
+                    { 'data': "origen", },
                 ],
+                "columnDefs": hiddencolumns,
                 'pageLength': 10,
                 "order": [
                     [0, "desc"]

@@ -1,11 +1,14 @@
 let distritos_plataforma_web_api_url;
 let autoridades_plataforma_web_api_url;
 let edictos_plataforma_web_api_url;
+let id_autoridad;
 
 $(document).ready(function() {
     $('#divcargando').hide();
 
     getDistritos();
+
+    getYears();
 
     $('#ListasTable').removeClass('table-striped');
 
@@ -46,7 +49,7 @@ $(document).ready(function() {
         });
 
         var jobCount = $('#listDistritos .in').length;
-        $('.list-countDistritos').text(jobCount + ' Distritos');
+        $('.list-countDistritos').text(jobCount + ' Elementos');
 
         //shows empty state text when no jobs found
         if (jobCount == '0') {
@@ -87,7 +90,7 @@ $(document).ready(function() {
         });
 
         var jobCount = $('#listAutoridades .in').length;
-        $('.list-countAutoridades').text(jobCount + ' Autoridades');
+        $('.list-countAutoridades').text(jobCount + ' Elementos');
 
         //shows empty state text when no jobs found
         if (jobCount == '0') {
@@ -110,14 +113,35 @@ $(document).ready(function() {
         $('#divcargando').hide();
         $('#distritos').hide();
         $('#autoridades').show();
+        var currentYear = new Date().getFullYear();
+        $("#anio").val(currentYear);
+        $("option:selected", 0);
+        id_autoridad = 0;
+        $()
         $('#tablaResultado').hide();
         $('#consultaJuzgado').empty();
         $('#ListasTable').DataTable().clear();
         $('#ListasTable').DataTable().destroy();
     });
+
+    $('#anio').on('change', function(e) {
+        var optionSelected = $("option:selected", this);
+        var valueSelected = this.value;
+        resultadoConsulta(id_autoridad, valueSelected);
+    });
 });
 
-function consulta(api, id = 0) {
+function getYears() {
+    var currentYear = new Date().getFullYear();
+    var years = [];
+    var startYear = 2015;
+    for (var i = currentYear; i >= startYear; i--) {
+        years.push('<option value= "' + currentYear + '">' + currentYear-- + '</option>');
+    }
+    $('#anio').append(years);
+}
+
+function consulta(api, id = 0, anio = 0) {
     switch (api) {
         case "distritos":
             switch (location.hostname) {
@@ -161,19 +185,19 @@ function consulta(api, id = 0) {
             switch (location.hostname) {
                 case "localhost":
                     // Para desarrollo
-                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id;
+                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "127.0.0.1":
                     // Para desarrollo
-                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id;
+                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 case "172.30.37.233":
                     // Para desarrollo
-                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id;
+                    edictos_plataforma_web_api_url = "http://172.30.37.233:8001/edictos?autoridad_id=" + id + '&ano=' + anio;
                     break;
                 default:
                     // Para producción
-                    edictos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/edictos?autoridad_id=" + id;
+                    edictos_plataforma_web_api_url = "https://plataforma-web-api-dot-pjecz-268521.uc.r.appspot.com/edictos?autoridad_id=" + id + '&ano=' + anio;
             }
             break;
     }
@@ -190,11 +214,11 @@ function getDistritos() {
         'dataType': "json",
         'success': function(response) {
             $.each(response, function(i, distrito) {
-                $("#listDistritos").append('<li onclick="getAutoridades(this.value);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="../../theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
+                $("#listDistritos").append('<li onclick="getAutoridades(this.value,0);" class="in li" value="' + distrito.id + '"><a class="text-white btn-floating btn-fb btn-sm"><img class="rounded-circle" src="../../theme/images/' + imagen + distrito.id + '.png"></a> ' + distrito.distrito + ' </li> ');
             });
             $("#listDistritos").append('<span class = "empty-item" > Sin resultados </span>');
             var jobCount = response.length;
-            $('.list-countDistritos').text(jobCount + ' resultados');
+            $('.list-countDistritos').text(jobCount + ' Elementos');
             $('#divcargando').hide();
         }
     });
@@ -202,6 +226,7 @@ function getDistritos() {
 }
 
 function getAutoridades(distrito) {
+
     $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').show();
@@ -216,19 +241,20 @@ function getAutoridades(distrito) {
         'success': function(response) {
             $("#listAutoridades").empty();
             $.each(response, function(i, autoridad) {
-                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
+                $("#listAutoridades").append('<li onclick="resultadoConsulta(this.value,0);" class="in li" value="' + autoridad.id + '">' + autoridad.autoridad + ' </li> ');
                 nombreDistrito = autoridad.distrito;
             });
             $("#listAutoridades").append('<span class = "empty-item" > Sin resultados < /span>');
             var jobCount = response.length;
-            $('.list-countAutoridades').text(jobCount + ' resultados');
+            $('.list-countAutoridades').text(jobCount + ' Elementos');
             $('#consultaDistrito').html(nombreDistrito);
             $('#divcargando').hide();
         }
     });
 }
 
-function resultadoConsulta(autoridad) {
+function resultadoConsulta(autoridad, anio) {
+    id_autoridad = autoridad;
     $('#divcargando').show();
     $('#distritos').hide();
     $('#autoridades').hide();
@@ -240,7 +266,13 @@ function resultadoConsulta(autoridad) {
         $('#ListasTable').DataTable().destroy();
     };
 
-    consulta("listas", autoridad);
+    if (anio == 0) {
+        var currentYear = new Date().getFullYear();
+        anio = currentYear
+    }
+
+    consulta("listas", id_autoridad, anio);
+
     var nombreDistrito = "";
     var nombreAutoridad = "";
     $.ajax({
@@ -266,12 +298,12 @@ function resultadoConsulta(autoridad) {
                     { 'data': "url", 'width': "20%", "render": function(data, type, row) { return "<a href='" + data + "' target='_blank'> <i class='fa fa-download'></i> Descargar</a>" } },
                 ],
                 'pageLength': 10,
+                "order": [
+                    [0, "desc"]
+                ],
                 'language': {
                     'lengthMenu': "Mostrar _MENU_",
                     'search': "Filtrar:",
-                    "order": [
-                        [0, "desc"]
-                    ],
                     'zeroRecords': "Cargando información...",
                     'info': "Página _PAGE_ de _PAGES_",
                     'infoEmpty': "No hay registros",

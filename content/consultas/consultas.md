@@ -12,7 +12,7 @@ Modified: 2020-06-01 16:29
 
 ### [Acuerdos del Pleno](../category/acuerdos-del-pleno1.html)
 
-### [Agenda de Audiencias](agenda-audiencias/)
+### [Agenda de Audiencias](audiencias/)
 
 ### Artículos en este sitio web
 
@@ -33,6 +33,8 @@ Modified: 2020-06-01 16:29
 ### [Expediente Virtual 2.0](expediente-virtual/)
 
 ### [Fuentes RSS](fuentes-rss/)
+
+### [Glosas](glosas/)
 
 ### [Listas de Acuerdos](listas-de-acuerdos/)
 
