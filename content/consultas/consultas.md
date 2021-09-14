@@ -3,7 +3,7 @@ Slug: consultas
 URL: consultas/
 Save_As: consultas/index.html
 Date: 2020-04-22 16:30
-Modified: 2020-06-01 16:29
+Modified: 2021-09-14 12:55
 
 
 ### [Abogados Registrados](abogados-registrados/)
@@ -20,17 +20,11 @@ Modified: 2020-06-01 16:29
 - [Tabla con los Comunicados y Noticias](articulos/comunicados-noticias/)
 - [Tabla con las Tramisiones de las Sesiones en Vivo](articulos/transmisiones-sesiones/)
 
-### [Boletas de Central de Actuarios](boletas/)
-
-### [Buzón Electrónico](../buzon-electronico/)
-
 ### [Citas](../citas/)
 
 ### [Edictos en Línea](edictos/)
 
 ### [Edictos de Declaración de Ausencia](../edictos-de-declaracion-de-ausencia/)
-
-### [Expediente Virtual 2.0](expediente-virtual/)
 
 ### [Fuentes RSS](fuentes-rss/)
 
@@ -40,7 +34,7 @@ Modified: 2020-06-01 16:29
 
 ### [Peritos](peritos/)
 
-### [Poder en Línea](poder-en-linea/)
+### [Poder en Línea: Expediente Virtual 2.0, Buzón Electrónico, Boletas de Central de Actuarios y Citas](poder-en-linea/)
 
 ### [Trámites y Servicios](../tramites-y-servicios/)
 

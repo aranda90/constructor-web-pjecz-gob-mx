@@ -1,9 +1,11 @@
 Title: Boletas de Central de Actuarios
+Summary: Sistema de Boletas Electrónicas de Gestión Actuarial
 Slug: consultas-boletas
 URL: consultas/boletas/
 Save_As: consultas/boletas/index.html
 Date: 2020-05-14 16:40
-Modified: 2020-05-14 21:30
+Modified: 2021-09-14 12:55
+JavaScripts: consultas-poder-en-linea.js
 
 
 <nav aria-label="breadcrumb">
@@ -13,18 +15,6 @@ Modified: 2020-05-14 21:30
 </ol>
 </nav>
 
-## Distrito Judicial de Saltillo
+## [Ir a Poder en Línea](../consultas/poder-en-linea/)
 
-### [Juzgado Primero Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=36)
-
-### [Juzgado Segundo Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=37)
-
-### [Juzgado Tercero Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=201)
-
-## Distrito Judicial de Torreón
-
-### [Juzgado Primero Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=75)
-
-### [Juzgado Segundo Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=76)
-
-### [Juzgado Tercero Mercantil](http://201.144.104.74/eexpediente/consultaboleta.php?id=81)
+El nuevo **Sistema de Boletas Electrónicas de Gestión Actuarial** ahora está en [Poder en Línea](../consultas/poder-en-linea/)
