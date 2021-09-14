@@ -4,7 +4,7 @@ Slug: consultas-poder-en-linea
 URL: consultas/poder-en-linea/
 Save_As: consultas/poder-en-linea/index.html
 Date: 2021-05-18 11:55
-Modified: 2021-05-18 11:55
+Modified: 2021-09-14 12:55
 
 
 <nav aria-label="breadcrumb">
@@ -18,10 +18,10 @@ Modified: 2021-05-18 11:55
 
 El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
 
-- El Sistema de Citas en Línea para agendar su trabajo en los órganos jurisdiccionales.
-- El Buzón Electrónico para Demandas y Promociones.
-- El Expediente Virtual 2.0 para consultar los expedientes electrónicos de los Juzgados en materia Civil, Mercantil, Familiar y Penal.
-- Y el nuevo Sistema de Boletas Electrónicas de Gestión Actuarial.
+- El **Sistema de Citas** en Línea para agendar su trabajo en los órganos jurisdiccionales.
+- El **Buzón Electrónico** para Demandas y Promociones.
+- El **Expediente Virtual 2.0** para consultar los expedientes electrónicos de los Juzgados en materia Civil, Mercantil, Familiar y Penal.
+- Y el nuevo **Sistema de Boletas Electrónicas de Gestión Actuarial.**
 
 Para accesar use la combinación de usuario y contraseña de tu cuenta ya registrada para Buzón Electrónico o Expediente Virtual.
 
