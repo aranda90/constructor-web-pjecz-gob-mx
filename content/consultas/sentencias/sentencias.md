@@ -61,6 +61,7 @@ Stylesheets: consultas-sentencias.css
               <th>Fecha</th>
               <th>Sentencia</th>
               <th>Expediente</th>
+              <th>Tipo de Juicio</th>
               <th>P. de Género</th>
               <th>Archivo</th>
             </tr>
