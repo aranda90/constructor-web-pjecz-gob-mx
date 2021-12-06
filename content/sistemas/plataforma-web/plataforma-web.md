@@ -17,7 +17,7 @@ Status: hidden
             <img class="img-fluid" src="plataforma-web.jpg" alt="Plataforma Web"><br>
             <h3 class="lead">En pocos segundos se redigirá al sistema. Espere por favor.</h3>
             <div class="py-3">
-                <a href="https://plataforma-web-dot-pjecz-268521.uc.r.appspot.com/" class="btn btn-secondary text-white">De clic aquí si no se redirige</a>
+                <a href="https://plataforma-web.justiciadigital.gob.mx" class="btn btn-secondary text-white">De clic aquí si no se redirige</a>
             </div>
         </div>
     </div>
