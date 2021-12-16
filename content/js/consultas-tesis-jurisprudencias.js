@@ -62,6 +62,11 @@ $(document).ready(function() {
         $('#ListasTable').DataTable().destroy();
     });
 
+    $("#btnbackTesisJusrisprudencias").click(function() {
+        resultadoConsulta();
+        $('#autoridades').hide();
+    });
+
     $('#anio').on('change', function(e) {
         var optionSelected = $("option:selected", this);
         var valueSelected = this.value;
@@ -213,7 +218,7 @@ function resultadoConsulta(autoridad, anio) {
                         'targets': 0,
                         'data': null,
                         render: function(data, type, row, meta) {
-                            return '<button onClick="detalleConsulta(' + data + ')">' + data + '</button>';
+                            return '<button type="button" class="btn btn-secondary" onClick="detalleConsulta(' + data + ')">' + data + '</button>';
                         }
                     }
                 ],
@@ -256,6 +261,7 @@ function detalleConsulta(id_tesis_jurisprudencia) {
         'dataType': "json",
         'success': function(result) {
             $('#detalleTitulo').text(result.titulo);
+            $('#detalleTituloTJ').text(result.titulo);
             $('#detalleRegistro').text(result.id);
             $('#detalleSubtitulo').text(result.subtitulo);
             $('#detalleDistrito').text(result.distrito);
