@@ -1,4 +1,4 @@
-Title: Tesis y Jurisprudencias.
+Title: Tesis y Jurisprudencias
 Summary:
 Slug: tesis-jurisprudencias
 URL: consultas/tesis-jurisprudencias/
@@ -8,6 +8,8 @@ Modified: 2021-12-13 10:08:00
 JavaScripts: consultas-tesis-jurisprudencias.js
 Stylesheets: consultas-tesis-jurisprudencias.css
 
+
+<img class="img-fluid" src="cabecera.jpg">
 
 De acuerdo al artículo 31 de los Lineamientos para la emisión, aprobación, sistematización, compilación y publicación de las Tesis y Jurisprudencias en el Poder Judicial del Estado de Coahuila de Zaragoza emitidos el 18 de noviembre de 2020, por el Magistrado Miguel Felipe Mery Ayup, Presidente del Tribunal Superior de Justicia y del Consejo de la Judicatura del Estado, ordenará a la Comisión de Sistematización de Tesis su publicación inmediatamente —una vez concluidos los proyectos por cada órgano jurisdiccional— entre otros medios, en la página de internet del Poder Judicial de Coahuila.
 
