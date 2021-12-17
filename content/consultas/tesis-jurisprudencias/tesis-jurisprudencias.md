@@ -30,7 +30,7 @@ Por lo anterior, la aplicación de la innovación representa un gran beneficio p
           <th>Fecha de aprobación</th>
           <th>Título</th>
           <th>Subtítulo</th>
-          <th>Organo emisor</th>
+          <th>Órgano emisor</th>
         </tr>
       </thead>
     </table>
