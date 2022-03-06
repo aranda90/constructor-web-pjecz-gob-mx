@@ -4,7 +4,7 @@ Slug: consultas-poder-en-linea
 URL: consultas/poder-en-linea/
 Save_As: consultas/poder-en-linea/index.html
 Date: 2021-05-18 11:55
-Modified: 2021-09-14 12:55
+Modified: 2022-03-05 21:06
 
 
 <nav aria-label="breadcrumb">
@@ -13,8 +13,6 @@ Modified: 2021-09-14 12:55
 <li class="breadcrumb-item active" aria-current="page">Poder en Línea</li>
 </ol>
 </nav>
-
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/557622062?color=ecece6&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
 
