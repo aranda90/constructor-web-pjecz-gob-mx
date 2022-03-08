@@ -1,4 +1,4 @@
-Title: Registro Estatal de personas sancionada por violencia contra las mujeres
+Title: Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres
 Slug: consultas-repsvm
 URL: consultas/repsvm/
 Save_As: consultas/repsvm/index.html
