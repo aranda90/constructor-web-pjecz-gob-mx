@@ -23,7 +23,7 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
 
 ### [Acuerdo C-009/2022 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza](/acuerdos-del-consejo/2022/2022-01-24-acuerdo-registro-repvm/)
 
-### REPSVM
+### Instrucciones: elija el Distrito Judicial, escriba parte del nombre y de clic en Consultar
 
 <div id="buscarDiv" class="card mb-2">
     <div class="card-body">
