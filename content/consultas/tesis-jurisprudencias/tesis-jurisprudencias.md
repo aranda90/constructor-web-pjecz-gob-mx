@@ -36,7 +36,7 @@ Por lo anterior, la aplicación de la innovación representa un gran beneficio p
     </table>
   </div>
   <div class="container" id="tablaDetalle" style="overflow:auto; width:auto" >
-  <button id="btnbackTesisJusrisprudencias" type="button" class="btn btn-secondary">
+    <button id="btnbackTesisJusrisprudencias" type="button" class="btn btn-secondary">
       <i class="fa fa-arrow-left" aria-hidden="true"></i>
       Tesis y jurisprudencias
     </button>
@@ -74,10 +74,10 @@ Por lo anterior, la aplicación de la innovación representa un gran beneficio p
       <div class="col-4">
          <div class="row" style="border: 1px solid #dee2e6;">
           <div class="col-12">
-            <p style="font-size: 15px; font-weight: bold; padding: 0 0;"">ÓRGANO EMISOR:</p>
+            <p style="font-size: 15px; font-weight: bold; padding: 0 0;">ÓRGANO EMISOR:</p>
           </div>
           <div class="col-12">
-            <p id="detalleAutoridad" style="font-size: 17px; padding: 0 0;""> </p>
+            <p id="detalleAutoridad" style="font-size: 17px; padding: 0 0;"> </p>
           </div>
         </div>
       </div>
