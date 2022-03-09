@@ -70,8 +70,13 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
                     <th>No. Causa</th>
                     <th>Pena Impuesta</th>
                     <th>Observaciones</th>
+                    <th>V.P. Sentencia</th>
                 </tr>
             </thead>
         </table>
     </div>
 </div>
+
+### Descargar la base de datos
+
+- [De clic aqui para descargar un archivo CSV con toda la información.](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.csv)
