@@ -2,8 +2,8 @@ Title: Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres
 Slug: consultas-repsvm
 URL: consultas/repsvm/
 Save_As: consultas/repsvm/index.html
-Date: 2022-03-07 16:20
-Modified: 2022-03-07 16:20
+Date: 2022-03-07 16:20:00
+Modified: 2022-03-09 07:29:00
 JavaScripts: consultas-repsvm.js
 
 
@@ -77,6 +77,7 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
     </div>
 </div>
 
-### Descargar la base de datos
+### Descargar toda la información
 
-- [De clic aqui para descargar un archivo CSV con toda la información.](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.csv)
+- [Archivo texto separado por comas repsvm.cvs](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.csv)
+- [Archivo Microsoft Excel repsvm.xlsx](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.xlsx)
