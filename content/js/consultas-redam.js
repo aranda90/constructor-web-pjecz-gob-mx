@@ -42,8 +42,8 @@ $(document).ready(function() {
             alRecibirDistritos(dataDistritos);
         }
     });
-    function alRecibirDistritos(dataDistritos) {
-        $.each(dataDistritos, function (i, distrito) {
+    function alRecibirDistritos(data) {
+        $.each(data, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
                 text: distrito.distrito
@@ -51,87 +51,26 @@ $(document).ready(function() {
         });
     };
 
-    // Al dar clic en el botón Consultar
-    $('#consultarButton').click(function () {
-
-        // Validar
-        let valido = true;
-        let distrito = $('#distritoSelect').val();
-        let nombre = $('#nombreInput').val().trim();
-        if (nombre != "" && nombre.length < 4) {
-            $('#revisarParametrosAlert').text("El nombre a buscar debe tener por lo menos cuatro letras.");
-            valido = false;
-        };
-
-        // Si es válido el formulario
-        if (valido) {
-            // Ocultar botón Consultar, mostrar botón Cargando... y ocultar mensaje Sin resultados
-            $('#consultarButton').hide();
-            $('#cargandoButton').show();
-            $('#revisarParametros').hide();
-            $('#sinResultados').hide();
-            // Llamar a la API y ejecutar acciones hasta recibir resultados
-            if (nombre == "") {
-                $.ajax({
-                    'url': redams_api_url,
-                    'type': "GET",
-                    'data': {
-                        'distrito_id': distrito
-                    },
-                    'dataType': "json",
-                    'success': function (data) {
-                        alRecibirResultados(data);
-                    }
-                });
-            } else {
-                $.ajax({
-                    'url': redams_api_url,
-                    'type': "GET",
-                    'data': {
-                        'distrito_id': distrito,
-                        'nombre': nombre
-                    },
-                    'dataType': "json",
-                    'success': function (data) {
-                        alRecibirResultados(data);
-                    }
-                });
-            }
-        } else {
-            $('#revisarParametros').show();
-            $('#resultadosDiv').hide();
-        };
-
+    // Alimentar resultados
+    $.ajax({
+        'url': redams_api_url,
+        'type': "GET",
+        'dataType': "json",
+        'success': function (dataRedam) {
+            alRecibirRedam(dataRedam);
+        }
     });
-
-    // Al recibir los datos de la API
-    function alRecibirResultados(data) {
-
-        // Si tiene datos, limpiar la tabla
-        if ($('#resultadosDataTable').length > 0) {
-            $('#resultadosDataTable').DataTable().clear();
-            $('#resultadosDataTable').DataTable().destroy();
-        };
-
-        // Si no hay resultados, muestra mensaje y termina
-        if (data.length == 0) {
-            $('#cargandoButton').hide();
-            $('#consultarButton').show();
-            $('#sinResultados').show();
-            $('#sinResultadosAlert').text("No se encontraron registros con las opciones dadas.");
-            $('#resultadosDiv').hide();
-            return;
-        };
-
+    function alRecibirRedam(data) {
         // Mostrar tabla
         $('#resultadosDiv').show();
-
         // DataTable
         $('#resultadosDataTable').DataTable({
-            'data': data.items,
+            'processing': true,
+            'serverSide': true,
+            'data': data,
             'columns': [
                 { "data": "id" },
-                { "data": "distrito_nombre" },
+                { "data": "distrito_nombre_corto" },
                 { "data": "autoridad_descripcion_corta" },
                 { "data": "nombre" },
                 { "data": "expediente" },
@@ -154,11 +93,6 @@ $(document).ready(function() {
                 }
             }
         });
-
-        // Mostrar botón Consultar y ocultar botón Cargando...
-        $('#consultarButton').show();
-        $('#cargandoButton').hide();
-
     };
 
-} );
+});
