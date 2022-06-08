@@ -107,8 +107,6 @@ $(document).ready(function() {
     // Al recibir los datos de la API
     function alRecibirResultados(data) {
 
-        console.log(data.items);
-
         // Si tiene datos, limpiar la tabla
         if ($('#resultadosDataTable').length > 0) {
             $('#resultadosDataTable').DataTable().clear();
