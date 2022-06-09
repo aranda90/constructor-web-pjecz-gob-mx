@@ -66,8 +66,14 @@ $(document).ready(function() {
             'serverSide': true,
             'ajax': {
                 'url': redams_api_url,
-                'type': "GET",
-                'dataSrc': "items"
+                'type': "POST",
+                'contentType': "application/json",
+                'data': {
+                    "draw": 1,
+                    "start": 0,
+                    "length": 10,
+                    "distrito_id": $('#distritoSelect').val()
+                }
             },
             'columns': [
                 { "data": "id" },
@@ -76,23 +82,7 @@ $(document).ready(function() {
                 { "data": "nombre" },
                 { "data": "expediente" },
                 { "data": "fecha" }
-            ],
-            'pageLength': 10,
-            'order': [[0, "desc"]],
-            'language': {
-                'lengthMenu': "Mostrar _MENU_",
-                'search': "Filtrar:",
-                'zeroRecords': "Cargando información...",
-                'info': "Página _PAGE_ de _PAGES_",
-                'infoEmpty': "No hay registros",
-                'infoFiltered': "(filtrados desde _MAX_ registros totales)",
-                'oPaginate': {
-                    'sFirst': "Primero",
-                    'sLast': "Último",
-                    'sNext': "Siguiente",
-                    'sPrevious': "Anterior"
-                }
-            }
+            ]
         });
     };
 
