@@ -51,23 +51,24 @@ $(document).ready(function() {
         });
     };
 
-    // Alimentar resultados
-    $.ajax({
-        'url': redams_api_url,
-        'type': "GET",
-        'dataType': "json",
-        'success': function (dataRedam) {
-            alRecibirRedam(dataRedam);
-        }
+    // Al dar clic en el botón Consultar
+    $('#consultarButton').click(function () {
+        alRecibirRedam();
     });
-    function alRecibirRedam(data) {
+
+    // Mostrar DataTable
+    function alRecibirRedam() {
         // Mostrar tabla
         $('#resultadosDiv').show();
         // DataTable
         $('#resultadosDataTable').DataTable({
             'processing': true,
             'serverSide': true,
-            'data': data,
+            'ajax': {
+                'url': redams_api_url,
+                'type': "GET",
+                'dataSrc': "items"
+            },
             'columns': [
                 { "data": "id" },
                 { "data": "distrito_nombre_corto" },
