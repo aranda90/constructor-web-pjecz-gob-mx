@@ -62,20 +62,19 @@ $(document).ready(function() {
         $('#resultadosDiv').show();
         // DataTable
         $('#resultadosDataTable').DataTable({
-            'processing': true,
-            'serverSide': true,
-            'ajax': {
-                'url': redams_api_url,
-                'type': "POST",
-                'contentType': "application/json",
-                'data': {
-                    "draw": 1,
-                    "start": 0,
-                    "length": 10,
-                    "distrito_id": $('#distritoSelect').val()
-                }
+            lengthChange: false,
+            ordering: false,
+            searching: false,
+            serverSide: true,
+            ajax: {
+                url: redams_api_url,
+                type: "GET",
+                data: {
+                    distrito_id: $('#distritoSelect').val()
+                },
+                dataType: "json"
             },
-            'columns': [
+            columns: [
                 { "data": "id" },
                 { "data": "distrito_nombre_corto" },
                 { "data": "autoridad_descripcion_corta" },
