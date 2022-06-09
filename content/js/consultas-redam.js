@@ -57,11 +57,34 @@ $(document).ready(function() {
 
     // Al dar clic en el botón Consultar
     $('#consultarButton').click(function () {
-        alRecibirRedam();
+
+        // Validar formulario
+        let valido = true;
+        let nombre = $('#nombreInput').val().trim();
+        if (nombre != "" && nombre.length < 4) {
+            $('#revisarParametrosAlert').text("El nombre a buscar debe tener por lo menos cuatro letras.");
+            valido = false;
+        };
+
+        // Si es válido el formulario
+        if (valido) {
+            // Ocultar botón Consultar, mostrar botón Cargando... y ocultar mensaje Sin resultados
+            $('#consultarButton').hide();
+            $('#cargandoButton').show();
+            $('#revisarParametros').hide();
+            $('#sinResultados').hide();
+            // Mostrar DataTable
+            mostrarDataTable();
+        } else {
+            // Mostrar mensaje de validacion
+            $('#revisarParametros').show();
+            $('#resultadosDiv').hide();
+        };
+
     });
 
     // Mostrar DataTable
-    function alRecibirRedam() {
+    function mostrarDataTable() {
 
         // Si tiene datos, limpiar la tabla
         if ($('#resultadosDataTable').length > 0) {
