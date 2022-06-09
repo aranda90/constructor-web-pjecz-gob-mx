@@ -43,6 +43,10 @@ $(document).ready(function() {
         }
     });
     function alRecibirDistritos(data) {
+        $('#distritoSelect').append($('<option>', {
+            value: 0,
+            text: 'Todos'
+        }))
         $.each(data, function (i, distrito) {
             $('#distritoSelect').append($('<option>', {
                 value: distrito.id,
@@ -58,8 +62,16 @@ $(document).ready(function() {
 
     // Mostrar DataTable
     function alRecibirRedam() {
+
+        // Si tiene datos, limpiar la tabla
+        if ($('#resultadosDataTable').length > 0) {
+            $('#resultadosDataTable').DataTable().clear();
+            $('#resultadosDataTable').DataTable().destroy();
+        };
+
         // Mostrar tabla
         $('#resultadosDiv').show();
+
         // DataTable
         $('#resultadosDataTable').DataTable({
             lengthChange: false,
@@ -70,7 +82,8 @@ $(document).ready(function() {
                 url: redams_api_url,
                 type: "GET",
                 data: {
-                    distrito_id: $('#distritoSelect').val()
+                    distrito_id: $('#distritoSelect').val(),
+                    nombre: $('#nombreInput').val(),
                 },
                 dataType: "json"
             },
@@ -81,8 +94,23 @@ $(document).ready(function() {
                 { "data": "nombre" },
                 { "data": "expediente" },
                 { "data": "fecha" }
-            ]
+            ],
+            language: {
+                lengthMenu: "Mostrar _MENU_",
+                search: "Filtrar:",
+                zeroRecords: "Cargando información...",
+                info: "Página _PAGE_ de _PAGES_",
+                infoEmpty: "No hay registros",
+                infoFiltered: "(filtrados desde _MAX_ registros totales)",
+                oPaginate: {
+                    sFirst: "Primero",
+                    sLast: "Último",
+                    sNext: "Siguiente",
+                    sPrevious: "Anterior"
+                }
+            }
         });
-    };
+
+    }; // alRecibirRedam
 
 });
