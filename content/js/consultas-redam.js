@@ -98,10 +98,10 @@ $(document).ready(function() {
             language: {
                 lengthMenu: "Mostrar _MENU_",
                 search: "Filtrar:",
-                zeroRecords: "Cargando información...",
-                info: "Página _PAGE_ de _PAGES_",
+                zeroRecords: "No se encontraron registros",
+                info: "Total de registros _TOTAL_",
                 infoEmpty: "No hay registros",
-                infoFiltered: "(filtrados desde _MAX_ registros totales)",
+                infoFiltered: "(_TOTAL_ filtrados de _MAX_ registros)",
                 oPaginate: {
                     sFirst: "Primero",
                     sLast: "Último",
