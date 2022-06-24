@@ -7,7 +7,7 @@ Modified: 2022-06-08 12:50
 JavaScripts: consultas-redam.js
 
 
-### ¿Qué es el Registro Estatal de Deudores Alimentarios?
+### ¿Qué es el Registro Estatal de Deudores Alimentarios Morosos?
 
 De acuerdo al **Artículo 308** de la **Ley de Familia** el **Poder Judicial** tendrá a su cargo la creación y manejo del **Registro Estatal de Deudores Alimentarios Morosos,** en el que se inscribirá a las personas que hayan dejado de cumplir sus obligaciones alimentarias de manera consecutiva o intermitentemente, ya sea en tres ocasiones en un periodo de tres meses, o, para el caso de las pensiones alimenticias que se deban cumplir de manera mensual, en tres ocasiones en un periodo de seis meses, decretadas por la autoridad judicial correspondiente.
 
