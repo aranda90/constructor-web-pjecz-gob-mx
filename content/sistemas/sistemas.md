@@ -16,6 +16,11 @@ Modified: 2021-04-23 10:08:00
                 <a href="plataforma-web/" class="btn btn-secondary text-white">Plataforma Web</a>
             </div>
         </div>
+        <div class="my-3 py-3 pl-3 text-center">
+            <div class="py-3">
+                <a href="citas-admin/" class="btn btn-secondary text-white">Citas Admin</a>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
     </div>
