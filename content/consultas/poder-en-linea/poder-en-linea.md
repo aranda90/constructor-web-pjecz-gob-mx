@@ -67,4 +67,4 @@ Para solicitar el registro acudir al módulo más cercano y llevar los siguiente
 - Copia de tu CURP.
 - Y un teléfono móvil con un número celular para recibir NIPs dinámicos mediante mensaje de texto.
 
-Si tienes alguna duda puedes contactarnos en nuestra línea de atención de [WhatsApp 844 277 5774](https://wa.me/528442775774) y con gusto te atenderemos.
+Si tienes alguna duda puedes contactarnos en nuestra línea de atención de [WhatsApp 844 506 0075](https://wa.me/528445060075) y con gusto te atenderemos.
