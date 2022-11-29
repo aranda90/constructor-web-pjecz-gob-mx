@@ -126,7 +126,6 @@ $(document).ready(function() {
                 }
             },
             'columns': [
-                { "data": "id" },
                 { "data": "distrito_nombre_corto" },
                 { "data": "autoridad_descripcion_corta" },
                 { "data": "nombre" },

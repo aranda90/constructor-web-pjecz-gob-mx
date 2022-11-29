@@ -60,7 +60,6 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
         <table id="resultadosDataTable" class="table" style="width: 100%;">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Distrito</th>
                     <th>Tipo de Juzgado</th>
                     <th>Delito Genérico</th>

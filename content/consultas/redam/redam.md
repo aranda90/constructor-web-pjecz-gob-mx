@@ -52,7 +52,6 @@ Es necesario que la acreedora o acreedor reporte la incidencia de adeudo ante el
         <table id="resultadosDataTable" class="table" style="width: 100%;">
             <thead>
                 <tr>
-                    <th>ID</th>
                     <th>Distrito</th>
                     <th>Juzgado</th>
                     <th>Nombre</th>

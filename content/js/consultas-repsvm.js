@@ -126,12 +126,11 @@ $(document).ready(function() {
                 }
             },
             'columns': [
-                { "data": "id" },
-                { "data": "distrito" },
-                { "data": "materia_tipo_juzgado" },
-                { "data": "delito_generico" },
-                { "data": "delito_especifico" },
-                { "data": "tipo_sentencia" },
+                { "data": "distrito_nombre_corto" },
+                { "data": "materia_tipo_juzgado_descripcion" },
+                { "data": "repsvm_delito_generico_nombre" },
+                { "data": "repsvm_delito_especifico_descripcion" },
+                { "data": "repsvm_tipo_sentencia_nombre" },
                 { "data": "nombre" },
                 { "data": "numero_causa" },
                 { "data": "pena_impuesta" },
@@ -140,7 +139,7 @@ $(document).ready(function() {
             ],
             'columnDefs': [
                 {
-                    'targets': 10, // sentencia_url
+                    'targets': 9, // sentencia_url
                     'data': null,
                     render: function(data, type, row, meta) {
                         if (data != "") {
