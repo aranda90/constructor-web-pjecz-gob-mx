@@ -61,11 +61,11 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
             <thead>
                 <tr>
                     <th>Distrito</th>
+                    <th>Nombre</th>
                     <th>Tipo de Juzgado</th>
                     <th>Delito Genérico</th>
                     <th>Delito Específico</th>
                     <th>Tipo de Sentencia</th>
-                    <th>Nombre</th>
                     <th>No. Causa</th>
                     <th>Pena Impuesta</th>
                     <th>Observaciones</th>
@@ -75,8 +75,3 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
         </table>
     </div>
 </div>
-
-### Descargar toda la información
-
-- [Archivo texto separado por comas repsvm.cvs](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.csv)
-- [Archivo Microsoft Excel repsvm.xlsx](https://storage.googleapis.com/pjecz-consultas/repsvm/repsvm.xlsx)
