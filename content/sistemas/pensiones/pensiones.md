@@ -18,9 +18,9 @@ Modified: 2023-01-13 09:30:00
 - Banca digital sin costo.
 - Retiro de efectivo en más de 16,800 sitios.
 
-## Para solicitar el registro necesita...
+## Para solicitar el registro necesita:
 
-- Nombre completo.
+- Nombre completo
 - Correo Electrónico
 - R.F.C.
 - C.U.R.P.
@@ -31,10 +31,9 @@ Modified: 2023-01-13 09:30:00
 - Número de expediente dn donde se decretó la pensión.
 - Archivo PDF de su Credencial de Elector por ambos lados
 - Archivo PDF del comprobante de domicilio no mayor a tres meses
+- [Archivo JPEG con la Autorización de Transferencia de Datos Personales con su firma autógrafa](https://storage.googleapis.com/pjecz-consultas/Sistemas/autorizacion-transferencia-datos-personales.pdf)
 
-Se enviará un correo electrónico con una copia de tus respuestas a la dirección que suministraste.
-
-Ya una vez inscritos en un trascurso **no mayor a 10 días hábiles** se les notificara el día y la hora en que podrán pasar por su tarjeta de débito, al juzgado en donde se realiza el pago de la pensión, para lo cual deberán llevar en **original y copia el ine y el comprobante de domicilio**, así como el nombre correcto de o las personas que designaran como **beneficiarios del seguro de vida.**
+Ya una vez inscrito(a) en un trascurso **no mayor a 10 días hábiles** se le notificará el día y la hora en que podrá pasar por su tarjeta de débito, al juzgado en donde se realiza el pago de la pensión, para lo cual deberá llevar en **original y copia el INE y el comprobante de domicilio**, así como el nombre correcto de o las persona(s) que designará como **beneficiarios del seguro de vida.**
 
 ## Aviso de Transferencia de Datos Personales
 
