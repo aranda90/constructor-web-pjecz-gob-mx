@@ -63,16 +63,4 @@ certifica que consultó su opinión y obtuvo su aprobación previa a la entrega 
 
 ## Formulario de registro en Google Forms
 
-<div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6">
-        <div class="my-3 py-3 pl-3 text-center">
-            <div class="py-3">
-                <a href="https://forms.gle/h1CgRJnaAtRQYPUQ7" class="btn btn-secondary text-white">De clic aquí para ir al formulario</a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-3">
-    </div>
-</div>
+A partir del 23 de enero de 2023 podrá ingresar al formulario.
