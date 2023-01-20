@@ -9,6 +9,8 @@ URL: {{ url }}
 Save_As: {{ save_as }}
 Date: {{ date }}
 Modified: {{ modified }}
+{% if downloads %}Downloads: {{ downloads }}
+{% endif %}
 {% if preview %}Preview: {{ preview }}
 {% endif %}
 {% if status %}Status: {{ status }}
