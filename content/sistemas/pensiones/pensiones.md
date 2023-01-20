@@ -60,6 +60,8 @@ edad que se identificarán plenamente, el tratamiento de sus datos personales, p
 certifica que consultó su opinión y obtuvo su aprobación previa a la entrega de los datos.
 1. Cuando aplique, autoriza a entregar la información para el cumplimiento de la ley.
 
+De clic aquí para descargar el formato para la [Autorización de Transferencia de Datos Personales](https://storage.googleapis.com/pjecz-consultas/Sistemas/autorizacion-transferencia-datos-personales.pdf).
+
 ## Formulario de registro en Google Forms
 
 A partir del 23 de enero de 2023 podrá ingresar al formulario.
