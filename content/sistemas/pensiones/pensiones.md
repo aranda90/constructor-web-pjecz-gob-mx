@@ -62,6 +62,6 @@ certifica que consultó su opinión y obtuvo su aprobación previa a la entrega 
 
 De clic aquí para descargar el formato para la [Autorización de Transferencia de Datos Personales](https://storage.googleapis.com/pjecz-consultas/Sistemas/autorizacion-transferencia-datos-personales.pdf).
 
-## Formulario de registro en Google Forms
+## Se requiere cuenta en Google para este formulario
 
-A partir del 23 de enero de 2023 podrá ingresar al formulario.
+<a href="https://forms.gle/Dtg9PbC81rwrohqeA" type="button" class="btn btn-secondary btn-lg btn-block my-4 text-white">Formulario de registro en Google Forms</a>
