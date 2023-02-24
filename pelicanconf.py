@@ -60,6 +60,7 @@ PAGE_PATHS = [
     "sistemas",
     "tramites-y-servicios",
     "transparencia",
+    "transparencia-proactiva",
     "transparencia-tca",
 ]
 
@@ -90,6 +91,7 @@ STATIC_PATHS = [
     "sistemas",
     "tramites-y-servicios",
     "transparencia",
+    "transparencia-proactiva",
     "transparencia-tca",
     "CNAME",
     "favicon.ico",
