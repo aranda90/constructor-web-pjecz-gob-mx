@@ -117,7 +117,7 @@ $(document).ready(function() {
             }))
             $.each(result.items,function (i, distrito) {
                 $('#distritoSelect').append($('<option>', {
-                    value: distrito["id"],
+                    value: distrito["clave"],
                     text: distrito["nombre"]
                 }));
             })
@@ -190,7 +190,7 @@ $(document).ready(function() {
             console.log(data)
             $('#defensoriautoridadSelect').append($('<option>', {
                 value: 0,
-                text: 'Selecciona una Oficina Defensoría'
+                text: 'Selecciona una Oficina de Defensoría'
             }))
             $.each(data.items, function (i, autoridades) {
                 $('#defensoriautoridadSelect').append($('<option>', {
