@@ -75,3 +75,7 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
         </table>
     </div>
 </div>
+
+### Datos abiertos
+
+Para descargar los datos abiertos del Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres como un archivo CSV, haga clic en el siguiente enlace: [Descargar repsvm.csv](https://storage.googleapis.com/pjecz-consultas/REPSVM/repsvm.csv)
