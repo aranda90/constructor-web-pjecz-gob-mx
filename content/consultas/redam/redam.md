@@ -15,7 +15,9 @@ De acuerdo al **Artículo 308** de la **Ley de Familia** el **Poder Judicial** t
 
 Es necesario que la acreedora o acreedor reporte la incidencia de adeudo ante el juzgado familiar correspondiente, para que el órgano jurisdiccional registre a la persona deudora.
 
-### Instrucciones: elija el Distrito Judicial, escriba parte del nombre y de clic en Consultar
+### Consultar la base de datos REDAM
+
+**Instrucciones:** elija el Distrito Judicial, escriba parte del nombre y de clic en Consultar.
 
 <div id="buscarDiv" class="card mb-2">
     <div class="card-body">
@@ -62,3 +64,7 @@ Es necesario que la acreedora o acreedor reporte la incidencia de adeudo ante el
         </table>
     </div>
 </div>
+
+### Descargar la base de datos del REDAM
+
+Para descargar los datos del **Registro Estatal de Deudores Alimentarios Morosos** como un archivo CSV, haga clic en el siguiente enlace: [Descargar redam.csv](https://storage.googleapis.com/pjecz-consultas/REDAM/redam.csv)
