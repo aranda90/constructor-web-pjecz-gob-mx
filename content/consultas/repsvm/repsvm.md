@@ -23,7 +23,9 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
 
 ### [Acuerdo C-009/2022 emitido por el Pleno del Consejo de la Judicatura del Estado de Coahuila de Zaragoza](/acuerdos-del-consejo/2022/2022-01-24-acuerdo-registro-repvm/)
 
-### Instrucciones: elija el Distrito Judicial, escriba parte del nombre y de clic en Consultar
+### Consultar la base de datos REPSVM
+
+**Instrucciones:** elija el Distrito Judicial, escriba parte del nombre y de clic en Consultar.
 
 <div id="buscarDiv" class="card mb-2">
     <div class="card-body">
@@ -76,6 +78,6 @@ Tiene como objetivo ser un mecanismo efectivo de prevención y protección para 
     </div>
 </div>
 
-### Datos abiertos
+### Descargar la base de datos del REPSVM
 
-Para descargar los datos abiertos del Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres como un archivo CSV, haga clic en el siguiente enlace: [Descargar repsvm.csv](https://storage.googleapis.com/pjecz-consultas/REPSVM/repsvm.csv)
+Para descargar los datos del **Registro Estatal de Personas Sancionadas por Violencia contra las Mujeres** como un archivo CSV, haga clic en el siguiente enlace: [Descargar repsvm.csv](https://storage.googleapis.com/pjecz-consultas/REPSVM/repsvm.csv)
