@@ -83,7 +83,7 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
         <div class="col-md-3">
             <div class="card destacados-card mb-2">
                 <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><img class="card-img-top" src="ingreso-plataforma-poder-en-linea.jpg"></a>
-                <div class="card-body" style="height:142px;">
+                <div class="card-body" style="height:130px;">
                     <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
                 </div>
             </div>
