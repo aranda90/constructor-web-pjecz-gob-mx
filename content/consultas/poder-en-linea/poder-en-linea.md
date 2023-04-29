@@ -44,7 +44,7 @@ Modified: 2023-04-24 12:40
 </div>
 <br>
 
-El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
+El Poder Judicial del Estado de Coahuila de Zaragoza pone al servico de la ciudadanía la [Plataforma Poder en Línea](https://poderenlinea.gob.mx/), la cual integra en un sólo punto las siguientes herramientas de justicia digital:
 
 - El **Sistema de Citas** en Línea para agendar su trabajo en los órganos jurisdiccionales.
 - El **Buzón Electrónico** para Demandas y Promociones.
@@ -82,16 +82,16 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
         </div>
         <div class="col-md-3">
             <div class="card destacados-card mb-2">
-                <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><img class="card-img-top" src="ingreso-plataforma-poder-en-linea.jpg"></a>
+                <a href="https://poderenlinea.gob.mx/" target="_blank"><img class="card-img-top" src="ingreso-plataforma-poder-en-linea.jpg"></a>
                 <div class="card-body" style="height:130px;">
-                    <a href="https://poderenlinea.pjecz.gob.mx/" target="_blank"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
+                    <a href="https://poderenlinea.gob.mx/" target="_blank"><h3 class="card-title mb-0">Ingresar a Poder en Línea</h3></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-Para registrase y comenzar a utilizar nuestros servicios necesita proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea](https://poderenlinea.pjecz.gob.mx/).
+Para registrase y comenzar a utilizar nuestros servicios necesita proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea](https://poderenlinea.gob.mx/).
 
 En la plataforma subirá lo siguiente:
 
