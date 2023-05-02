@@ -16,10 +16,10 @@ Modified: 2023-04-24 12:40
 
 <div class="row">
     <div class="col-md-6 col-xs-12 mt-2">
-        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-01-aviso-importante.jpg">
+        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-02-descarga-app-token-2.png">
     </div>    
     <div class="col-md-6 col-xs-12 mt-2">
-        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-02-descarga-app-token-2.png">
+        <img class="img-fluid" style="border-radius:5px;" src="generar-tokens.png">
     </div>
 </div>
 <div class="row">
@@ -74,9 +74,9 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
         </div>
         <div class="col-md-3">
             <div class="card destacados-card mb-2">
-                <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf" target="_blank"><img class="card-img-top" src="manual-de-usuario.jpg"></a>
+                <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_de_usuario%20.pdf" target="_blank"><img class="card-img-top" src="manual-de-usuario.jpg"></a>
                 <div class="card-body" style="height:130px;">
-                    <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual%20de%20usuario%20Poder%20en%20linea.pdf" target="_blank"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
+                    <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_de_usuario%20.pdf" target="_blank"><h3 class="card-title mb-0">Manual de usuario para el abogado</h3></a>
                 </div>
             </div>
         </div>
