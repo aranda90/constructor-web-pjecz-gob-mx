@@ -16,10 +16,10 @@ Modified: 2023-04-24 12:40
 
 <div class="row">
     <div class="col-md-6 col-xs-12 mt-2">
-        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-02-descarga-app-token-2.png">
+        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-02-descarga-app-token.png">
     </div>
     <div class="col-md-6 col-xs-12 mt-2">
-        <img class="img-fluid" style="border-radius:5px;" src="generar-tokens.png">
+        <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-03-generar-tokens.png">
     </div>
 </div>
 <div class="row">
@@ -35,7 +35,7 @@ Modified: 2023-04-24 12:40
 <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-4 mt-4 text-center">
-        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_google_play.pdf" style="font-size:20px;"><b>Manual del usuario de la App para Google Play</b></a>
+        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_google_play.pdf" style="font-size:20px;"><b>Manual del usuario para Google Play</b></a>
     </div>
     <div class="col-md-4 mt-4 text-center">
         <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_app_store.pdf" style="font-size:20px;"><b>Manual del usuario para App Store</b></a>
@@ -91,7 +91,7 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
     </div>
 </div>
 
-**Para registrase** y comenzar a utilizar nuestros servicios necesita proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea](https://poderenlinea.gob.mx/).
+**Para registrarse** y comenzar a utilizar nuestros servicios necesita proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea](https://poderenlinea.gob.mx/).
 
 En la plataforma subirá lo siguiente:
 
