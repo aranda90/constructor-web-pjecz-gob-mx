@@ -1,0 +1,142 @@
+body {
+    font-size: 16px;
+}
+/* Modo oscuro */
+.oscuro body{
+    background-color: #1f1f1f !important;
+    color: #f1eded !important;
+}
+
+.oscuro .footer-light{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro section{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro article{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro .container-oscuro{
+    background-color: #2c2c2c !important;
+    color: #f1eded !important;
+}
+
+.oscuro #navegacion_logo {
+    filter: invert(100%);
+}
+
+.oscuro .breadcrumb {
+    background-color: #434343 !important;
+    padding-left: 10px;
+}
+
+.oscuro .breadcrumb-item :active{
+    color: #d8d8d8 !important;
+}
+
+.oscuro h1 {
+    color: #f0eded !important;
+}
+
+.oscuro h2 {
+    color: #f0eded !important;
+}
+
+.oscuro h3 {
+    color: #3492ff !important;
+}
+
+.oscuro p {
+    color: #828389 !important;
+}
+
+.oscuro a:not(.dropdown-item) {
+    color: #d5c69c !important;
+}
+
+.oscuro .card-body {
+    background-color: #434346 !important;
+}
+
+.oscuro header {
+    background-color: #1f1f1f !important;
+}
+
+.oscuro main {
+    background-color: #1f1f1f !important;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.theme-switch label {
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 30px;
+    cursor: pointer;
+    display: block;
+    height: 26px;
+    position: absolute;
+    top: 2px;
+    width: 56px;
+    content: "\f186";
+}
+
+.theme-switch input:checked + label {
+    background-color: #000;
+}
+
+.theme-switch label:before {
+    background-color: #999;
+    border-radius: 50%;
+    content: "";
+    height: 22px;
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    transition: all 0.3s ease-in-out;
+    width: 22px;
+}
+
+.theme-switch input:checked + label:before {
+    background-color: #fff;
+    transform: translateX(30px);
+}
+
+
+/* Boton para ir al inicio */
+.boton-flotante {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #004360;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    z-index: 999;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+.boton-flotante:hover {
+    background-color: #025b81;
+}
