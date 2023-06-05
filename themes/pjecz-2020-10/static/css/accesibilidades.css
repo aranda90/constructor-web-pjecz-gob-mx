@@ -1,6 +1,11 @@
 body {
     font-size: 16px;
 }
+
+#miencabezado {
+    font-size: 16px; /* Tamaño de fuente fijo para el encabezado */
+}
+
 /* Modo oscuro */
 .oscuro body{
     background-color: #1f1f1f !important;
@@ -52,6 +57,14 @@ body {
     color: #3492ff !important;
 }
 
+.oscuro h6 {
+    color: #f0eded !important;
+}
+
+ .oscuro th {
+    color: #f0eded !important;
+}
+
 .oscuro p {
     color: #828389 !important;
 }
@@ -71,52 +84,6 @@ body {
 .oscuro main {
     background-color: #1f1f1f !important;
 }
-
-.theme-switch {
-    display: inline-block;
-    height: 30px;
-    position: relative;
-    width: 60px;
-}
-
-.theme-switch input {
-    display:none;
-}
-
-.theme-switch label {
-    background-color: #fff;
-    border: 1px solid #999;
-    border-radius: 30px;
-    cursor: pointer;
-    display: block;
-    height: 26px;
-    position: absolute;
-    top: 2px;
-    width: 56px;
-    content: "\f186";
-}
-
-.theme-switch input:checked + label {
-    background-color: #000;
-}
-
-.theme-switch label:before {
-    background-color: #999;
-    border-radius: 50%;
-    content: "";
-    height: 22px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    transition: all 0.3s ease-in-out;
-    width: 22px;
-}
-
-.theme-switch input:checked + label:before {
-    background-color: #fff;
-    transform: translateX(30px);
-}
-
 
 /* Boton para ir al inicio */
 .boton-flotante {
@@ -140,3 +107,74 @@ body {
 .boton-flotante:hover {
     background-color: #025b81;
 }
+
+/* Estilo para tabla en modo oscuro */
+.tabla {
+    border-collapse: collapse;
+}
+  
+.oscuro td {
+    padding: 8px !important;
+    border: 1px solid #555 !important;
+    color: #fff !important;
+}
+  
+.oscuro .remarcada {
+    background-color: #464646 !important;
+    color: #d1d0d0 !important;
+}
+  
+/* Botones de accesibilidades */
+
+div.accessibility-bar {
+    position: fixed;
+    width: 55px;
+    margin-top: 50px;
+    transition: all 0.3s linear;
+    box-shadow: 2px 2px 8px 0px rgba(100, 100, 100, 0.4);
+    right: 0;
+    z-index: 999;
+}
+  
+div.accessibility-bar ul.accessibility-barList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+div.accessibility-bar li.accessibility-barItem {
+    height: 50px;
+    position: relative;
+}
+  
+div.accessibility-bar li.accessibility-barItem button {
+    color: white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    padding-left: 15%;
+    border-bottom: 1px solid rgba(101, 101, 101, 0.4);
+    transition: all 0.3s linear;
+}
+  
+div.accessibility-bar li:nth-child(1) button {
+    background: #2e2d2d;
+}
+
+div.accessibility-bar li:nth-child(2) button {
+    background: #4267b2;
+}
+
+div.accessibility-bar li:nth-child(3) button {
+    background: #1da1f2;
+}
+  
+div.accessibility-bar li.accessibility-barItem button i {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    font-size: 25px;
+}
+  
+
