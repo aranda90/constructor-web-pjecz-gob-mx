@@ -13,9 +13,7 @@ RELATIVE_URLS = False
 SITENAME = "Poder Judicial del Estado de Coahuila de Zaragoza"
 SITELOGO = "theme/images/pjecz.png"
 SITEPREVIEW = "theme/images/generic.jpg"
-SITEDESCRIPTION = (
-    "Responsables de impartir justicia en el Estado, de dirimir diferencias entre particulares, de conciliar, y de promover con el ejemplo una cultura de la legalidad y justicia cotidiana."
-)
+SITEDESCRIPTION = "Responsables de impartir justicia en el Estado, de dirimir diferencias entre particulares, de conciliar, y de promover con el ejemplo una cultura de la legalidad y justicia cotidiana."
 SITETWITTER = "@PJCoah"
 
 # Autor por defecto
@@ -45,7 +43,6 @@ PAGE_PATHS = [
     "citas",
     "comisiones",
     "conocenos",
-    "consultas",
     "derechos-humanos-e-igualdad-de-genero",
     "edictos-de-declaracion-de-ausencia",
     "justicia-para-ti",
@@ -77,7 +74,6 @@ STATIC_PATHS = [
     "comisiones",
     "comunicados",
     "conocenos",
-    "consultas",
     "derechos-humanos-e-igualdad-de-genero",
     "edictos-de-declaracion-de-ausencia",
     "entrevistas",
