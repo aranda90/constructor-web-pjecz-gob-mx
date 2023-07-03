@@ -15,6 +15,6 @@ JavaScripts: consultas-poder-en-linea.js
 </ol>
 </nav>
 
-## [Ir a Poder en Línea](../consultas/poder-en-linea/)
+## [Ir a Poder en Línea](../poder-en-linea/)
 
-El **Buzón Electrónico** para Demandas y Promociones ahora está en [Poder en Línea](../consultas/poder-en-linea/)
+El **Buzón Electrónico** para Demandas y Promociones ahora está en [Poder en Línea](../poder-en-linea/)
