@@ -337,6 +337,9 @@ $(document).ready(function () {
     fetch(api_distritos, { headers: { "X-Api-Key": apiKey } })
       .then((res) => res.json())
       .then((data) => {
+        // Primero, remover todas las opciones existentes
+        $("#distritoSelect option").remove();
+        // Agregar la opción por defecto
         $("#distritoSelect").append(
           $("<option>", {
             value: 0,
@@ -360,10 +363,12 @@ $(document).ready(function () {
   // Obtener Distritos por CLAVE
   function getDistritosClave() {
     var api_distritos_clave = get_api_url_only_distritos();
-
     fetch(api_distritos_clave, { headers: { "X-Api-Key": apiKey } })
       .then((res) => res.json())
       .then((data) => {
+        // Primero, remover todas las opciones existentes
+        $("#distritoClaveSelect option").remove();
+        // Agregar la opción por defecto
         $("#distritoClaveSelect").append(
           $("<option>", {
             value: 0,
@@ -391,6 +396,9 @@ $(document).ready(function () {
     fetch(api_url, { headers: { "X-Api-Key": apiKey } })
       .then((res) => res.json())
       .then((data) => {
+        // Primero, remover todas las opciones existentes
+        $("#autoridadSelect option").remove();
+        // Agregar la opción por defecto
         $("#autoridadSelect").append(
           $("<option>", {
             value: 0,
@@ -418,6 +426,9 @@ $(document).ready(function () {
     fetch(api_url, { headers: { "X-Api-Key": apiKey } })
       .then((res) => res.json())
       .then((data) => {
+        // Primero, remover todas las opciones existentes
+        $("#cemascSelect option").remove();
+        // Agregar la opción por defecto
         $("#cemascSelect").append(
           $("<option>", {
             value: 0,
@@ -445,6 +456,9 @@ $(document).ready(function () {
     fetch(api_url, { headers: { "X-Api-Key": apiKey } })
       .then((res) => res.json())
       .then((data) => {
+        // Primero, remover todas las opciones existentes
+        $("#defensoriaSelect option").remove();
+        // Agregar la opción por defecto
         $("#defensoriaSelect").append(
           $("<option>", {
             value: 0,
