@@ -37,6 +37,8 @@
     <script src="https://use.fontawesome.com/af111b85f5.js"></script>
     <!-- Stylesheets del tema -->
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pjecz-2020-10.css">
+    <!-- Stylesheets del tema accesibilidades -->
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/accesibilidades.css">
     <!-- Stylesheets individuales -->
 {% if USE_REMOTE_SERVICES %}{% include 'google-analytics.html' %}{% endif %}
 {% if page %}
@@ -52,6 +54,7 @@
     <header>
         {% include 'navegacion-logotipo-redes.html' %}
         {% include 'navegacion-menu.html' %}
+        {% include 'accesibilidades.html' %}
         {% block header %}{% endblock %}
         {% block second_navigation %}{% endblock %}
     </header>
@@ -79,6 +82,7 @@
     <script src="{{ SITEURL }}/theme/js/cambiar-tablas.js"></script>
     <script src="{{ SITEURL }}/theme/js/inicial-transmisiones-sesiones.js"></script>
     <script src="{{ SITEURL }}/theme/js/inicial-noticias-eventos.js"></script>
+    <script src="{{ SITEURL }}/theme/js/accesibilidades.js"></script>
     <!-- JavaScripts individuales -->
 {% if page %}
 {% if page.javascripts %}
