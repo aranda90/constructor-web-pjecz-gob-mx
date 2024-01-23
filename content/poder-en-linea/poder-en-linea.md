@@ -57,54 +57,61 @@ Modified: 2023-04-24 12:40
 <br>
 Registro y Uso de la Aplicación:
 
-**Para registrarse** y comenzar a utilizar nuestros servicios, necesitarás proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea](https://poderenlinea.gob.mx/) ó mediante la aplicación móvil.
+**Para registrarse** y comenzar a utilizar nuestros servicios, necesitarás proporcionar algunos datos personales. La información que proporcione será tratada de forma confidencial y solo será utilizada para fines de verificación y autenticación. El registro se realizará en la [Plataforma Poder en Línea Web](https://poderenlinea.gob.mx/) ó mediante la aplicación móvil.
 
 Deberás completar los siguientes paso para crear tu cuenta:
+<div class="row">
+    <div class="col-md-6">
+        <b>Paso 1: Llenar la información personal</b>
+        <ol>
+            <li> Nombre </li>
+            <li> Apellido 1</li>
+            <li> Apellido 2</li>
+            <li> CURP</li>
+            <li> Cédula Profesional (opcional)</li>
+            <li> Teléfono Celular</li>
+            <li> Teléfono fijo (opcional)</li>
+        </ol>
+    </div>
+    <div class="col-md-6">
+        <b>Paso 2: Llenar la información de domicilio</b>
+        <ol>
+            <li> Estado </li>
+            <li> Municipio </li>
+            <li> Código postal </li>
+            <li> Asentamiento </li>
+            <li> Tipo de domicilio </li>
+            <li> Calle o Vialidad </li>
+            <li> Número int./ ext. </li>
+            <li> Referencia (opcional) </li>
+        </ol>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <b>Paso 3: Poner los datos de la cuenta</b>
+        <ol>
+            <li> Correo electrónico </li>
+            <li> Confirmar correo electrónico </li>
+            <li> Contraseña ( Debe estar formada de 8 a 16 caracteres, debe contener números y letras , al menos primer caracter debe ser una letra y estar en mayúscula y los caracteres asterisco [*], guion medio [-] y punto [.] estan permitidos ). </li>
+            <li> Confirmar contraseña. </li>
+        </ol>
+    </div>
+    <div class="col-md-6">
+        <b>Paso 4: cargar los documentos y prueba de vida</b>
+        <ol>
+            <li> Un documento con su <b>Identificación Oficial con fotografía vigente</b>. </li>
+            <li> De manera opcional un documento con su <b>Cédula Profesional</b>. </li>
+            <li> Su Constancia de <b>Clave Única de Registro de Población</b> (CURP) expedida por la Secretaría de Gobernación. </li>
+            <li> Una <b>Prueba de vida</b> (grabación con audio y video) donde se menciona una declaración y una palabra clave. </li>
+            <li> Su <b>número celular</b> que será vinculado a su cuenta. </li>
+        </ol>
+    </div>
+</div>
+<br>
 
-**Información personal**
-
-1. Nombre
-2. Apellido 1
-3. Apellido 2
-4. CURP
-5. Cédula Profesional (opcional)
-6. Teléfono Celular
-7. Teléfono fijo (opcional)
-
-**Información de domicilio**
-
-   1. Estado
-   2. Municipio
-   3. Código postal
-   4. Asentamiento
-   5. Tipo de domicilio
-   6. Calle o Vialidad
-   7. Número int./ ext.
-   8. Referencia (opcional)
-
-**Datos de la cuenta**
-
-   1. Correo electrónico
-   2. Confirmar correo electrónico
-   3. Contraseña 
-       - Debe estar formada de 8 a 16 caracteres, 
-       - Debe contener números y letras, 
-       - Al menos primer caracter deb ser una letra y estar en mayúscula.
-       - Los caracteres "*","-" y "." estan permitidos.
-   4. Confirmar contraseña.
-
-**Documentos y prueba de vida**
-
-   1. Un documento con su **Identificación Oficial con fotografía vigente**.
-   2. De manera opcional un documento con su **Cédula Profesional**.
-   3. Su Constancia de **Clave Única de Registro de Población** (CURP) expedida por la Secretaría de Gobernación.
-   4. Una **Prueba de vida** (grabación con audio y video) donde se menciona una declaración y una palabra clave.
-   5. Su **número celular** que será vinculado a su cuenta.
-
-
-
-
-Para accesar use la combinación de usuario y contraseña de tu cuenta ya registrada para Buzón Electrónico o Expediente Virtual.
+**Para accesar** use la combinación de usuario y contraseña de tu cuenta ya registrada para Buzón Electrónico o Expediente Virtual.
 
 
 <div class="container pt-4 pb-2">
@@ -144,55 +151,76 @@ Para accesar use la combinación de usuario y contraseña de tu cuenta ya regist
     </div>
 </div>
 
+<!-- App  token -->
 <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-5 col-xs-12 mt-2">
+    <div class="col-md col-xs-12 mt-2">
         <h3>App Token</h3>
-        <p>Para el uso de Buzón Electrónico</p>
+        <p>Ahora, para enviar tus trámites a través del Buzón Electrónico en la Plataforma Poder en Línea Web, simplemente genera Tokens utilizando la "APP Token".</p>
     </div>
-    <div class="col-md-5 col-xs-12 mt-2">
-        <h3>App Poder en Líne@</h3>
-        <p>Para uso </p>
-    </div>
-    <div class="col-md-1"></div>
 </div>
 <div class="row">
-    <!-- <div class="col-md-1"></div> -->
-    <div class="col-md-6 col-xs-12 mt-2">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 col-xs-12 mt-2">
         <img class="img-fluid" style="border-radius:5px;" src="poder-en-linea-03-generar-tokens.png">
     </div>
-    <div class="col-md-6 col-xs-12 mt-2">
-        <img class="img-fluid" style="border-radius:5px; height:100%" src="fondo2.jpg">
-    </div>
-    <!-- <div class="col-md-1"></div> -->
+    <div class="col-md-2"></div>
 </div>
 <div class="row">
-    <div class="col-md-3 mt-2">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 mt-2">
         <a href="https://play.google.com/store/apps/details?id=com.poderlineatokenapp&pli=1"><img class="img-fluid" src="google-play.png"></a>
     </div>
-    <div class="col-md-3 mt-2">
+    <div class="col-md-4 mt-2">
         <a href="https://apps.apple.com/mx/app/app-token/id1669177678"><img class="img-fluid" src="app-store.png"></a>
     </div>
-    <div class="col-md-3 mt-2">
-        <a href="https://play.google.com/store/apps/details?id=gob.pjecz.poder_en_linea_app&hl=es_MX&gl=US"><img class="img-fluid" src="google-play.png"></a>
+    <div class="col-md-2"></div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 mt-4 text-center">
+        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_google_play.pdf" style="font-size:20px;"><b>Manual del usuario para APP Token Android</b></a>
     </div>
-    <div class="col-md-3 mt-2">
-        <a href="https://apps.apple.com/mx/app/poder-en-l%C3%ADne/id6475118346" ><img class="img-fluid" src="app-store.png"></a>
+    <div class="col-md-4 mt-4 text-center">
+        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_app_store.pdf" style="font-size:20px;"><b>Manual del usuario para APP Token IOS</b></a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<!-- Poder en Line@ -->
+<div class="row">
+    <div class="col-md col-xs-12 mt-2">
+        <h3>App Poder en Líne@</h3>
+        <p>Poder en Líne@ App concentra todas las herramientas de justicia digital para los litigantes en la palma de su mano.<br>
+        Desde la aplicación pueden usar estas plataformas de manera segura ya que se vincula directamente con su teléfono y los autentica por medio de tecnología biométrica; como la huella digital o el reconocimiento facial.</p>
+        <p>Le permite al usuario generar un token único, con el que firmará electrónicamente el envío de sus demandas y promociones.<br>
+        La App cuenta con una nueva funcionalidad de notificaciones, que concede a quien la use la facilidad de saber el estatus de sus envíos y expedientes sin necesidad de acudir a un juzgado.</p>
     </div>
 </div>
 <div class="row">
-    <div class="col-md-3 mt-4 text-center">
-        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_google_play.pdf" style="font-size:20px;"><b>Manual del usuario para Google Play APP Token</b></a>
+    <div class="col-md-2"></div>
+    <div class="col-md-8 col-xs-12 mt-2">
+        <img class="img-fluid" style="border-radius:5px; height:100%" src="fondo_gris.jpg">
     </div>
-    <div class="col-md-3 mt-4 text-center">
-        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_app_store.pdf" style="font-size:20px;"><b>Manual del usuario para App Store APP Token</b></a>
-    </div>
-    <div class="col-md-3 mt-4 text-center">
-        <a href="#" style="font-size:20px;"><b>Manual del usuario para Google Play Poder en Líne@</b></a>
-    </div>
-    <div class="col-md-3 mt-4 text-center">
-        <a href="https://storage.googleapis.com/pjecz-gob-mx/Consultas/Poder%20en%20Linea/Manual_descarga_configuracion_app_store.pdf" style="font-size:20px;"><b>Manual del usuario para App Store Poder en Líne@</b></a>
-    </div>
+    <div class="col-md-2"></div>
 </div>
-
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 mt-2">
+        <a href="https://play.google.com/store/apps/details?id=gob.pjecz.poder_en_linea_app&hl=es_MX&gl=US"><img class="img-fluid" src="google-play.png"></a>
+    </div>
+    <div class="col-md-4 mt-2">
+        <a href="https://apps.apple.com/mx/app/poder-en-l%C3%ADne/id6475118346" ><img class="img-fluid" src="app-store.png"></a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 mt-4 text-center">
+        <a href="#" style="font-size:20px;"><b>Manual del usuario para Poder en Líne@ Android</b></a>
+    </div>
+    <div class="col-md-4 mt-4 text-center">
+        <a href="#" style="font-size:20px;"><b>Manual del usuario para Poder en Líne@ IOS </b></a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<br>
 Si tienes alguna duda puedes contactarnos en nuestra línea de atención de [WhatsApp 844 506 0075](https://wa.me/528445060075) y con gusto te atenderemos.
