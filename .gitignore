@@ -40,4 +40,5 @@ content/transparencia/
 content/transparencia-proactiva/
 content/transparencia-tca/
 developmentconf.py
+poetry.lock
 settings.ini
