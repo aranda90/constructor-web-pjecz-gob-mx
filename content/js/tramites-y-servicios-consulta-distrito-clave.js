@@ -1,34 +1,29 @@
 $(document).ready(function () {
-    // Variable global para controlar si se muestra el msj de error
-    var errorShow = false;
-
     // Validación 08 CURSO CAPACITACIÓN PARA EXTERNOS
     function validateCCI() {
         if ($("#distritoClaveSelect option:selected").val() !== "0") {
-            document.getElementById("buscarForm").submit();
+        document.getElementById("buscarForm").submit();
         } else {
-            errorMessage("Elige una Distrito");
-            setTimeout(() => {
-                $("#msjError").remove();
-                errorShow = false;
-            }, 5000);
+        errorMessage("Elige una Distrito");
+        setTimeout(() => {
+            $("#msjError").remove();
+        }, 5000);
         }
     }
     $("#CCIEJ").bind("click", validateCCI);
 
     // Validación 11 CONSTANCIA DE NO REGISTRO REDAM
     function validateREDAM() {
-        if ($("#distritoClaveSelect option:selected").val() !== "0" && $("#nombreREDAM").val().trim() !== "") {
-            var descripcion = $("#nombreREDAM").val();
-            $("#descripcion").val(descripcion);
-            document.getElementById("buscarForm").submit();
-            return false;
+        if ($("#distritoClaveSelect option:selected").val() !== "0" || $("#nombreREDAM").val().trim() === "") {
+        var descripcion = $("#nombreREDAM").val();
+        $("#descripcion").val(descripcion);
+        document.getElementById("buscarForm").submit();
+        return false;
         } else {
-            errorMessage("Llene todos los campos");
-            setTimeout(() => {
-                $("#msjError").remove();
-                errorShow = false;
-            }, 5000);
+        errorMessage("Llene todos los campos");
+        setTimeout(() => {
+            $("#msjError").remove();
+        }, 5000);
         }
     }
     $("#REDAM").bind("click", validateREDAM);
@@ -36,13 +31,12 @@ $(document).ready(function () {
     // Validación 16 RENTA DE INSTALACIONES
     function validateRI() {
         if ($("#distritoClaveSelect option:selected").val() !== "0" && $("#descripcionInput").val().trim() !== "") {
-            document.getElementById("buscarForm").submit();
+        document.getElementById("buscarForm").submit();
         } else {
-            errorMessage("Elige una Distrito y escribe una descripción");
-            setTimeout(() => {
-                $("#msjError").remove();
-                errorShow = false;
-            }, 5000);
+        errorMessage("Elige una Distrito y escribe una descripción");
+        setTimeout(() => {
+            $("#msjError").remove();
+        }, 5000);
         }
     }
     $("#RI").bind("click", validateRI);
@@ -53,17 +47,10 @@ $(document).ready(function () {
         event.preventDefault();
     });
 
-    
-    // Funcion para mostrar el mensaje de error
-    function errorMessage(message){
-        if(!errorShow){
-            // Mostrar el mensaje de error
-            $("#msjError").remove();
-            $("#buscarForm").prepend('<div id="msjError" class="alert alert-danger text-center" role="alertA">' + message + '</div>');
-            errorShow = true;
-        }
-    }
-  
+    // Mensaje de error alert
+    const errorMessage = (text) => {
+        $("#msjError").append(`<div id='errMsj' class="alert alert-danger text-center" rol="alert">${text}</div>`);
+    };
 
     // Obtener Distritos por CLAVE
     function getDistritosClave() {
