@@ -4,6 +4,8 @@ URL: politicas-de-uso/terminos-de-uso-de-la-informacion/
 Save_As: politicas-de-uso/terminos-de-uso-de-la-informacion/index.html
 Date: 2020-04-27 17:02
 Modified: 2020-04-27 17:02
+JavaScripts: listados-interactivos.js
+Stylesheets: listados-interactivos.css
 
 
 Al utilizar la información del **Poder Judicial del Estado de Coahuila de Zaragoza**, usted acepta expresamente los siguientes:
