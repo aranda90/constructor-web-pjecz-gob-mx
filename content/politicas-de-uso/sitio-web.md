@@ -4,6 +4,8 @@ URL: politicas-de-uso/terminos-de-uso-del-sitio-web/
 Save_As: politicas-de-uso/terminos-de-uso-del-sitio-web/index.html
 Date: 2018-03-15 12:40
 Modified: 2018-04-16 11:00
+JavaScripts: listados-interactivos.js
+Stylesheets: listados-interactivos.css
 
 
 El uso del sitio del **Poder Judicial del Estado de Coahuila de Zaragoza** en Internet www.pjecz.gob.mx o de cualquiera de sus componentes, implica la aceptación expresa de los siguientes:
