@@ -1,9 +1,11 @@
 [tool.poetry]
+package-mode = false
 name = "constructor-web-pjecz-gob-mx"
 version = "1.0"
-description = "Constructor del sitio web del PJECZ para usarse con Pelican"
+description = "Constructor del sitio web para usarse con Pelican"
 authors = ["Guillermo Valdes <guillermo.valdes@pjecz.gob.mx>"]
 license = "AGPL3"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -13,7 +15,7 @@ archivista = "^0.4.5"
 beautifulsoup4 = "^4.11.1"
 click = "^8.1.3"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 pylint = "^2.14.5"
 black = "^22.6.0"
 
